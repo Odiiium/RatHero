@@ -5,24 +5,23 @@ using UnityEngine.Events;
 
 public class Character : Unit
 {
-
-    public delegate void MoveAction();
-    public static event MoveAction OnMove;
-
+    [SerializeField] MobileController mobileJoystick;
 
     private void OnEnable()
     {
-        OnMove += Run;
+        mobileJoystick.OnMove += Run;
     }
 
     private void OnDisable()
     {
-        OnMove -= Run;
+        mobileJoystick.OnMove -= Run;
     }
 
-    protected override void Run(float x, float z)
+    protected override void Run()
     {
-        Vector3 moveVector = new Vector3(x, 0, z);
-        rigidBody.AddForce(moveVector * Time.deltaTime, ForceMode.Force);
+        speed = 10;
+
+        Vector3 moveVector = new Vector3(mobileJoystick.xAxis(), 0, mobileJoystick.yAxis());
+        rigidBody.AddForce(moveVector *  speed, ForceMode.Force);
     }
 }

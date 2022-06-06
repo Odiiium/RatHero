@@ -10,6 +10,12 @@ public abstract class Unit : MonoBehaviour
 
     internal float healthPoints { get; set; }
     internal float damage { get; set; }
+    internal float speed { get; set; }
+
+    private void Start()
+    {
+        rigidBody = GetComponent<Rigidbody>();
+    }
 
     protected virtual void  GetDamage()
     {
