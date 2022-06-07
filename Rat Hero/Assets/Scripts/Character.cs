@@ -7,21 +7,17 @@ public class Character : Unit
 {
     [SerializeField] MobileController mobileJoystick;
 
-    private void OnEnable()
-    {
-        mobileJoystick.OnMove += Run;
-    }
+    float speed = 2.2f;
+    float rotateSpeed = .7f;
 
-    private void OnDisable()
+    private void Update()
     {
-        mobileJoystick.OnMove -= Run;
+        Run();
     }
 
     protected override void Run()
-    {
-        speed = 10;
-
-        Vector3 moveVector = new Vector3(mobileJoystick.xAxis(), 0, mobileJoystick.yAxis());
-        rigidBody.AddForce(moveVector *  speed, ForceMode.Force);
+    { 
+        rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * speed;
+        transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
     }
 }

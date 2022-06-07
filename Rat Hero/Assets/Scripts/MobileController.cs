@@ -11,7 +11,7 @@ public class MobileController : MonoBehaviour, IDragHandler, IPointerUpHandler, 
 
     public delegate void MoveAction();
     public event MoveAction OnMove;
-
+    public EventSystem onMove;
 
     void Start()
     {
@@ -22,20 +22,17 @@ public class MobileController : MonoBehaviour, IDragHandler, IPointerUpHandler, 
     public void OnDrag(PointerEventData eventData)
     {
         Vector2 pos;
-        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickBackground.rectTransform, eventData.position, eventData.pressEventCamera, out pos))
-        {
-            pos.x /= joystickBackground.rectTransform.sizeDelta.x;
-            pos.y /= joystickBackground.rectTransform.sizeDelta.y; 
-
-            inputVector = new Vector2(pos.x * 2 - 1, pos.y * 2 - 1); 
-            inputVector = (inputVector.magnitude > 1.0f) ? inputVector.normalized : inputVector;
-
-            joystickForeground.rectTransform.anchoredPosition = new Vector2(inputVector.x * (joystickBackground.rectTransform.sizeDelta.x / 2), inputVector.y * (joystickBackground.rectTransform.sizeDelta.y / 2));
-
-            if (OnMove != null)
+            if (RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickBackground.rectTransform, eventData.position, eventData.pressEventCamera, out pos))
             {
-                OnMove();
-            }
+                pos.x /= joystickBackground.rectTransform.sizeDelta.x;
+                pos.y /= joystickBackground.rectTransform.sizeDelta.y;
+
+                inputVector = new Vector2(pos.x * 2 - 1, pos.y * 2 - 1);
+                inputVector = (inputVector.magnitude > 1.0f) ? inputVector.normalized : inputVector;
+
+                joystickForeground.rectTransform.anchoredPosition = new Vector2(inputVector.x * (joystickBackground.rectTransform.sizeDelta.x / 2), inputVector.y * (joystickBackground.rectTransform.sizeDelta.y / 2));
+
+                OnMove?.Invoke();
         }
     }
 
@@ -61,6 +58,5 @@ public class MobileController : MonoBehaviour, IDragHandler, IPointerUpHandler, 
         if (inputVector.y != 0) return inputVector.y;
         else return 0;
     }
-
 
 }
