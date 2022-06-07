@@ -8,9 +8,22 @@ public abstract class Unit : MonoBehaviour
     protected Slider healthSlider;
     protected Rigidbody rigidBody;
 
-    internal float healthPoints { get; set; }
+    internal float healthPoints
+    {
+        get 
+        { 
+            return healthPoints; 
+        }
+        set
+        {
+            healthPoints = value;
+            if (healthPoints < 0) healthPoints = 0;
+        }
+    }
+
     internal float damage { get; set; }
     internal float speed { get; set; }
+    protected float rotateSpeed { get; set; }
 
     private void Start()
     {

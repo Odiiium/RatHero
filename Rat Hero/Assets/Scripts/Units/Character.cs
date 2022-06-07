@@ -7,8 +7,11 @@ public class Character : Unit
 {
     [SerializeField] MobileController mobileJoystick;
 
-    float speed = 2.2f;
-    float rotateSpeed = .7f;
+    private void OnEnable()
+    {
+        speed = 2.2f;
+        rotateSpeed = .7f;
+    }
 
     private void Update()
     {
@@ -16,7 +19,7 @@ public class Character : Unit
     }
 
     protected override void Run()
-    { 
+    {
         rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * speed;
         transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
     }
