@@ -356,7 +356,10 @@
 "Assets/Scripts/Units/Unit.cs"
 "Assets/Scripts/Weapons/Axe.cs"
 "Assets/Scripts/Weapons/Pistol.cs"
+"Assets/Scripts/Weapons/PoisonedKnife.cs"
+"Assets/Scripts/Weapons/Sword.cs"
 "Assets/Scripts/Weapons/Weapon.cs"
+"Assets/Scripts/Weapons/WeaponInitializer.cs"
 -langversion:9.0
 
 /deterministic

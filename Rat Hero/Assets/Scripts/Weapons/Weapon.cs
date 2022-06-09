@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Weapon : MonoBehaviour
+public class Weapon : MonoBehaviour
 {
     protected string weaponName { get; set; }
     protected float damage { get; set; }
 
     protected Rigidbody weaponRigidbody;
     protected BoxCollider weaponCollider;
-    protected Character player;
 
+    static Weapon instance;
     protected void StatsInitialize(float Damage, string Name)
     {
         damage = Damage;
@@ -19,12 +19,24 @@ public abstract class Weapon : MonoBehaviour
 
     private void Awake()
     {
-        player = FindObjectOfType<Character>();
+        if (instance == null)
+        {
+            instance = this;
+            if (gameObject.name == "Weapon")
+            {
+                WeaponInitializer.instance.InitialWeapon("PoisonedKnife", 2);
+            }
+        }
+        else
+        {
+            return;
+        }
     }
 
-    protected virtual void RotateAroundPlayer()
+    protected void RotateAroundPlayer()
     {
-        transform.RotateAround(player.transform.position, Vector3.up, 2);
+        transform.RotateAround(this.transform.parent.position, Vector3.up, 2);
+
     }
 
     protected virtual void Attack()

@@ -7,10 +7,10 @@ public class Pistol : Weapon
     private void OnEnable()
     {
         damage = 100;
-        name = "Axe";
+        name = "Pistol";
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         RotateAroundPlayer();
     }
