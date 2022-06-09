@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    protected string weaponName { get; set; }
-    protected float damage { get; set; }
+    public string weaponName { get; protected set; }
+    public float damage { get; protected set; }
 
-    protected Rigidbody weaponRigidbody;
-    protected BoxCollider weaponCollider;
+     Weapon instance;
 
-    static Weapon instance;
+    public static string currentWeapon;
+
     protected void StatsInitialize(float Damage, string Name)
     {
         damage = Damage;
@@ -19,18 +19,8 @@ public class Weapon : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            if (gameObject.name == "Weapon")
-            {
-                WeaponInitializer.instance.InitialWeapon("PoisonedKnife", 2);
-            }
-        }
-        else
-        {
-            return;
-        }
+        currentWeapon = "Sword";
+        WeaponInitializer.OnLoaded += InstanceInitialize;
     }
 
     protected void RotateAroundPlayer()
@@ -42,6 +32,22 @@ public class Weapon : MonoBehaviour
     protected virtual void Attack()
     {
 
+    }
+
+    private void InstanceInitialize()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            if (gameObject.name == "Weapon")
+            {
+                WeaponInitializer.instance.InitializeWeapon(currentWeapon, 2);
+            }
+        }
+        else
+        {
+            return;
+        }
     }
 
 }

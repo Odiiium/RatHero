@@ -30,7 +30,7 @@ public abstract class Unit : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
     }
 
-    protected virtual void  GetDamage()
+    protected virtual void  GetDamage(float damage)
     {
 
     }

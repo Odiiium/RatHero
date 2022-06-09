@@ -1,0 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Fly : Enemy
+{
+    private void Awake()
+    {
+        speed = 1.2f;
+    }
+}

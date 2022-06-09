@@ -11,6 +11,8 @@ public class Character : Unit
     {
         speed = 2.2f;
         rotateSpeed = .7f;
+
+        Enemy.OnApplyDamage += GetDamage;
     }
 
     private void Update()
@@ -22,5 +24,10 @@ public class Character : Unit
     {
         rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * speed;
         transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
+    }
+
+    protected override void GetDamage(float enemyDamage)
+    {
+        healthPoints -= enemyDamage;
     }
 }
