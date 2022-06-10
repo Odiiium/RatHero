@@ -64,7 +64,7 @@ public class Enemy : Unit
     {
         if (collision.gameObject.GetComponent<Character>() != null)
         {
-            OnApplyDamage(damage);
+            OnApplyDamage?.Invoke(damage);
             Destroy(gameObject);
         }
     }
