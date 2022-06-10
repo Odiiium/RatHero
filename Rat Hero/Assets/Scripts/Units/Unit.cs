@@ -8,16 +8,13 @@ public abstract class Unit : MonoBehaviour
     protected Slider healthSlider;
     protected Rigidbody rigidBody;
 
-    internal float healthPoints
-    {
-        get 
-        { 
-            return healthPoints; 
-        }
-        set
+    float currentHp;
+    internal float healthPoints { 
+        get { return currentHp; } 
+        set 
         {
-            healthPoints = value;
-            if (healthPoints < 0) healthPoints = 0;
+            currentHp = value;
+            if (currentHp <= 0) { Destroy(gameObject); }
         }
     }
 

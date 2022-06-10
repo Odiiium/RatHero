@@ -16,7 +16,7 @@ public class WeaponInitializer : MonoBehaviour
             instance = this;
             OnLoaded?.Invoke();
         }
-        else { return;}
+        else return;
 
     }
 

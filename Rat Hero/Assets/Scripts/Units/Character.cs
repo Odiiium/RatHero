@@ -11,6 +11,8 @@ public class Character : Unit
     {
         speed = 2.2f;
         rotateSpeed = .7f;
+        damage = 10;
+        healthPoints = 10000;
 
         Enemy.OnApplyDamage += GetDamage;
     }

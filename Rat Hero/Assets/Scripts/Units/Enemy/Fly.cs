@@ -6,6 +6,8 @@ public class Fly : Enemy
 {
     private void Awake()
     {
+        healthPoints = 400;
+        damage = 40;
         speed = 1.2f;
     }
 }

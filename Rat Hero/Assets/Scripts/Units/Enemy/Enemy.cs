@@ -16,25 +16,27 @@ public class Enemy : Unit
     private void OnEnable()
     {
         OnPlayerInSight += Run;
+        OnPlayerInSight += LookTowardsPlayers;
         OnGetDamaged += GetDamage;
             
     }
 
     private void Update()
     {
-        OnPlayerInSight();
+        PlayerInSight();
     }
 
     protected override void Run()
     {
-        rigidBody.velocity = (player.transform.position - transform.position).normalized * speed;
+        rigidBody.velocity = (player.transform.GetChild(0).transform.position - transform.position).normalized * speed;
     }
 
     protected virtual void PlayerInSight()
     {
-        if (Mathf.Abs(player.transform.position.x-transform.position.x) < 8 | Mathf.Abs(player.transform.position.z - transform.position.z) < 8)
+        float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
+        if (distanceToPlayer < 8)
         {
-            OnPlayerInSight();
+            OnPlayerInSight?.Invoke();
         }
     }
 
@@ -43,11 +45,18 @@ public class Enemy : Unit
         healthPoints -= playerDamage;
     }
 
+    private void LookTowardsPlayers()
+    {
+        transform.LookAt(player.GetComponentsInChildren<Transform>()[0].transform.position);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent(WeaponInitializer.instance.weaponsValues.GetValueOrDefault(Weapon.currentWeapon).GetType()) != null)
         {
             OnGetDamaged(player.damage);
+            Debug.Log(healthPoints);
+            Debug.Log(player.damage);
         }
     }
 
@@ -56,6 +65,7 @@ public class Enemy : Unit
         if (collision.gameObject.GetComponent<Character>() != null)
         {
             OnApplyDamage(damage);
+            Destroy(gameObject);
         }
     }
 
