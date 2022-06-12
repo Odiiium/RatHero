@@ -7,6 +7,9 @@ public class Character : Unit
 {
     [SerializeField] MobileController mobileJoystick;
 
+
+
+
     private void OnEnable()
     {
         speed = 2.2f;

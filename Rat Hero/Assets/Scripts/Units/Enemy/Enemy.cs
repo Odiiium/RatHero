@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : Unit
 {
     [SerializeField] Character player;
 
-    private delegate void OnSee();
-    public delegate void OnDamage(float damage);
+    private UnityAction OnPlayerInSight;
+    private UnityAction<float> OnGetDamaged;
+    public UnityAction<float> OnDamage;
 
-    private event OnSee OnPlayerInSight;
-    private event OnDamage OnGetDamaged;
-    internal static event OnDamage OnApplyDamage;
+    internal static UnityAction<float> OnApplyDamage;
 
     private void OnEnable()
     {

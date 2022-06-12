@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class SkinChanger : MonoBehaviour
 {
-    public delegate void OnSkinChanged(string skinName);
-    public static event OnSkinChanged onChangeSkin;
+    public static UnityAction<string> onChangeSkin;
 
     public delegate void OnLoad();
     public static event OnLoad OnLoaded;

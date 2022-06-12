@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WeaponInitializer : MonoBehaviour
 {
     public static WeaponInitializer instance;
 
-    public delegate void OnLoad();
-    public static event OnLoad OnLoaded;
-    
+    public static UnityAction OnLoaded;
+
     private void Awake()
     {
         if (instance == null)
