@@ -16,7 +16,7 @@ public class Skin : MonoBehaviour
     private float healthpoints;
     private float luck;
 
-    public float healthPoints { get { return healthpoints; } set { healthpoints = value; } }
+    public float healthPoints { get { return healthpoints; } }
     public float luckPoints { get { return luck; } set { luck = value; } }
 
     private void SkinInitialize()
@@ -24,7 +24,7 @@ public class Skin : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            SkinChanger.instance.ChangeSkin("AlbinoRat");
+            SkinChanger.instance.ChangeSkin("DoubleStripeRat");
         }
         else { return; }
     }

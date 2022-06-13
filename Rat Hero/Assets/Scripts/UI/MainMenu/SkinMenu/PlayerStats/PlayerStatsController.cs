@@ -1,18 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
+
 
 public class PlayerStatsController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] PlayerStatsView statsView;
+    [SerializeField] PlayerStats stats;
+
+    public static UnityAction onLoad;
+    public static UnityAction onAdd;
+    public static UnityAction onStatsShowing;
+
+    private void Start()
     {
-        
+        onLoad?.Invoke();
+        onStatsShowing?.Invoke();
+    }
+    private void Awake()
+    {
+        onLoad += stats.LoadStats;
+        onAdd += stats.AddStats;
+        onAdd += stats.SaveStats;
+        onAdd += RatLevelUpView.ShowLevel;
+        onStatsShowing += RatLevelUpView.ShowLevel;
+        onStatsShowing += statsView.ShowStats;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
