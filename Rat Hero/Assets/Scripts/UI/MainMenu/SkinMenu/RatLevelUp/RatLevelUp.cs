@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class RatLevelUp : MonoBehaviour
 {
-    public static int CurrentLvl { get { return currentLvl; } set { currentLvl = value; } }
-    static int currentLvl;
+    public static int CurrentLvl { get { return PlayerPrefs.GetInt("currentLvl"); } set { PlayerPrefs.SetInt("currentLvl", value); } }
 
 
 }

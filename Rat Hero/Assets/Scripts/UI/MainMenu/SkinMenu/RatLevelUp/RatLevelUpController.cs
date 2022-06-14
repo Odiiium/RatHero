@@ -7,16 +7,16 @@ public class RatLevelUpController : MonoBehaviour
     [SerializeField] RatLevelUpView levelUpView;
     [SerializeField] RatLevelUp levelUp;
 
-    UnityAction onLoad;
+
 
     private void Awake()
     {
-        onLoad += levelUpView.GetPrice;
-        onLoad += levelUpView.GetButton;
+        levelUpView.GetPrice();
+        levelUpView.GetButton();
     }
     private void Start()
     {
-        onLoad?.Invoke();
         levelUpView.levelUpButton.onClick.AddListener(PlayerStatsController.onAdd);
+        levelUpView.levelUpButton.onClick.AddListener(levelUpView.SetPrice);
     }
 }

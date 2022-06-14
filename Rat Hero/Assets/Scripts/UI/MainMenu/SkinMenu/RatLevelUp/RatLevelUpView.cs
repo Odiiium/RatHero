@@ -23,7 +23,7 @@ public class RatLevelUpView : MonoBehaviour
     {
         FindObjectOfType<RatLevel>().transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = RatLevelUp.CurrentLvl + " LVL";
     }
-    private void SetPrice()
+    internal void SetPrice()
     {
         priceCount.text = "" + Mathf.Pow(RatLevelUp.CurrentLvl, 2);
     }

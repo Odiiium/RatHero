@@ -17,30 +17,35 @@ public class SkinChanger : MonoBehaviour
         { 
             instance = this;
             onChangeSkin += SkinInitialize;
-            OnLoaded?.Invoke();
         }
         else { return; }
     }
 
-    public Dictionary<string, Skin> skinValues = new Dictionary<string, Skin>()
+    private void Start()
     {
-        {"AlbinoRat",       new Albino()            },
-        {"DoubleStripeRat", new DoubleStripeRat()   },
-        {"RedHatRat",       new RedHatRat()         }
-    };
-
+        OnLoaded?.Invoke();
+    }
     public void ChangeSkin(string skinName)
     {
         onChangeSkin?.Invoke(skinName);
-        Skin.currentSkin = skinValues.GetValueOrDefault(skinName);
-
+        DisplayRat(skinName);
     }
 
     private void SkinInitialize(string skinName)
     {
         gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Units/Characters/{skinName}");
-        gameObject.GetComponent<MeshCollider>().sharedMesh = Resources.Load<Mesh>($"Mesh/Units/Characters/{skinName}/{skinName}1");
         gameObject.GetComponent<MeshFilter>().sharedMesh = Resources.Load<Mesh>($"Mesh/Units/Characters/{skinName}/{skinName}1");
-        gameObject.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>($"Animation/Units/Characters/{skinName}");
+        if (gameObject.name == "MenuSkin") return;
+        else
+        {
+            gameObject.GetComponent<MeshCollider>().sharedMesh = Resources.Load<Mesh>($"Mesh/Units/Characters/{skinName}/{skinName}1");
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>($"Animation/Units/Characters/{skinName}");
+        }
+    }
+    private void DisplayRat(string skinName)
+    {
+        if (PlayerPrefs.GetInt(skinName) == 1) RatShopController.onHide?.Invoke();
+        else RatShopController.onShow?.Invoke();
+
     }
 }

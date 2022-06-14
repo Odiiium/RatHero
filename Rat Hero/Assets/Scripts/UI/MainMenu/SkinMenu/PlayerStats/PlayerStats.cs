@@ -105,15 +105,21 @@ public class PlayerStats : MonoBehaviour
     
     public  void AddStats()
     {
-        Damage = Mathf.Round(Damage *1.04f);
-        AttackSpeed = Mathf.Round(AttackSpeed *1.04f);
-        HealthPoints = Mathf.Round(HealthPoints *1.04f);
-        Defence = Mathf.Round(Defence + 1);
-        Speed = Mathf.Round(Speed *1.04f);
-        CriticalChance = Mathf.Round(CriticalChance + 1);
-        Mana = Mathf.Round(Mana*1.04f);
-        RatLevelUp.CurrentLvl += 1;
-        FindObjectOfType<PlayerStatsView>().ShowStats();
+        int moneyToLvlUp = (int)Mathf.Pow(RatLevelUp.CurrentLvl, 2);
+
+        if (Money.cheese >= moneyToLvlUp)
+        {
+            Damage = Mathf.Round(Damage * 1.04f);
+            AttackSpeed = Mathf.Round(AttackSpeed * 1.04f);
+            HealthPoints = Mathf.Round(HealthPoints * 1.04f);
+            Defence = Mathf.Round(Defence + 1);
+            Speed = Mathf.Round(Speed * 1.04f);
+            CriticalChance = Mathf.Round(CriticalChance + 1);
+            Mana = Mathf.Round(Mana * 1.04f);
+            RatLevelUp.CurrentLvl += 1;
+            FindObjectOfType<PlayerStatsView>().ShowStats();
+            Money.ReduceCheese(moneyToLvlUp);
+        }
     }
 
 

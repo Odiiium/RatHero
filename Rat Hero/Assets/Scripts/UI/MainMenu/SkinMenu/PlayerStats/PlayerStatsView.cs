@@ -5,26 +5,6 @@ using TMPro;
 using UnityEngine.Events;
 public class PlayerStatsView : MonoBehaviour
 {
-    /*internal void ShowStats()
-    {
-        List<TextMeshProUGUI> list = new List<TextMeshProUGUI>();
-        for (int i = 0; i < 7; i++)
-        {
-            var statCount = gameObject.transform.GetChild(i).transform.GetChild(2).GetComponent<TextMeshProUGUI>();
-            var addStatCount = gameObject.transform.GetChild(i).transform.GetChild(3).GetComponent<TextMeshProUGUI>();
-            if (i == 1 | i == 4 | i == 5 | i == 6)
-            {
-                statCount.text = PlayerStats.propertyValues[i] + "";
-                addStatCount.text = "+" + PlayerStats.propertyValues[i] * .04f + "%";
-
-            }
-            else
-            {
-                statCount.text = PlayerStats.propertyValues[i] + "";
-                addStatCount.text = "+" + PlayerStats.propertyValues[i] * .04f + "%";
-            }
-        }
-    }*/
     List<TextMeshProUGUI> statsCountList = new List<TextMeshProUGUI>(9);
     List<TextMeshProUGUI> addStatCountList = new List<TextMeshProUGUI>(9);
 
