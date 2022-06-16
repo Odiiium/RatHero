@@ -7,9 +7,9 @@ public class WeaponSwitcher : MonoBehaviour
 {
     [SerializeField] internal string[] weapons;
 
-    static public int currentWeapon { get {return PlayerPrefs.GetInt("currentWeapon"); } set { PlayerPrefs.SetInt("currentWeapon", value);}}
+    static public int currentWeapon { get { return PlayerPrefs.GetInt("currentWeapon"); } set { PlayerPrefs.SetInt("currentWeapon", value); } }
 
-    static public void  FindWeaponInArray()
+    static public void FindWeaponInArray()
     {
         WeaponSwitcher weaponSwitcher = FindObjectOfType<WeaponSwitcher>();
         for (int i = 0; i < weaponSwitcher.weapons.Length; i++)
@@ -29,11 +29,14 @@ public class WeaponSwitcher : MonoBehaviour
         {
             weaponInitializer.InitializeMenuWeapons(weapons[currentWeapon - 1]);
             currentWeapon--;
+            DisplayWeapon();
+
         }
         else
         {
             weaponInitializer.InitializeMenuWeapons(weapons[weapons.Length - 1]);
             currentWeapon = weapons.Length - 1;
+            DisplayWeapon();
         }
     }
 
@@ -44,11 +47,13 @@ public class WeaponSwitcher : MonoBehaviour
         {
             weaponInitializer.InitializeMenuWeapons(weapons[currentWeapon + 1]);
             currentWeapon++;
+            DisplayWeapon();
         }
         else
         {
             weaponInitializer.InitializeMenuWeapons(weapons[0]);
             currentWeapon = 0;
+            DisplayWeapon();
         }
     }
 
@@ -60,18 +65,15 @@ public class WeaponSwitcher : MonoBehaviour
         }
         else { Weapon.choisedWeapon = "Axe"; }
     }
-}
-
-
-
-    /*private void DisplayWeapon()
+    private void DisplayWeapon()
     {
-        DisplayRatStats();
-        if (PlayerPrefs.GetInt(rats[currentRat]) == 1) RatShopController.onHide?.Invoke();
-        else RatShopController.onShow?.Invoke();
+        if (PlayerPrefs.GetInt(weapons[currentWeapon]) > 0) WeaponShopController.onHide?.Invoke();
+        else WeaponShopController.onShow?.Invoke();
+        WeaponLevelUpController.onWeaponChanging?.Invoke();
     }
 
     private void DisplayWeaponStats()
     {
         RatAdditionalStatsController.onStatsDisplay?.Invoke();
-    }*/
+    }
+}

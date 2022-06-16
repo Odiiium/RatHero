@@ -19,11 +19,26 @@ public class WeaponShop : MonoBehaviour
     };
     internal void StartWeaponInitialize()
     {
-        if (PlayerPrefs.GetInt("Axe") == 0)
+        PlayerPrefs.SetInt("Axe", 2);
+        /*if (PlayerPrefs.GetInt("Axe") == 0)
         {
-            PlayerPrefs.SetInt("Axe", 1);
+            PlayerPrefs.SetInt("Axe", 2);
         }
-        else return;
+        else return;*/
+    }
 
+    internal void OnWeaponBuy()
+    {
+        WeaponSwitcher weaponSwitcher = FindObjectOfType<WeaponSwitcher>();
+        var currentWeaponName = weaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
+
+        if (Money.cheese >= weaponsPrice.GetValueOrDefault(currentWeaponName))
+        {
+            Money.ReduceCheese(weaponsPrice.GetValueOrDefault(currentWeaponName));
+            PlayerPrefs.SetInt(currentWeaponName, 1);
+            WeaponShopController.onHide?.Invoke();
+            MoneyController.onMoneyShows?.Invoke();
+            WeaponLevelUpController.onWeaponChanging?.Invoke();
+        }
     }
 }

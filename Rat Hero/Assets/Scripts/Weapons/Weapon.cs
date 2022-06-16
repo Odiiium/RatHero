@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
 
     public static string choisedWeapon { get { return PlayerPrefs.GetString("choisedWeapon"); } set { PlayerPrefs.SetString("choisedWeapon", value); }}
 
-    public static int currentLevel;
+    public static int currentLevel { get { return PlayerPrefs.GetInt(choisedWeapon);} set { PlayerPrefs.SetInt(choisedWeapon, value); } }
 
     protected void StatsInitialize(float Damage, string Name)
     {
@@ -42,7 +42,7 @@ public class Weapon : MonoBehaviour
             instance = this;
             if (gameObject.name == "Weapon")
             {
-                WeaponInitializer.instance.InitializeWeapon(choisedWeapon, PlayerPrefs.GetInt(choisedWeapon));
+                WeaponInitializer.instance.InitializeWeapon(choisedWeapon, currentLevel);
             }
         }
         else
