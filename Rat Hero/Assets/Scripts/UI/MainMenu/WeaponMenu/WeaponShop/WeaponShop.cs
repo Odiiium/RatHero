@@ -19,12 +19,11 @@ public class WeaponShop : MonoBehaviour
     };
     internal void StartWeaponInitialize()
     {
-        PlayerPrefs.SetInt("Axe", 2);
-        /*if (PlayerPrefs.GetInt("Axe") == 0)
+        if (PlayerPrefs.GetInt("Axe") == 0)
         {
-            PlayerPrefs.SetInt("Axe", 2);
+            PlayerPrefs.SetInt("Axe", 1);
         }
-        else return;*/
+        else return;
     }
 
     internal void OnWeaponBuy()

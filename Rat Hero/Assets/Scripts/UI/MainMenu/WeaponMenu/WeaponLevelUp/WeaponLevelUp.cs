@@ -22,11 +22,8 @@ public class WeaponLevelUp : MonoBehaviour
             PlayerPrefs.SetInt(currentWeaponName, PlayerPrefs.GetInt(currentWeaponName) + 1);
             Money.ReduceCheese(currentWeaponLvlUpPrice);
             WeaponLevelUpController.onWeaponChanging?.Invoke();
+            WeaponStatsController.onStatsDisplay?.Invoke();
             WeaponShopController.onHide?.Invoke();
         }
     }
-
-
-
-
 }

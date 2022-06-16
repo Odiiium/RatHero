@@ -69,11 +69,13 @@ public class WeaponSwitcher : MonoBehaviour
     {
         if (PlayerPrefs.GetInt(weapons[currentWeapon]) > 0) WeaponShopController.onHide?.Invoke();
         else WeaponShopController.onShow?.Invoke();
-        WeaponLevelUpController.onWeaponChanging?.Invoke();
+        DisplayWeaponStats();
     }
 
     private void DisplayWeaponStats()
     {
-        RatAdditionalStatsController.onStatsDisplay?.Invoke();
+        WeaponAbilitiesController.onWeaponChanged?.Invoke();
+        WeaponLevelUpController.onWeaponChanging?.Invoke();
+        WeaponStatsController.onStatsDisplay?.Invoke();
     }
 }

@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class WeaponMenuButtonView : MonoBehaviour
 {
     internal Button goToWeaponMenuButton;
-
-
     internal void GetButton()
     {
         goToWeaponMenuButton = gameObject.GetComponent<Button>();
