@@ -28,7 +28,6 @@ public class RatShop : MonoBehaviour
 
     internal void OnRatBuy()
     {
-        Money.cheese = 10000;
         RatSwitcher ratSwitcher = FindObjectOfType<RatSwitcher>();
         var currentRatName = ratSwitcher.rats[RatSwitcher.currentRat];
 

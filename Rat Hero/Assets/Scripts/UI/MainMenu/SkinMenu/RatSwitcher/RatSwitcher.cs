@@ -55,9 +55,14 @@ public class RatSwitcher : MonoBehaviour
 
     private void DisplayRat()
     {
+        DisplayRatStats();
         if (PlayerPrefs.GetInt(rats[currentRat]) == 1) RatShopController.onHide?.Invoke();
         else RatShopController.onShow?.Invoke();
     }
 
+    private void DisplayRatStats()
+    {
+        RatAdditionalStatsController.onStatsDisplay?.Invoke();
+    }
 
 }

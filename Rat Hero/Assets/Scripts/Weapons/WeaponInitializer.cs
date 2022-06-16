@@ -11,13 +11,18 @@ public class WeaponInitializer : MonoBehaviour
 
     private void Awake()
     {
+
+        if (gameObject.name == "WeaponMenu")
+        {
+            BeginStartingInitalizeInWeaponMenu();
+        }
+
         if (instance == null)
         {
             instance = this;
             OnLoaded?.Invoke();
         }
         else return;
-
     }
 
     public Dictionary<string, Weapon> weaponsValues = new Dictionary<string, Weapon>()
@@ -41,6 +46,22 @@ public class WeaponInitializer : MonoBehaviour
             }
         }
         else return;
+    }
+
+    internal void InitializeMenuWeapons(string weaponName)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject childObject = gameObject.transform.GetChild(i).gameObject;
+            childObject.GetComponent<MeshFilter>().mesh = Resources.Load<Mesh>($"Mesh/Weapons/{weaponName}/{weaponName}_lvl{i+1}");
+            childObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Weapons/{weaponName}/{weaponName}_lvl{i+1}");
+        }
+    }
+    
+    private void BeginStartingInitalizeInWeaponMenu()
+    {
+        WeaponSwitcher.FindWeaponInArray();
+        InitializeMenuWeapons(Weapon.choisedWeapon);
     }
 
 }

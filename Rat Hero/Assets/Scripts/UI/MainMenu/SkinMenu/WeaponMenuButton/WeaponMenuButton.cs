@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class WeaponMenuButton : MonoBehaviour
 {
-    [SerializeField] GameObject SkinMenu;
-    [SerializeField] GameObject WeaponMenu;
+    [SerializeField] GameObject skinMenu;
+    [SerializeField] GameObject weaponMenu;
     [SerializeField] GameObject mainCameras;
 
     internal void GoToWeaponMenu()
@@ -23,7 +23,7 @@ public class WeaponMenuButton : MonoBehaviour
 
     private void OpenWeaponMenu()
     {
-        SkinMenu.gameObject.SetActive(false);
-        WeaponMenu.gameObject.SetActive(true);
+        skinMenu.gameObject.SetActive(false);
+        weaponMenu.gameObject.SetActive(true);
     }
 }

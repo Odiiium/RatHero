@@ -54,8 +54,8 @@ public class PlayerStats : MonoBehaviour
     public static float CriticalChance { 
         get
         {
-            if (criticalChance > 90)
-                return 90;
+            if (criticalChance > 75)
+                return 75;
             else if (criticalChance > 3)
                 return criticalChance;
             else
