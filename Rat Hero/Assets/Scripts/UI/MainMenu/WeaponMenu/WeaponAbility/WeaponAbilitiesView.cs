@@ -18,8 +18,7 @@ public class WeaponAbilitiesView : MonoBehaviour
 
     internal void ShowWeaponAbilityInfo()
     {
-        WeaponSwitcher weaponSwitcher = FindObjectOfType<WeaponSwitcher>();
-        string currentWeaponName = weaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
+        string currentWeaponName = WeaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
 
         abilityNameText.text = WeaponAbilities.abilityInfoValues.GetValueOrDefault(currentWeaponName)[0];
         abilityDescriptionText.text = WeaponAbilities.abilityInfoValues.GetValueOrDefault(currentWeaponName)[1];

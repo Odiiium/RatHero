@@ -5,16 +5,18 @@ using UnityEngine.Events;
 
 public class WeaponSwitcher : MonoBehaviour
 {
-    [SerializeField] internal string[] weapons;
+    internal static string[] weapons = new string[] 
+    {
+    "Axe", "Sword", "Pistol", "PoisonedKnife"
+    };
 
     static public int currentWeapon { get { return PlayerPrefs.GetInt("currentWeapon"); } set { PlayerPrefs.SetInt("currentWeapon", value); } }
 
     static public void FindWeaponInArray()
     {
-        WeaponSwitcher weaponSwitcher = FindObjectOfType<WeaponSwitcher>();
-        for (int i = 0; i < weaponSwitcher.weapons.Length; i++)
+        for (int i = 0; i < weapons.Length; i++)
         {
-            if (weaponSwitcher.weapons[i] == Weapon.choisedWeapon)
+            if (weapons[i] == Weapon.choisedWeapon)
             {
                 currentWeapon = i;
                 return;

@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-public class RatSwitcherController : MonoBehaviour
+public class 
+    witcherController : MonoBehaviour
 {
     [SerializeField] RatSwitcher ratSwitcher;
     [SerializeField] RatSwitcherView ratSwitcherView;

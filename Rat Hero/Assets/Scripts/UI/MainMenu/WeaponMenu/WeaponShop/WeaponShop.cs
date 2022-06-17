@@ -28,8 +28,7 @@ public class WeaponShop : MonoBehaviour
 
     internal void OnWeaponBuy()
     {
-        WeaponSwitcher weaponSwitcher = FindObjectOfType<WeaponSwitcher>();
-        var currentWeaponName = weaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
+        var currentWeaponName = WeaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
 
         if (Money.cheese >= weaponsPrice.GetValueOrDefault(currentWeaponName))
         {

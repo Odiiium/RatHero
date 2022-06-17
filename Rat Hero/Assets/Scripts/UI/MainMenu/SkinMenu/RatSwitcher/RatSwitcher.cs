@@ -6,7 +6,10 @@ using System.IO;
 
 public class RatSwitcher : MonoBehaviour
 {
-    [SerializeField] internal string[] rats;
+    public static string[] rats = new string[]
+    {
+        "DoubleStripeRat", "AlbinoRat", "RedHatRat"
+    };
 
     static public int currentRat;
 

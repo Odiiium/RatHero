@@ -19,8 +19,7 @@ public class RatAdditionalStatsView : MonoBehaviour
 
     internal void SetStats()
     {
-        RatSwitcher ratSwitcher = FindObjectOfType<RatSwitcher>();
-        float[] ratStatsArray = RatAdditionalStats.ratStatsValues.GetValueOrDefault(ratSwitcher.rats[RatSwitcher.currentRat]);
+        float[] ratStatsArray = RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat]);
 
         for (int i = 0; i < 7; i++)
         {

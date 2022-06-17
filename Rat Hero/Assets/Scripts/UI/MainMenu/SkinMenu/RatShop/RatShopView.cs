@@ -40,7 +40,6 @@ public class RatShopView : MonoBehaviour
 
     internal void SetPrice()
     {
-        RatSwitcher ratSwitcher = FindObjectOfType<RatSwitcher>(); 
-        priceText.text = "" + RatShop.ratsPrice.GetValueOrDefault(ratSwitcher.rats[RatSwitcher.currentRat]);
+        priceText.text = "" + RatShop.ratsPrice.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat]);
     }
 }

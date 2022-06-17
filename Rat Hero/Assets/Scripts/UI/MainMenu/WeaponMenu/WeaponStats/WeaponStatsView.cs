@@ -17,7 +17,7 @@ public class WeaponStatsView : MonoBehaviour
     internal void SetStats()
     {
         WeaponSwitcher weaponSwitcher = FindObjectOfType<WeaponSwitcher>();
-        string currentWeaponName = weaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
+        string currentWeaponName = WeaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
         float[] weaponStatsArray = WeaponStats.weaponStatsValues.GetValueOrDefault(currentWeaponName);
 
         if (PlayerPrefs.GetInt(currentWeaponName) > 0)

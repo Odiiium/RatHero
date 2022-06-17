@@ -23,8 +23,7 @@ public class WeaponLevelUpView : MonoBehaviour
 
     internal void SetPrice()
     {
-        WeaponSwitcher weaponSwitcher = FindObjectOfType<WeaponSwitcher>();
-        string currentWeaponName = weaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
+        string currentWeaponName = WeaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
 
         if (PlayerPrefs.GetInt(currentWeaponName) > 0 & PlayerPrefs.GetInt(currentWeaponName) < 3)
         {

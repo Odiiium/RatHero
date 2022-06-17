@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public abstract class Unit : MonoBehaviour
 {
-    protected Slider healthSlider;
     protected Rigidbody rigidBody;
 
     float currentHp;

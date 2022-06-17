@@ -14,7 +14,7 @@ public class WeaponLevelUp : MonoBehaviour
 
     internal void WeaponLevelingUp()
     {
-        string currentWeaponName = FindObjectOfType<WeaponSwitcher>().weapons[WeaponSwitcher.currentWeapon];
+        string currentWeaponName = WeaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
         int currentWeaponLvlUpPrice = lvlUpPriceValues.GetValueOrDefault(currentWeaponName)[PlayerPrefs.GetInt(currentWeaponName) - 1];
 
         if (Money.cheese > currentWeaponLvlUpPrice & PlayerPrefs.GetInt(currentWeaponName) < 3)

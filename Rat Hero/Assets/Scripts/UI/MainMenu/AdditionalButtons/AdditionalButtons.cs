@@ -20,7 +20,6 @@ public class AdditionalButtons : MonoBehaviour
 
     private void SwitchCameras()
     {
-        for (int i = 0; i < 2; i++) mainCameras.transform.GetChild(i).gameObject.SetActive(false);
         mainCameras.transform.GetChild(2).gameObject.SetActive(true);
     }
 
