@@ -17,4 +17,9 @@ public class WeaponAbilitiesController : MonoBehaviour
         onWeaponChanged += weaponAbilitiesView.ShowWeaponAbilityInfo;
     }
 
+    private void OnDisable()
+    {
+        onWeaponChanged -= weaponAbilitiesView.ShowWeaponAbilityInfo;
+    }
+
 }

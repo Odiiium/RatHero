@@ -19,6 +19,11 @@ public class Character : Unit
         Enemy.OnApplyDamage += GetDamage;
     }
 
+    private void OnDisable()
+    {
+        Enemy.OnApplyDamage -= GetDamage;
+    }
+
     private void Update()
     {
         Run();

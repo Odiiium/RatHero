@@ -29,4 +29,13 @@ public class PlayerStatsController : MonoBehaviour
         onStatsShowing += statsView.ShowStats;
     }
 
+    private void OnDisable()
+    {
+        onLoad -= stats.LoadStats;
+        onAdd -= stats.AddStats;
+        onAdd -= stats.SaveStats;
+        onAdd -= RatLevelUpView.ShowLevel;
+        onStatsShowing -= RatLevelUpView.ShowLevel;
+        onStatsShowing -= statsView.ShowStats;
+    }
 }

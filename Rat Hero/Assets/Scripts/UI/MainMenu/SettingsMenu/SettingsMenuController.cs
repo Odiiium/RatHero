@@ -15,5 +15,12 @@ public class SettingsMenuController : MonoBehaviour
         settingsMenuView.soundSlider.onValueChanged.AddListener(settingsMenu.ChangeSoundVolume);
     }
 
+    private void OnDisable()
+    {
+        settingsMenuView.backButton.onClick.RemoveAllListeners();
+        settingsMenuView.musicSlider.onValueChanged.RemoveAllListeners();
+        settingsMenuView.soundSlider.onValueChanged.RemoveAllListeners();
+    }
+
 
 }

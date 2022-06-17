@@ -11,6 +11,12 @@ public class Skin : MonoBehaviour
         SkinChanger.OnLoaded += SkinInitialize;
     }
 
+    private void OnDisable()
+    {
+        SkinChanger.OnLoaded -= SkinInitialize;
+
+    }
+
     private void SkinInitialize()
     {
         if (instance == null)

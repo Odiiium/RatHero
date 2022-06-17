@@ -24,6 +24,11 @@ public class Weapon : MonoBehaviour
         WeaponInitializer.OnLoaded += InstanceInitialize;
     }
 
+    private void OnDisable()
+    {
+        WeaponInitializer.OnLoaded -= InstanceInitialize;
+    }
+
     protected void RotateAroundPlayer()
     {
         transform.RotateAround(this.transform.parent.position, Vector3.up, 2);

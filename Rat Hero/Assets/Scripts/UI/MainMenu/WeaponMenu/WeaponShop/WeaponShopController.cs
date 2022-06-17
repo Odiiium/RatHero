@@ -28,4 +28,12 @@ public class WeaponShopController : MonoBehaviour
         weaponShopView.buyButton.onClick.AddListener(WeaponShopView.onBuy);
     }
 
+    private void OnDisable()
+    {
+        onHide -= weaponShopView.HideUIElements;
+        onShow -= weaponShopView.ShowUIElements;
+        WeaponShopView.onBuy -= weaponShop.OnWeaponBuy;
+        weaponShopView.buyButton.onClick.RemoveAllListeners();
+    }
+
 }

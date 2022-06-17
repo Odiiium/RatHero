@@ -11,6 +11,11 @@ public class CharacterStats : MonoBehaviour
         SkinChanger.onChangeSkin += ChangeStats;
     }
 
+    private void OnDisable()
+    {
+        SkinChanger.onChangeSkin -= ChangeStats;
+    }
+
 
     void ChangeStats(string skinName)
     {

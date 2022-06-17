@@ -21,6 +21,11 @@ public class SkinChanger : MonoBehaviour
         else { return; }
     }
 
+    private void OnDisable()
+    {
+        onChangeSkin -= SkinInitialize;
+    }
+
     private void Start()
     {
         OnLoaded?.Invoke();

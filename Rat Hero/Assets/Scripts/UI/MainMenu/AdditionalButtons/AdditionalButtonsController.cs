@@ -14,5 +14,11 @@ public class AdditionalButtonsController : MonoBehaviour
         additionalButtonsView.exitButton.onClick.AddListener(additionalButtons.ExitGame);
     }
 
+    private void OnDisable()
+    {
+        additionalButtonsView.settingMenuButton.onClick.RemoveAllListeners();
+        additionalButtonsView.exitButton.onClick.RemoveAllListeners();
+    }
+
 
 }

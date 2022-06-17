@@ -18,4 +18,11 @@ public class WeaponSwitcherController : MonoBehaviour
         weaponSwitcherView.rightButton.onClick.AddListener(weaponSwitcher.SwitchToRight);
         weaponSwitcherView.selectButton.onClick.AddListener(weaponSwitcher.SelectWeapon);
     }
+
+    private void OnDisable()
+    {
+        weaponSwitcherView.leftButton.onClick.RemoveAllListeners();
+        weaponSwitcherView.rightButton.onClick.RemoveAllListeners();
+        weaponSwitcherView.selectButton.onClick.RemoveAllListeners();
+    }
 }

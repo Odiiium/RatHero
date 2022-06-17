@@ -13,5 +13,10 @@ public class SwitchSceneButtonsController : MonoBehaviour
         switchSceneButtonsView.backToSkinMenuButton.onClick.AddListener(switchSceneButtons.GoToSkinMenu);
         switchSceneButtonsView.playButton.onClick.AddListener(switchSceneButtons.PlayGame);
     }
+    private void OnDisable()
+    {
+        switchSceneButtonsView.backToSkinMenuButton.onClick.RemoveAllListeners();
+        switchSceneButtonsView.playButton.onClick.RemoveAllListeners();
+    }
 
 }

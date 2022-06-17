@@ -16,6 +16,11 @@ public class RatAdditionalStatsController : MonoBehaviour
         ratAdditionalStatsView.SetStats();
         onStatsDisplay += ratAdditionalStatsView.SetStats;
     }
+
+    private void OnDisable()
+    {
+        onStatsDisplay -= ratAdditionalStatsView.SetStats;
+    }
 }
 
 

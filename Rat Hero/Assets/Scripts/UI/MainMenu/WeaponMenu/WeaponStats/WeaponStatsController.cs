@@ -16,4 +16,8 @@ public class WeaponStatsController : MonoBehaviour
         weaponStatsView.SetStats();
         onStatsDisplay += weaponStatsView.SetStats;
     }
+    private void OnDisable()
+    {
+        onStatsDisplay -= weaponStatsView.SetStats;
+    }
 }

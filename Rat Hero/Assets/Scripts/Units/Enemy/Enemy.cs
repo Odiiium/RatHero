@@ -18,7 +18,13 @@ public class Enemy : Unit
         OnPlayerInSight += Run;
         OnPlayerInSight += LookTowardsPlayers;
         OnGetDamaged += GetDamage;
-            
+    }
+
+    private void OnDisable()
+    {
+        OnPlayerInSight -= Run;
+        OnPlayerInSight -= LookTowardsPlayers;
+        OnGetDamaged -= GetDamage;
     }
 
     private void Update()

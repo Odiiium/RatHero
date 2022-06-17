@@ -22,4 +22,10 @@ public class WeaponLevelUpController : MonoBehaviour
         onWeaponChanging += weaponLevelUpView.SetPrice;
         weaponLevelUpView.levelUpButton.onClick.AddListener(weaponLevelUp.WeaponLevelingUp);
     }
+
+    private void OnDisable()
+    {
+        onWeaponChanging -= weaponLevelUpView.SetPrice;
+        weaponLevelUpView.levelUpButton.onClick.RemoveAllListeners();
+    }
 }

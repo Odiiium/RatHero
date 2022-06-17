@@ -25,5 +25,12 @@ public class RatShopController : MonoBehaviour
         ratShopView.buyButton.onClick.AddListener(RatShopView.onBuy);
     }
 
+    private void OnDisable()
+    {
+        onHide -= ratShopView.HideUIElements;
+        onShow -= ratShopView.ShowUIElements;
+        RatShopView.onBuy -= ratShop.OnRatBuy;
+    }
+
 
 }

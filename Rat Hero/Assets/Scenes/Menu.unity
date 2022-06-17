@@ -6099,10 +6099,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d098e4e88f8099d4bbf8940567dc9b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rats:
-  - DoubleStripeRat
-  - AlbinoRat
-  - RedHatRat
 --- !u!114 &786846603
 MonoBehaviour:
   m_ObjectHideFlags: 0
