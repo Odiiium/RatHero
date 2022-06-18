@@ -10,6 +10,9 @@ public class WeaponLevelUp : MonoBehaviour
         {"Sword",               new int[2]{100, 350}    },
         {"Pistol",              new int[2]{200, 500}    },
         {"PoisonedKnife",       new int[2]{300, 800}    },
+        {"Claws",               new int[2]{500, 1400}    },
+        {"Scepter",             new int[2]{450, 1150}    },
+        {"Katana",              new int[2]{700, 1600}    }
     };
 
     internal void WeaponLevelingUp()

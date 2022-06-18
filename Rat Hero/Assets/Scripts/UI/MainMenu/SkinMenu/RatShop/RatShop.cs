@@ -7,13 +7,15 @@ public class RatShop : MonoBehaviour
     public static Dictionary<string, int> ratsPrice = new Dictionary<string, int>() // Dictionary which contains price 
     {
         {"AlbinoRat", 100 },
-        {"RedHatRat", 200 }
+        {"RedHatRat", 200 },
+        {"ArthasRat", 400 }
     };
 
     public static Dictionary<string, string> moneyType = new Dictionary<string, string>() // Dictionary which contains currency ( cheese or diamonds )
     {
         {"AlbinoRat", "cheese" },
         {"RedHatRat", "chesee"},
+        {"ArthasRat", "cheese" }
     };
 
 

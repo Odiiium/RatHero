@@ -31,8 +31,14 @@ public class Weapon : MonoBehaviour
 
     protected void RotateAroundPlayer()
     {
-        transform.RotateAround(this.transform.parent.position, Vector3.up, 2);
+        transform.RotateAround(this.transform.parent.position, Vector3.up, PlayerStats.AttackSpeed / 50);
 
+    }
+
+
+    private void Update()
+    {
+        RotateAroundPlayer();
     }
 
     protected virtual void Attack()
@@ -42,20 +48,6 @@ public class Weapon : MonoBehaviour
 
     private void InstanceInitialize()
     {
-        if (instance == null)
-        {
-            instance = this;
-            if (gameObject.name == "Weapon")
-            {
-                WeaponInitializer.instance.InitializeWeapon(choisedWeapon, currentLevel);
-            }
-        }
-        else
-        {
-            return;
-        }
+        WeaponInitializer.instance.InitializeWeapon(choisedWeapon, currentLevel);
     }
-
-
-
 }

@@ -58,7 +58,7 @@ public class Enemy : Unit
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent(WeaponInitializer.instance.weaponsValues.GetValueOrDefault(Weapon.choisedWeapon).GetType()) != null)
+        if (other.gameObject.GetComponent<Weapon>() != null)
         {
             OnGetDamaged(player.damage);
             Debug.Log(healthPoints);

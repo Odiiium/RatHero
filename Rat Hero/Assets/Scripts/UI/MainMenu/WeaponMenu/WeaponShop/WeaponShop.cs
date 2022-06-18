@@ -6,16 +6,22 @@ public class WeaponShop : MonoBehaviour
 {
     public static Dictionary<string, int> weaponsPrice = new Dictionary<string, int>() // Dictionary which contains price 
     {
-        {"Pistol", 100 },
-        {"PoisonedKnife", 200 },
-        {"Sword", 200 }
+        {"Sword",               100 },
+        {"Pistol",              200 },
+        {"PoisonedKnife",       200 },
+        {"Claws",               350 },
+        {"Scepter",             400 },
+        {"Katana",              500 }
     };
 
     public static Dictionary<string, string> weaponsType = new Dictionary<string, string>() // Dictionary which contains currency ( cheese or diamonds )
     {
-        {"Pistol", "cheese" },
-        {"PoisonedKnife", "cheese" },
-        {"Sword", "cheese" }
+        {"Sword",               "cheese" },
+        {"PoisonedKnife",       "cheese" },
+        {"Pistol",              "cheese" },
+        {"Claws",               "cheese" },
+        {"Scepter",             "cheese" },
+        {"Katana",              "cheese" }
     };
     internal void StartWeaponInitialize()
     {
