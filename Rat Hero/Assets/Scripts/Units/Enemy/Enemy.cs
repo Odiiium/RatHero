@@ -5,16 +5,31 @@ using UnityEngine.Events;
 
 public class Enemy : Unit
 {
-    [SerializeField] Character player;
+    Character player;
 
-    private UnityAction OnPlayerInSight;
+    protected UnityAction OnPlayerInSight;
     private UnityAction<float> OnGetDamaged;
     public UnityAction<float> OnDamage;
 
     internal static UnityAction<float> OnApplyDamage;
 
+    internal override float healthPoints
+    {
+        get { return currentHp; }
+        set
+        {
+            currentHp = value;
+            if (currentHp <= 0)
+            {
+                OnDie();
+            }
+        }
+    }
+
     private void OnEnable()
     {
+        maxHp = healthPoints;
+        player = FindObjectOfType<Character>();
         OnPlayerInSight += Run;
         OnPlayerInSight += LookTowardsPlayers;
         OnGetDamaged += GetDamage;
@@ -35,6 +50,15 @@ public class Enemy : Unit
     protected override void Run()
     {
         rigidBody.velocity = (player.transform.GetChild(0).transform.position - transform.position).normalized * speed;
+    }
+
+    protected virtual void OnDie()
+    {
+        Money.AddCheese(Mathf.RoundToInt(maxHp / 1000) + 1);
+        Money.onCheeseAdding();
+        SpawnManager.enemyCount--;
+        SpawnManager.onSpawningNewEnemy();
+        Destroy(gameObject);
     }
 
     protected virtual void PlayerInSight()
@@ -74,6 +98,7 @@ public class Enemy : Unit
             Destroy(gameObject);
         }
     }
+
 
 
 

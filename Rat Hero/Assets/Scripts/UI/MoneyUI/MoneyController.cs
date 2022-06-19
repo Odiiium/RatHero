@@ -25,4 +25,16 @@ public class MoneyController : MonoBehaviour
             Money.onCheeseAdding += moneyView.ShowCurrentMoneyInGame;
         }
     }
+
+    private void OnDisable()
+    {
+        if (gameObject.name != "MoneyGameUI")
+        {
+            onMoneyShows -= moneyView.ShowCurrentMoney;
+        }
+        else
+        { 
+            Money.onCheeseAdding -= moneyView.ShowCurrentMoneyInGame;
+        }
+    }
 }

@@ -13,6 +13,7 @@ public class Character : Unit
     private void OnEnable()
     {
         speed = (PlayerStats.Speed + RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[4] * PlayerStats.Speed) / 60;
+        currentSpeed = speed;
         rotateSpeed = .7f;
         damage = PlayerStats.Damage + RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[0] * PlayerStats.Damage + WeaponStats.weaponStatsValues.GetValueOrDefault(Weapon.choisedWeapon)[Weapon.currentLevel - 1];
 
@@ -31,7 +32,7 @@ public class Character : Unit
 
     protected override void Run()
     {
-        rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * speed;
+        rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * currentSpeed;
         transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
     }
 
