@@ -18,13 +18,12 @@ public class SettingsMenu : MonoBehaviour
         public static float volume { get { return PlayerPrefs.GetFloat("musicVolume"); } set { PlayerPrefs.SetFloat("musicVolume", value); } }
     }
 
-    internal void ChangeMusicVolume(float volume)
+    internal static void ChangeMusicVolume(float volume)
     {
         Music.volume = volume;
-        Debug.Log(Music.volume);
     }
 
-    internal void ChangeSoundVolume(float volume)
+    internal static void ChangeSoundVolume(float volume)
     {
         Sound.volume = volume;
     }

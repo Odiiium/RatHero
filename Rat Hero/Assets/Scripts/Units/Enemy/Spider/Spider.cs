@@ -35,5 +35,6 @@ public class Spider : Enemy
     {
         SpiderShoot spidershoot = Instantiate(Resources.Load<SpiderShoot>("Prefabs/Units/Enemy/EnemyAbilities/SpiderShoot"), transform.position, transform.rotation);
         spidershoot.parentSpider = this;
+        spidershoot.transform.rotation = transform.rotation;
     }
 }

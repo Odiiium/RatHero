@@ -11,8 +11,8 @@ public class SettingsMenuController : MonoBehaviour
     {
         settingsMenuView.InitializeUIElements();
         settingsMenuView.backButton.onClick.AddListener(settingsMenu.BackToMenu);
-        settingsMenuView.musicSlider.onValueChanged.AddListener(settingsMenu.ChangeMusicVolume);
-        settingsMenuView.soundSlider.onValueChanged.AddListener(settingsMenu.ChangeSoundVolume);
+        settingsMenuView.musicSlider.onValueChanged.AddListener(SettingsMenu.ChangeMusicVolume);
+        settingsMenuView.soundSlider.onValueChanged.AddListener(SettingsMenu.ChangeSoundVolume);
     }
 
     private void OnDisable()

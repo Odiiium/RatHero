@@ -8,7 +8,8 @@ public class SpiderShoot : MonoBehaviour
 
     private void Awake()
     {
-        GetComponent<Rigidbody>().AddForce(FindObjectOfType<Skin>().transform.position * 1.5f, ForceMode.Impulse);
+        Transform playerTransform = FindObjectOfType<Skin>().transform;
+        GetComponent<Rigidbody>().AddForce((playerTransform.position - transform.position) * 1.5f, ForceMode.Impulse);
         StartCoroutine(StartLifeTime());
     }
 
