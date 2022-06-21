@@ -32,8 +32,11 @@ public class Character : Unit
 
     protected override void Run()
     {
-        rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * currentSpeed;
-        transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
+        if (mobileJoystick.yAxis() != 0)
+        {
+            rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * currentSpeed;
+        }
+            transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
     }
 
     protected override void GetDamage(float enemyDamage)
