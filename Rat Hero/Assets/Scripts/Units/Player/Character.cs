@@ -10,7 +10,7 @@ public class Character : Unit
     public static UnityAction onHealthChanged;
     public static UnityAction onManaChanged;
 
-    private void OnEnable()
+    private void Awake()
     {
         speed = (PlayerStats.Speed + RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[4] * PlayerStats.Speed) / 60;
         currentSpeed = speed;
