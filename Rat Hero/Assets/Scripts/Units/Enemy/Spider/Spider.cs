@@ -13,6 +13,7 @@ public class Spider : Enemy
         healthPoints = 1200;
         damage = 40;
         speed = 0;
+        currentSpeed = speed;
     }
 
     protected override void Attack()

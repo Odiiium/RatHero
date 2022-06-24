@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    Character player;
+
     public static string choisedWeapon { get { return PlayerPrefs.GetString("choisedWeapon"); } set { PlayerPrefs.SetString("choisedWeapon", value); }}
 
     public static int currentLevel { get { return PlayerPrefs.GetInt(choisedWeapon);} set { PlayerPrefs.SetInt(choisedWeapon, value); } }
 
     private void Awake()
     {
+        player = FindObjectOfType<Character>();
         WeaponInitializer.OnLoaded += InstanceInitialize;
     }
 
@@ -20,7 +23,7 @@ public class Weapon : MonoBehaviour
 
     protected void RotateAroundPlayer()
     {
-        transform.RotateAround(this.transform.parent.position, Vector3.up, PlayerStats.AttackSpeed / 50);
+        transform.RotateAround(this.transform.parent.position, Vector3.up, player.attackSpeed / 50);
     }
 
 

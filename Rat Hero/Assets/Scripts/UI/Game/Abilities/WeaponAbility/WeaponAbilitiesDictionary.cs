@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class WeaponAbilitiesDictionary : MonoBehaviour
 {
-    Berserker bers = new Berserker();
-
     internal static Dictionary<string, WeaponAbility> weaponAbilityObjectValues = new Dictionary<string, WeaponAbility>()
     {
         {"Axe",             new Berserker()},

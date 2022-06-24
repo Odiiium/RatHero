@@ -9,5 +9,6 @@ public class Fly : Enemy
         healthPoints = 400;
         damage = 40;
         speed = 1.2f;
+        currentSpeed = speed;
     }
 }

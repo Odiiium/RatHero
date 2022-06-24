@@ -4,16 +4,28 @@ using UnityEngine;
 
 public class Poison : WeaponAbility
 {
+    float spawnRateModifier = 1500;
     protected override void TurnOnWeaponAbility()
     {
-        StartCoroutine(HealRat());
+        StartCoroutine(SpawnIceBlocks(Weapon.currentLevel));
     }
-    protected static IEnumerator HealRat()
+
+    private IEnumerator SpawnIceBlocks(int weaponlvl)
     {
-        if (HealthBar.healthPoints <= HealthBar.maximumHealth * 0.92f)
+        var iceBlock = Resources.Load("Prefabs/Weapons/Scepter/IceBlock");
+        Weapon[] weaponComponents = player.transform.GetChild(1).GetComponentsInChildren<Weapon>();
+
+        for (int i = 0; i < weaponComponents.Length; i++)
         {
-            HealthBar.healthPoints += HealthBar.maximumHealth * 0.08f;
+            Instantiate(iceBlock, weaponComponents[i].transform.position, weaponComponents[i].transform.rotation);
         }
-        yield return new WaitForSeconds(10);
+
+        yield return new WaitForSeconds(SpawnRate(weaponlvl));
+        StartCoroutine(SpawnIceBlocks(weaponlvl));
+    }
+
+    float SpawnRate(int weaponLvl)
+    {
+        return 1500 / weaponLvl / player.attackSpeed;
     }
 }

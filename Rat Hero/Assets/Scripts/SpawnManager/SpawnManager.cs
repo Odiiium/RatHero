@@ -43,8 +43,9 @@ public class SpawnManager : MonoBehaviour
 
     private IEnumerator SpawnEnemyWithCooldown()
     {
+        Vector3 spawnPosition = new Vector3(player.transform.position.x + DistanceForSpawn().x, 0, player.transform.position.z + DistanceForSpawn().z);
         int index = Random.Range(0, enemies.Length);
-        Instantiate(enemies[index], player.transform.position + DistanceForSpawn(), enemies[index].transform.rotation);
+        Instantiate(enemies[index], spawnPosition, enemies[index].transform.rotation);
         enemyCount++;
         yield return new WaitForSeconds(.5f);
         onSpawningNewEnemy();

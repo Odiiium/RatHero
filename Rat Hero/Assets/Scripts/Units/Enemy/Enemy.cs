@@ -57,7 +57,7 @@ public class Enemy : Unit
         Money.AddCheese(Mathf.RoundToInt(maxHp / 1000) + 1);
         Money.onCheeseAdding();
         SpawnManager.enemyCount--;
-        SpawnManager.onSpawningNewEnemy();
+        SpawnManager.onEnemyDies();
         Destroy(gameObject);
     }
 
@@ -85,8 +85,6 @@ public class Enemy : Unit
         if (other.gameObject.GetComponent<Weapon>() != null)
         {
             OnGetDamaged(player.damage);
-            Debug.Log(healthPoints);
-            Debug.Log(player.damage);
         }
     }
 
