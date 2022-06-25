@@ -52,7 +52,7 @@ public class Character : Unit
 
     protected override void GetDamage(float enemyDamage)
     {
-        float blockModifier = defence / 400;
+        float blockModifier = 1 - defence / 400;
         HealthBar.healthPoints -= Mathf.Round(enemyDamage * blockModifier);
         onHealthChanged?.Invoke();
     }
