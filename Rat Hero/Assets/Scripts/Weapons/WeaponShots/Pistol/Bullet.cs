@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : WeaponShot
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        speed = 15;
+        MoveToDirection();
+        StartCoroutine(WaitForDestroy());
+    }
+    protected override void DoEnemyCollision(Collision collision, Enemy enemy)
+    {
+        enemy.OnGetDamaged?.Invoke(player.damage * .6f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator WaitForDestroy()
     {
-        
+        yield return new WaitForSeconds(1.2f);
+        Destroy(gameObject);
     }
 }

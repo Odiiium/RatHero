@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class IceBlock : WeaponShot
 {
-    private float speed;
-    [SerializeField] Character player;
 
-    protected override void DoEnemyCollision(Collision collision)
+    private void Start()
     {
-        if (collision.gameObject.TryGetComponent(out Enemy enemy))
+        speed = 8;
+        MoveToDirection();
+        StartCoroutine(WaitForDestroy());
+    }
+    protected override void DoEnemyCollision(Collision collision, Enemy enemy)
+    {
+        enemy.OnGetDamaged?.Invoke(player.damage);
+        if (enemy != null)
         {
-            enemy.OnDamage(player.damage);
             StartCoroutine(ReduceEnemySpeed(enemy));
         }
     }
@@ -24,5 +28,11 @@ public class IceBlock : WeaponShot
         {
             enemy.currentSpeed = enemy.speed;
         }
+    }
+
+    private IEnumerator WaitForDestroy()
+    {
+        yield return new WaitForSeconds(1.2f);
+        Destroy(gameObject);
     }
 }

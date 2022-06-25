@@ -7,6 +7,8 @@ public abstract class Unit : MonoBehaviour
 {
     protected Rigidbody rigidBody;
 
+    internal bool isPoisoned;
+
     internal virtual float healthPoints
     {
         get { return currentHp; }

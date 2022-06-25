@@ -8,10 +8,10 @@ public class Enemy : Unit
     Character player;
 
     protected UnityAction OnPlayerInSight;
-    private UnityAction<float> OnGetDamaged;
-    public UnityAction<float> OnDamage;
+    internal UnityAction<float> OnGetDamaged;
 
     internal static UnityAction<float> OnApplyDamage;
+    internal static UnityAction<Enemy> onSpecificWeaponAbilityUsed;
 
     internal override float healthPoints
     {
@@ -85,6 +85,7 @@ public class Enemy : Unit
         if (other.gameObject.GetComponent<Weapon>() != null)
         {
             OnGetDamaged(player.damage);
+            onSpecificWeaponAbilityUsed?.Invoke(this);
         }
     }
 

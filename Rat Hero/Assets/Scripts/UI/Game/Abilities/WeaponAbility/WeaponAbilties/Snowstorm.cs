@@ -17,7 +17,7 @@ public class Snowstorm : WeaponAbility
 
         for (int i = 0; i < weaponComponents.Length; i++)
         {
-            Quaternion iceBlockRotation = weaponComponents[i].transform.rotation * Quaternion.Euler(0, 180, 0);
+            Quaternion iceBlockRotation = weaponComponents[i].transform.rotation * Quaternion.Euler(-90, 0, 0);
             Instantiate(iceBlock, weaponComponents[i].transform.position, iceBlockRotation);
         }
 
@@ -27,7 +27,6 @@ public class Snowstorm : WeaponAbility
 
     float SpawnRate(int weaponLvl)
     {
-        return 1500 / weaponLvl / player.attackSpeed;
-    }
-
+        return spawnRateModifier / weaponLvl / player.attackSpeed;
+    } 
 }

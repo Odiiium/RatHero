@@ -9,15 +9,15 @@ public class WeaponAbility : MonoBehaviour
     internal void InitializeCurrentWeaponAbility()
     {
         Character currentPlayer = FindObjectOfType<Character>();
-        CurrentWeaponAbility().player = currentPlayer;
-        CurrentWeaponAbility().TurnOnWeaponAbility();
+        CurrentWeaponAbility(currentPlayer).TurnOnWeaponAbility();
     }
 
-    private WeaponAbility CurrentWeaponAbility()
+    private WeaponAbility CurrentWeaponAbility(Character player)
     {
         WeaponAbility weaponAbilityObject = WeaponAbilitiesDictionary.weaponAbilityObjectValues.GetValueOrDefault(Weapon.choisedWeapon);
         gameObject.AddComponent(weaponAbilityObject.GetType());
         WeaponAbility currentWeaponAbility = gameObject.GetComponent(weaponAbilityObject.GetType()) as WeaponAbility;
+        currentWeaponAbility.player = player;
         return currentWeaponAbility;
     }
 

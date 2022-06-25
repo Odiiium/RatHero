@@ -4,28 +4,39 @@ using UnityEngine;
 
 public class Poison : WeaponAbility
 {
-    float spawnRateModifier = 1500;
+    private int poisonTime = 2;
+
     protected override void TurnOnWeaponAbility()
     {
-        StartCoroutine(SpawnIceBlocks(Weapon.currentLevel));
+        Enemy.onSpecificWeaponAbilityUsed += DoPoisonEnemy;
     }
 
-    private IEnumerator SpawnIceBlocks(int weaponlvl)
+    private void OnDisable()
     {
-        var iceBlock = Resources.Load("Prefabs/Weapons/Scepter/IceBlock");
-        Weapon[] weaponComponents = player.transform.GetChild(1).GetComponentsInChildren<Weapon>();
+        Enemy.onSpecificWeaponAbilityUsed -= DoPoisonEnemy;
+    }
 
-        for (int i = 0; i < weaponComponents.Length; i++)
+    private void DoPoisonEnemy(Enemy enemy)
+    {
+        if (!enemy.isPoisoned)
         {
-            Instantiate(iceBlock, weaponComponents[i].transform.position, weaponComponents[i].transform.rotation);
+            enemy.isPoisoned = true;
+            StartCoroutine(WaitForPoison(enemy));
         }
-
-        yield return new WaitForSeconds(SpawnRate(weaponlvl));
-        StartCoroutine(SpawnIceBlocks(weaponlvl));
     }
 
-    float SpawnRate(int weaponLvl)
+    private IEnumerator WaitForPoison(Enemy enemy)
     {
-        return 1500 / weaponLvl / player.attackSpeed;
+        if (enemy != null)
+        {
+            for (int i = 0; i < Weapon.currentLevel * poisonTime; i++)
+            {
+                yield return new WaitForSeconds(1);
+                if (enemy == null) break;
+                enemy.healthPoints -= Mathf.Round(player.damage * .3f);
+            }
+        }
     }
+
+
 }
