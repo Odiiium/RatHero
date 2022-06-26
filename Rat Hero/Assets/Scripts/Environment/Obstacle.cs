@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
-{ 
+{
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,17 +24,29 @@ public class Obstacle : MonoBehaviour
 
     private void SetTransparentMaterial()
     {
-        gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Environment/{pureName()}s/{gameObject.transform.parent.name} Transparent");
+        gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Environment/{pureName()}s/{instanceName()} Transparent");
     }
 
     private void SetOriginalMaterial()
     {
-        gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Environment/{pureName()}s/{gameObject.transform.parent.name}");
+        gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Environment/{pureName()}s/{instanceName()}");
     }
-
     string pureName()
     {
-        return gameObject.transform.parent.name.Substring(0, gameObject.transform.parent.name.IndexOf(" "));
+        return parentString().Substring(0, parentString().IndexOf(" "));
+    }
+    string instanceName()
+    {
+        if (parentString().Contains(")"))
+        {     
+            return parentString().Substring(0, parentString().IndexOf('(') - 1);
+        }
+        else return parentString();
+    }
+
+    string parentString()
+    {
+        return gameObject.transform.parent.name;
     }
 
 }
