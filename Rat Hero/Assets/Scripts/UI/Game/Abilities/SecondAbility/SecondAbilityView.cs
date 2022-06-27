@@ -8,6 +8,4 @@ public class SecondAbilityView : AbilityView
     {
         base.InitializeUIElements();
     }
-
-
 }

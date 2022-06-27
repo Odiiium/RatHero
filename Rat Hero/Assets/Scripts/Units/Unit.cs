@@ -15,7 +15,7 @@ public abstract class Unit : MonoBehaviour
         set
         {
             currentHp = value;
-            if (currentHp <= 0) Destroy(gameObject);
+            if (currentHp <= 0 && !gameObject.CompareTag("Player")) Destroy(gameObject);
         }
     }
     internal float currentHp;
