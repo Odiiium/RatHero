@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondAbilityView : MonoBehaviour
+public class SecondAbilityView : AbilityView
 {
-    // Start is called before the first frame update
-    void Start()
+    internal override void InitializeUIElements()
     {
-        
+        base.InitializeUIElements();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

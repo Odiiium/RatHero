@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public abstract class Ability : MonoBehaviour
 {
-    [SerializeField] protected FirstAbilityView firstAbilityView;
+    [SerializeField] protected AbilityView abilityView;
 
     protected Character player;
 

@@ -7,6 +7,8 @@ public class Character : Unit
 {
     [SerializeField] MobileController mobileJoystick;
 
+    internal static bool isGrounded;
+
     public static UnityAction onHealthChanged;
     public static UnityAction onManaChanged;
     internal float defence { get; set; }
@@ -15,6 +17,7 @@ public class Character : Unit
 
     private void Awake()
     {
+        isGrounded = true;
         SetPlayerStats();
         Enemy.OnApplyDamage += GetDamage;
     }
@@ -28,7 +31,15 @@ public class Character : Unit
     {
         Run();
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer != 6)
+        {
+            isGrounded = true;
+        }
+    }
+
     private void SetPlayerStats()
     {
         attackSpeed = InitializedPlayerAttackSpeed();
@@ -43,7 +54,7 @@ public class Character : Unit
 
     protected override void Run()
     {
-        if (mobileJoystick.yAxis() != 0)
+        if (mobileJoystick.yAxis() != 0 && isGrounded)
         {
             rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * currentSpeed;
         }

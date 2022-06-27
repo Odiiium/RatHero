@@ -43,7 +43,6 @@ public class SkinChanger : MonoBehaviour
         if (gameObject.name == "MenuSkin") return;
         else
         {
-            gameObject.GetComponent<MeshCollider>().sharedMesh = Resources.Load<Mesh>($"Mesh/Units/Characters/{skinName}/{skinName}1");
             gameObject.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>($"Animation/Units/Characters/{skinName}");
         }
     }
