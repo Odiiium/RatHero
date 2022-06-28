@@ -54,12 +54,9 @@ public class PlayerStats : MonoBehaviour
     public static float CriticalChance { 
         get
         {
-            if (criticalChance > 75)
-                return 75;
-            else if (criticalChance > 3)
-                return criticalChance;
-            else
-                return 3;
+            if (criticalChance > 75) return 75;
+            else if (criticalChance > 3)    return criticalChance;
+            else return 3;
         }                                                                                                           
         set { criticalChance = value; } 
     }
@@ -67,12 +64,9 @@ public class PlayerStats : MonoBehaviour
 
     public static float Mana {
         get {
-            if (mana > 800)
-                return 800;
-            if (mana > 100)
-                return mana;
-            else
-                return 100;
+            if (mana > 800) return 800;
+            if (mana > 100) return mana;
+            else return 100;
         }                            
         set { mana = value; } }
     static float mana;

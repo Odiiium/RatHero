@@ -17,6 +17,7 @@ public class SpawnManager : MonoBehaviour
     private void Awake()
     {
         PauseMenu.isGame = true;
+        enemyCount = 0;
         player = FindObjectOfType<Character>();
         onSpawningNewEnemy += SpawnRandomEnemy;
         onEnemyDies += SpawnRandomEnemy;

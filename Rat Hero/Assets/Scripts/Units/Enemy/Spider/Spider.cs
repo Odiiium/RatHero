@@ -10,8 +10,8 @@ public class Spider : Enemy
     {
         hasAttacked = false;
         OnPlayerInSight += Attack;
-        healthPoints = 1200;
-        damage = 800;
+        healthPoints = 600;
+        damage = 40;
         speed = 0;
         currentSpeed = speed;
     }

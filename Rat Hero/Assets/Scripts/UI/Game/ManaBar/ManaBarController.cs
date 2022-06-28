@@ -15,4 +15,9 @@ public class ManaBarController : MonoBehaviour
 
         Character.onManaChanged += manaBarView.SetManaBarCurrentValue;
     }
+
+    private void OnDisable()
+    {
+        Character.onManaChanged -= manaBarView.SetManaBarCurrentValue;
+    }
 }

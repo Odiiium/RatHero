@@ -15,4 +15,9 @@ public class HealthBarController : MonoBehaviour
 
         Character.onHealthChanged += healthBarView.SetHealthBarCurrentValue;
     }
+
+    private void OnDisable()
+    {
+        Character.onHealthChanged -= healthBarView.SetHealthBarCurrentValue;
+    }
 }
