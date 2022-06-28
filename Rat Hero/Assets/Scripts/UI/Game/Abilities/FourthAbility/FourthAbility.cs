@@ -8,7 +8,7 @@ public class FourthAbility : Ability
 
     internal override void DoAbility()
     {
-        if (!onCooldown && ManaBar.mana >= 100 && !PauseMenu.isGame)
+        if (!onCooldown && ManaBar.mana >= 100 && PauseMenu.isGame)
         {
             ReduceMana(100);
             timeFromCooldown = 0;

@@ -17,7 +17,10 @@ public class HealthBarView : MonoBehaviour
 
     internal void SetHealthBarCurrentValue()
     {
-        currentHealth.fillAmount = HealthBar.healthPoints / HealthBar.maximumHealth;
-        currentHealthText.text = HealthBar.healthPoints + "";
+        if (currentHealth != null)
+        {
+            currentHealth.fillAmount = HealthBar.healthPoints / HealthBar.maximumHealth;
+            currentHealthText.text = HealthBar.healthPoints + "";
+        }
     }
 }

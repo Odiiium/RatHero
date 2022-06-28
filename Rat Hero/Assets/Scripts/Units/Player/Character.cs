@@ -29,7 +29,11 @@ public class Character : Unit
 
     private void Update()
     {
-        Run();
+        if (PauseMenu.isGame)
+        {
+            PostGameMenu.timeAlived += Time.deltaTime;
+            Run();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

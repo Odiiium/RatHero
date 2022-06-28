@@ -38,7 +38,7 @@ public class SpiderShoot : MonoBehaviour
     {
         if (spider != null)
         {
-            Spider.OnApplyDamage(spider.damage);
+            Spider.OnApplyDamage?.Invoke(spider.damage);
             Character.onHealthChanged?.Invoke();
             Destroy(gameObject);
         }

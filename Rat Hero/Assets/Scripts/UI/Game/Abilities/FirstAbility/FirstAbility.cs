@@ -6,7 +6,7 @@ public class FirstAbility : Ability
 {
     internal override void DoAbility()
     {
-        if (!onCooldown && ManaBar.mana >= 50 && !PauseMenu.isGame)
+        if (!onCooldown && ManaBar.mana >= 50 && PauseMenu.isGame)
         {
             ReduceMana(50);
             timeFromCooldown = 0;

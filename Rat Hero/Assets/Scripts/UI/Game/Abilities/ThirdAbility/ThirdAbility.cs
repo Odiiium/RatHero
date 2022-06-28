@@ -8,7 +8,7 @@ public class ThirdAbility : Ability
 
     internal override void DoAbility()
     {
-        if (!onCooldown && ManaBar.mana >= 35 && !PauseMenu.isGame)
+        if (!onCooldown && ManaBar.mana >= 35 && PauseMenu.isGame)
         {
             ReduceMana(35);
             timeFromCooldown = 0;

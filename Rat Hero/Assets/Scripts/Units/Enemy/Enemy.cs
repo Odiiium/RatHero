@@ -49,16 +49,26 @@ public class Enemy : Unit
 
     protected override void Run()
     {
-        rigidBody.velocity = (player.transform.GetChild(0).transform.position - transform.position).normalized * speed;
+        if (PauseMenu.isGame)
+        {
+            rigidBody.velocity = (player.transform.GetChild(0).transform.position - transform.position).normalized * speed;
+        }
     }
 
     protected virtual void OnDie()
     {
-        Money.AddCheese(Mathf.RoundToInt(maxHp / 1000) + 1);
-        Money.onCheeseAdding();
+        AddCheeseForPlayer();
+        PostGameMenu.killedEnemies++;
         SpawnManager.enemyCount--;
         SpawnManager.onEnemyDies();
         Destroy(gameObject);
+    }
+
+    private void AddCheeseForPlayer()
+    {
+        Money.AddCheese(Mathf.RoundToInt(maxHp / 1000) + 1);
+        PostGameMenu.cheeseGained += Mathf.RoundToInt(maxHp / 1000) + 1;
+        Money.onCheeseAdding();
     }
 
     protected virtual void PlayerInSight()

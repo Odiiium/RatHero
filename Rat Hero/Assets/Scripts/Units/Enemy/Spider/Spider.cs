@@ -11,14 +11,14 @@ public class Spider : Enemy
         hasAttacked = false;
         OnPlayerInSight += Attack;
         healthPoints = 1200;
-        damage = 40;
+        damage = 800;
         speed = 0;
         currentSpeed = speed;
     }
 
     protected override void Attack()
     {
-        if (!hasAttacked)
+        if (!hasAttacked && PauseMenu.isGame)
         {
             SpitTheWeb();
             StartCoroutine(AttackCooldown());
