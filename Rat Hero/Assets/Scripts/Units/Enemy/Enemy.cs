@@ -94,7 +94,7 @@ public class Enemy : Unit
     {
         if (other.gameObject.GetComponent<Weapon>() != null)
         {
-            OnGetDamaged(player.damage);
+            OnGetDamaged(player.damage + player.Crit());
             onSpecificWeaponAbilityUsed?.Invoke(this);
         }
     }
@@ -107,8 +107,4 @@ public class Enemy : Unit
             Destroy(gameObject);
         }
     }
-
-
-
-
 }

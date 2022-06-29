@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] MobileController mobileJoystick;
 
+    static Camera camera;
     Character player;
     private Vector3 cameraPositionRelativeToThePlayer;
 
@@ -18,13 +19,18 @@ public class CameraController : MonoBehaviour
         }
         set
         {
-            if (value <= 100 && value >= 50) PlayerPrefs.SetFloat("cameraFieldOfView", value);
+            if (value <= 100 && value >= 50)
+            {
+                camera.fieldOfView = value;
+                PlayerPrefs.SetFloat("cameraFieldOfView", value);
+            }
         }
     }
 
 
     private void Start()
     {
+        camera = GetComponent<Camera>();
         player = FindObjectOfType<Character>();
         cameraPositionRelativeToThePlayer = player.transform.InverseTransformPoint(transform.position);
     }

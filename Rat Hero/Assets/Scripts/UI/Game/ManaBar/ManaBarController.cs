@@ -12,6 +12,7 @@ public class ManaBarController : MonoBehaviour
         manaBar.SetManaPoints();
         manaBarView.InitializeUI();
         manaBarView.SetManaBarCurrentValue();
+        InvokeRepeating(nameof(StartManaRegeneration), 1, 1);
 
         Character.onManaChanged += manaBarView.SetManaBarCurrentValue;
     }
@@ -19,5 +20,10 @@ public class ManaBarController : MonoBehaviour
     private void OnDisable()
     {
         Character.onManaChanged -= manaBarView.SetManaBarCurrentValue;
+    }
+
+    private void StartManaRegeneration()
+    {
+        manaBar.RegenerateMana();
     }
 }

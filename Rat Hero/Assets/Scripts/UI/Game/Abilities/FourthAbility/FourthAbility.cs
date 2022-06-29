@@ -31,7 +31,7 @@ public class FourthAbility : Ability
         {
             if (Vector3.Distance(enemies[i].transform.position, player.transform.position) < 8)
             {
-                enemies[i].OnGetDamaged(player.damage * 3);
+                enemies[i].OnGetDamaged((player.damage + player.Crit()) * 3);
                 necromantedEnemiesCount++;
                 SpawnParticles(enemies[i]);
             }

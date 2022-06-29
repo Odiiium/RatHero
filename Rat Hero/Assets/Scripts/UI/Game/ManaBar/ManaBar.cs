@@ -15,4 +15,18 @@ public class ManaBar : MonoBehaviour
         mana = maximumMana;
     }
 
+    internal void RegenerateMana()
+    {
+        if (mana <= maximumMana * 0.985f)
+        {
+            mana += Mathf.Round(maximumMana * 0.015f);
+            if (mana > maximumMana)
+            {
+                mana = maximumMana;
+            }
+        }
+        else mana = maximumMana;
+        Character.onManaChanged?.Invoke();
+    }
+
 }

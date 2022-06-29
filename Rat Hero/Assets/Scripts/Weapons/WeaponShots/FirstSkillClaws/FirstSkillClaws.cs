@@ -12,7 +12,7 @@ public class FirstSkillClaws : WeaponShot
     }
     protected override void DoEnemyCollision(Collision collision, Enemy enemy)
     {
-        enemy.OnGetDamaged?.Invoke(player.damage);
+        enemy.OnGetDamaged?.Invoke(player.damage + player.Crit());
     }
 
     private IEnumerator WaitForDestroy()

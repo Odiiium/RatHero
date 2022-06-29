@@ -17,6 +17,7 @@ public class PauseMenuController : MonoBehaviour
     {
         pauseMenuView.musicScrollbar.onValueChanged.AddListener(SettingsMenu.ChangeMusicVolume);
         pauseMenuView.soundScrollbar.onValueChanged.AddListener(SettingsMenu.ChangeSoundVolume);
+        pauseMenuView.fieldOfViewScrollbar.onValueChanged.AddListener(SettingsMenu.ChangeFieldOfView);
         pauseMenuView.exitButton.onClick.AddListener(pauseMenu.ExitGame);
         pauseMenuView.resumeGameButton.onClick.AddListener(pauseMenu.BackToGame);
     }

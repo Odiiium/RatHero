@@ -13,7 +13,7 @@ public class IceBlock : WeaponShot
     }
     protected override void DoEnemyCollision(Collision collision, Enemy enemy)
     {
-        enemy.OnGetDamaged?.Invoke(player.damage);
+        enemy.OnGetDamaged?.Invoke(player.damage + player.Crit());
         if (enemy != null)
         {
             StartCoroutine(ReduceEnemySpeed(enemy));

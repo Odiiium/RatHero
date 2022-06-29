@@ -28,4 +28,14 @@ public class HealthBar : MonoBehaviour
         healthPoints = maximumHealth;
     }
 
+    internal void RegenerateHp()
+    {
+        if (healthPoints <= maximumHealth * 0.99f)
+        {
+            healthPoints += Mathf.Round(maximumHealth * 0.01f - 1);
+        }
+        else healthPoints = maximumHealth;
+        Character.onHealthChanged?.Invoke();
+    }
+
 }

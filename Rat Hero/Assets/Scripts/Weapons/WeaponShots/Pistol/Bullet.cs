@@ -12,7 +12,7 @@ public class Bullet : WeaponShot
     }
     protected override void DoEnemyCollision(Collision collision, Enemy enemy)
     {
-        enemy.OnGetDamaged?.Invoke(player.damage * .6f);
+        enemy.OnGetDamaged?.Invoke((player.damage + player.Crit()) * .6f);
     }
 
     private IEnumerator WaitForDestroy()

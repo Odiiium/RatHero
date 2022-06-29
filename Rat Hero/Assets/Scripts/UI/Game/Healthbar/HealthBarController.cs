@@ -12,6 +12,7 @@ public class HealthBarController : MonoBehaviour
         healthBar.SetHealthPoints();
         healthBarView.InitializeUI();
         healthBarView.SetHealthBarCurrentValue();
+        InvokeRepeating(nameof(StartHpRegeration), 1, 1);
 
         Character.onHealthChanged += healthBarView.SetHealthBarCurrentValue;
     }
@@ -19,5 +20,10 @@ public class HealthBarController : MonoBehaviour
     private void OnDisable()
     {
         Character.onHealthChanged -= healthBarView.SetHealthBarCurrentValue;
+    }
+
+    private void StartHpRegeration()
+    {
+        healthBar.RegenerateHp();
     }
 }

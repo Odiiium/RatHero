@@ -35,5 +35,10 @@ public class SettingsMenu : MonoBehaviour
         mainMenu.gameObject.SetActive(true);
     }
 
+    internal static void ChangeFieldOfView(float fieldOfViewValue)
+    {
+        CameraController.cameraFieldOfView = 50 + fieldOfViewValue * 50;
+    }
+
 
 }

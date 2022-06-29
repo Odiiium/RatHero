@@ -104,4 +104,14 @@ public class Character : Unit
         return PlayerStats.CriticalChance + ratAdditionalCriticalChance;
     }
 
+    internal float Crit()
+    {
+        int randomInt = Random.Range(0, 100);
+        if (randomInt < criticalChance)
+        {
+            return damage * 1.5f;
+        }
+        else return 0;
+    }
+
 }
