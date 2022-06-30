@@ -36,6 +36,20 @@ public class Character : Unit
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.TryGetComponent(out Buff buff))
+        {
+            buff.DoBuff();
+            if (buff is PassiveBuff)
+            {
+                buff.ShowBuffUI(other.name.Replace("(Clone)", ""));
+                StartCoroutine((buff as PassiveBuff).WaitForBuffEnds());
+            }
+            Destroy(buff.gameObject);
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer != 6)

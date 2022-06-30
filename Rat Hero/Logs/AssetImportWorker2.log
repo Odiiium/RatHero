@@ -1,0 +1,354 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.1f1 (3b70a0754835) revision 3895456'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ru' Physical Memory: 8100 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51361
+Successfully changed project path to: D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
+D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 285.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.1f1 (3b70a0754835)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX150 (ID=0x1d10)
+    Vendor:   NVIDIA
+    VRAM:     1983 MB
+    Driver:   30.0.14.7212
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.012126 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 238.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.860 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1861ms)
+		BeginReloadAssembly (220ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1368ms)
+			LoadAssemblies (221ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (307ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (854ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (210ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (238ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (144ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009431 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.794 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2796ms)
+		BeginReloadAssembly (420ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (161ms)
+		EndReloadAssembly (2083ms)
+			LoadAssemblies (244ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (696ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (133ms)
+			SetupLoadedEditorAssemblies (943ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (62ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (195ms)
+				ProcessInitializeOnLoadAttributes (617ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.29 seconds
+Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3432 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (58.7 KB). Loaded Objects now: 3927.
+Memory consumption went from 142.3 MB to 142.3 MB.
+Total: 6.527900 ms (FindLiveObjects: 0.498100 ms CreateObjectMapping: 0.431600 ms MarkObjects: 5.412500 ms  DeleteObjects: 0.183200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 104482.356406 seconds.
+  path: Assets/UI/WeaponAbilityIcons/IncreaseManaRegeneration.png
+  artifactKey: Guid(cdec13907ffc75749ab2ed436bec6b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/IncreaseManaRegeneration.png using Guid(cdec13907ffc75749ab2ed436bec6b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54d1820b0daab55e7e1352768d4a6b9') in 0.340678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.405386 seconds.
+  path: Assets/UI/WeaponAbilityIcons/IncreaseDefenceBuff.png
+  artifactKey: Guid(b066c869b51f9384fa8ac9cce36b4648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/IncreaseDefenceBuff.png using Guid(b066c869b51f9384fa8ac9cce36b4648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9741b7f188a910e8ab23f4220a96e496') in 0.037386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.963561 seconds.
+  path: Assets/UI/WeaponAbilityIcons/IncreaseCriticalHitBuff.png
+  artifactKey: Guid(8a96b38c76be79946a150249547b07bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/IncreaseCriticalHitBuff.png using Guid(8a96b38c76be79946a150249547b07bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6c156633c795779ec6b7339db53758') in 0.048034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 301.378227 seconds.
+  path: Assets/UI/WeaponAbilityIcons/1.png
+  artifactKey: Guid(2a3d1d6d661c0fa46a4629ef5a65dbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/1.png using Guid(2a3d1d6d661c0fa46a4629ef5a65dbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee74fd7a1815009c42ce7db0b2f99b3') in 0.034684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/UI/WeaponAbilityIcons/13.png
+  artifactKey: Guid(0f669aa1b342a89458f8d7afb71b7c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/13.png using Guid(0f669aa1b342a89458f8d7afb71b7c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf6de4904a5e2bb0b3e85533da1c3f4') in 0.022294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/UI/WeaponAbilityIcons/19.png
+  artifactKey: Guid(2553fc83c87035c45894adf0a0fa77f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/19.png using Guid(2553fc83c87035c45894adf0a0fa77f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b46c4ca64537c8e45efe1dc90c1c490') in 0.019399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/UI/WeaponAbilityIcons/16.png
+  artifactKey: Guid(448a88865e66c974493899e3bcac7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/16.png using Guid(448a88865e66c974493899e3bcac7b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda47264b6273d2bcf85872da100c5ad') in 0.026028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/WeaponAbilityIcons/5.png
+  artifactKey: Guid(c3a7d27fa0fee8e448a2045328695db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/5.png using Guid(c3a7d27fa0fee8e448a2045328695db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925d9363aaa4559cf37313772979562f') in 0.020334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UI/WeaponAbilityIcons/14.png
+  artifactKey: Guid(99235773e2a9a0b4fba84992d9e8372f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/14.png using Guid(99235773e2a9a0b4fba84992d9e8372f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e4f495c155ff34bc4f5f039dac3b30') in 0.017299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/UI/WeaponAbilityIcons/9.png
+  artifactKey: Guid(6af9cc145eec3644cba2ee22f24dc17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/9.png using Guid(6af9cc145eec3644cba2ee22f24dc17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1b01c7b22511d287e6c2e150441d4e') in 0.019636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/UI/WeaponAbilityIcons/11.png
+  artifactKey: Guid(4d38bea012f09b2459d9fe92aea62069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/11.png using Guid(4d38bea012f09b2459d9fe92aea62069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84e0be632f87f6e77fa0f0cb844edfcb') in 0.021884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/UI/WeaponAbilityIcons/15.png
+  artifactKey: Guid(2aa7f80915af4a341afbb1c76a814b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/15.png using Guid(2aa7f80915af4a341afbb1c76a814b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cdbb66ec061312b081124bcf7f5b69c') in 0.021367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/WeaponAbilityIcons/8.png
+  artifactKey: Guid(bf655e0b0cb872e4280990f465a680a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/8.png using Guid(bf655e0b0cb872e4280990f465a680a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113644eece8e2e63900efa090a6f87e8') in 0.022392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UI/WeaponAbilityIcons/22.png
+  artifactKey: Guid(437e3412b6b7494418f6add65f81a88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/22.png using Guid(437e3412b6b7494418f6add65f81a88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe9e5201a7c1ef8f6721b42a3f25d38') in 0.020093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/UI/WeaponAbilityIcons/24.png
+  artifactKey: Guid(1374c77c93d7a694cb675d9f8e8c0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/24.png using Guid(1374c77c93d7a694cb675d9f8e8c0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '615849cfab5746e66ab359f87a7aecd5') in 0.027334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/UI/WeaponAbilityIcons/7.png
+  artifactKey: Guid(e65d7ca4e9d0d324790a49a3426ad5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/7.png using Guid(e65d7ca4e9d0d324790a49a3426ad5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee467394ecf62b63ca41df73528dcc65') in 0.018788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/UI/WeaponAbilityIcons/23.png
+  artifactKey: Guid(9919ccbd25959fd4aa5ddb8414f71ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/23.png using Guid(9919ccbd25959fd4aa5ddb8414f71ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b329404d2f371b812feeebba9dd3a250') in 0.022524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/UI/WeaponAbilityIcons/17.png
+  artifactKey: Guid(c0c6621ec9beaf5429a0b7077830e1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/17.png using Guid(c0c6621ec9beaf5429a0b7077830e1dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b32d09375e3ecebd1b8163332c58480') in 0.019217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.148433 seconds.
+  path: Assets/UI/WeaponAbilityIcons/28.png
+  artifactKey: Guid(d5c755ccb28ffa04a893cf6ddfeffbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/28.png using Guid(d5c755ccb28ffa04a893cf6ddfeffbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf570f11759822fa13022eaf22889eab') in 0.024046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/UI/WeaponAbilityIcons/31.png
+  artifactKey: Guid(76a0bed186205864c88329350d848497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/31.png using Guid(76a0bed186205864c88329350d848497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c4fd17e99ff3f31d87a93fd4ccdeaa') in 0.016830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/UI/WeaponAbilityIcons/33.png
+  artifactKey: Guid(e3136de0f912c86439e2f5a8faa8877e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/33.png using Guid(e3136de0f912c86439e2f5a8faa8877e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a64419940689771c2534c5743034f2b') in 0.020825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/WeaponAbilityIcons/32.png
+  artifactKey: Guid(1ec94fe91629fc8429a27e4dfb857146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/32.png using Guid(1ec94fe91629fc8429a27e4dfb857146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87147217a3dd1c8b6c6281cd0e6bedb') in 0.019099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI/WeaponAbilityIcons/44.png
+  artifactKey: Guid(87a5436ec45f41447b6ac2ab530a89f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/44.png using Guid(87a5436ec45f41447b6ac2ab530a89f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2785764a46f851baebabaf90d00676e0') in 0.021801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/UI/WeaponAbilityIcons/39.png
+  artifactKey: Guid(90687891f27f98e4494ef717af8475fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/39.png using Guid(90687891f27f98e4494ef717af8475fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a10bf92b899f9cc93c4ad30b0c030522') in 0.020914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI/WeaponAbilityIcons/35.png
+  artifactKey: Guid(12e22f00719cf524d9ab72dedcb1a7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/35.png using Guid(12e22f00719cf524d9ab72dedcb1a7d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b27c33396eeb671007bd58d5555dd8') in 0.018806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/UI/WeaponAbilityIcons/40.png
+  artifactKey: Guid(01194ad6c5044ff40b2cb985e87e291a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/40.png using Guid(01194ad6c5044ff40b2cb985e87e291a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18ef482ebb0332882dc618abc00dc21') in 0.020176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/UI/WeaponAbilityIcons/30.png
+  artifactKey: Guid(d7a229af0d5479e4ba8979b7834124c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/30.png using Guid(d7a229af0d5479e4ba8979b7834124c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5ff1ceaeb87318a5917bac7dc8a48c') in 0.021209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/UI/WeaponAbilityIcons/37.png
+  artifactKey: Guid(53096fcbf424bf040807098eb5082dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/37.png using Guid(53096fcbf424bf040807098eb5082dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c3820dcb8d27b90abea03658435092') in 0.019066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.362931 seconds.
+  path: Assets/UI/WeaponAbilityIcons/48.png
+  artifactKey: Guid(133222f9f6cce6f4ebe8ff34e6aceaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/48.png using Guid(133222f9f6cce6f4ebe8ff34e6aceaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e71c7c23172135daf4ea9a0695424e3') in 0.020755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.836146 seconds.
+  path: Assets/UI/WeaponAbilityIcons/IncreaseHealthRegeneration.png
+  artifactKey: Guid(c3aab7237df394c4890e647a4ae580ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/WeaponAbilityIcons/IncreaseHealthRegeneration.png using Guid(c3aab7237df394c4890e647a4ae580ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a402053e67f15e8892ad48dba25aaf70') in 0.039203 seconds 
