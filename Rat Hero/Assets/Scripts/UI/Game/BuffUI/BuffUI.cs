@@ -14,11 +14,12 @@ public class BuffUI : MonoBehaviour
 
     internal IEnumerator WaitForBuffEnds()
     {
+
         yield return new WaitForSeconds(15);
 
-        int i = BuffUIView.buffImages[0].isActiveAndEnabled ? 0 :
-                BuffUIView.buffImages[1].isActiveAndEnabled ? 1 :
-                BuffUIView.buffImages[2].isActiveAndEnabled ? 2 : 3;
+        int i = BuffUIView.buffImages[0].GetComponentInChildren<Image>().isActiveAndEnabled ? 0 :
+                BuffUIView.buffImages[1].GetComponentInChildren<Image>().isActiveAndEnabled ? 1 :
+                BuffUIView.buffImages[2].GetComponentInChildren<Image>().isActiveAndEnabled ? 2 : 3;
 
         BuffUIView.buffImages[i].gameObject.SetActive(false);
         currentBuffCount--;

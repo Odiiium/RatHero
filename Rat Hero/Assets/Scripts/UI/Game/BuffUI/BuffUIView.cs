@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class BuffUIView : MonoBehaviour
 {
-    internal static Image[] buffImages = new Image[4];
+    internal static GameObject[] buffImages = new GameObject[4];
 
     internal void InitializeUIElements()
     {
-        for (int i = 0; i< 4; i++)
+        for (int i = 0; i < 4; i++)
         {
-            buffImages[i] = transform.GetChild(i).GetChild(0).GetComponent<Image>();
+            buffImages[i] = transform.GetChild(i).gameObject;
         }
         HideImages();
     }

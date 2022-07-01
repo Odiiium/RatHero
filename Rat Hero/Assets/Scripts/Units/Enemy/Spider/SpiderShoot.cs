@@ -19,6 +19,11 @@ public class SpiderShoot : MonoBehaviour
         {
             ApplyDamageToPlayer(parentSpider);
         }
+        else
+        {
+            SpawnSpiderWeb();
+            Destroy(gameObject);
+        }
     }
 
     private IEnumerator StartLifeTime()

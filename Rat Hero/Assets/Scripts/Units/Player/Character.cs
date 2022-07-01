@@ -38,7 +38,7 @@ public class Character : Unit
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.TryGetComponent(out Buff buff))
+        if (BuffUI.currentBuffCount < 4 && other.gameObject.TryGetComponent(out Buff buff))
         {
             buff.DoBuff();
             if (buff is PassiveBuff)

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485864269538206162}
   - component: {fileID: 1374830245900679975}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,10 +24,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2293749493049686888}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.16000009, y: -1.45, z: 2.0100002}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 0.37991938, y: 0.62496, z: 0.62496}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2084864935896551562}
   m_Father: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 368302180409085268}
   - component: {fileID: 1374830247566846409}
   - component: {fileID: 5007247584043643018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

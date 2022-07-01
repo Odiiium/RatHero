@@ -15,32 +15,42 @@ public abstract class Buff : MonoBehaviour
 
     private void Update()
     {
-        gameObject.transform.Rotate(Vector3.up, 1);
+        gameObject.transform.Rotate(Vector3.up, 0.6f);
     }
 
     internal abstract void DoBuff();
 
     internal virtual void ShowBuffUI(string buffName)
     {
-        Debug.Log(buffName);
+        SpawnBuffParticleAtPlayer(buffName);
         var buffImage = Resources.Load<Sprite>($"Icons/Buffs/{buffName}");
-        if (BuffUI.currentBuffCount < 4)
-        {
-            SetBuffImageToBuffCell(buffImage);
-            BuffUI.currentBuffCount++;
-            onGetBuff?.Invoke();
-        }
+        SetBuffImageToBuffCell(buffImage);
+        BuffUI.currentBuffCount++;
+        onGetBuff?.Invoke();
     }
 
     private void SetBuffImageToBuffCell(Sprite buffImage)
     {
-        int currentBuffIndex = !BuffUIView.buffImages[0].isActiveAndEnabled ? 0 :
-                        !BuffUIView.buffImages[1].isActiveAndEnabled ? 1 :
-                        !BuffUIView.buffImages[2].isActiveAndEnabled ? 2 : 3;
+        int currentBuffIndex = !BuffUIView.buffImages[0].GetComponentInChildren<Image>().isActiveAndEnabled ? 0 :
+                        !BuffUIView.buffImages[1].GetComponentInChildren<Image>().isActiveAndEnabled ? 1 :
+                        !BuffUIView.buffImages[2].GetComponentInChildren<Image>().isActiveAndEnabled ? 2 : 3;
 
-        Image buffUIObject = BuffUIView.buffImages[currentBuffIndex];
+        GameObject buffUIObject = BuffUIView.buffImages[currentBuffIndex];
         buffUIObject.gameObject.SetActive(true);
-        buffUIObject.sprite = buffImage;
+        buffUIObject.GetComponentInChildren<Image>().sprite = buffImage;
+    }
+
+    private void SpawnBuffParticleAtPlayer(string name)
+    {
+        ParticleSystem buffParticle = Resources.Load<ParticleSystem>($"Prefabs/Particles/BuffParticles/{name}Particle");
+        var createdParticleSystem = Instantiate(buffParticle, player.transform.position, player.transform.rotation * Quaternion.Euler(-90, 0, 0));
+        player.StartCoroutine(DestroyParticleSystem(createdParticleSystem));
+    }
+
+    private IEnumerator DestroyParticleSystem(ParticleSystem particle)
+    {
+        yield return new WaitForSeconds(15);
+        Destroy(particle.gameObject);
     }
 
 }

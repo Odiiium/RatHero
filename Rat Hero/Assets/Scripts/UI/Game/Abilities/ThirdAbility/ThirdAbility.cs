@@ -29,10 +29,10 @@ public class ThirdAbility : Ability
         var currentAttackSpeed = player.attackSpeed;
         var currentSpeed = player.speed;
         player.attackSpeed *= 1.5f;
-        player.speed *= 1.2f;
+        player.currentSpeed *= 1.2f;
         yield return new WaitForSeconds(3);
-        player.attackSpeed = currentAttackSpeed;
-        player.speed = currentSpeed;
+        player.attackSpeed /= 1.5f;
+        player.currentSpeed /= 1.2f;
     }
 
     private void DoJump()

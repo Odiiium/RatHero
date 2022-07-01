@@ -22,6 +22,7 @@ public class WeaponShot : MonoBehaviour
             DoEnemyCollision(collision, enemy);
             Destroy(gameObject);
         }
+        else Destroy(gameObject); 
     }
 
     protected virtual void DoEnemyCollision(Collision collision, Enemy enemy)

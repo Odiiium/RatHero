@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4019041595653167530}
   - component: {fileID: 6124988779510129884}
   - component: {fileID: 4136131989275925452}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: SpiderShoot
   m_TagString: Shoot
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 686505169714196810}
   - component: {fileID: 2400941474237286400}
   - component: {fileID: 1185680000864070804}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
