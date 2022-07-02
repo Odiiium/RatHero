@@ -7,7 +7,7 @@ public class WeaponSwitcher : MonoBehaviour
 {
     internal static string[] weapons = new string[] 
     {
-    "Axe", "Sword", "Pistol", "PoisonedKnife", "Claws", "Scepter", "Katana"
+    "Axe", "Sword", "Pistol", "PoisonedKnife", "Claws", "Scepter", "Katana", "DruidStaff", "Bow", "ArcaneGun"
     };
 
     static public int currentWeapon { get { return PlayerPrefs.GetInt("currentWeapon"); } set { PlayerPrefs.SetInt("currentWeapon", value); } }

@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Enemy : Unit
 {
     Character player;
+    Transform playerSkinTransform;
+    Animator animator;
+
 
     protected UnityAction OnPlayerInSight;
     internal UnityAction<float> OnGetDamaged;
@@ -29,17 +30,15 @@ public class Enemy : Unit
     private void OnEnable()
     {
         maxHp = healthPoints;
+        animator = transform.GetChild(0).GetComponent<Animator>();
         player = FindObjectOfType<Character>();
-        OnPlayerInSight += Run;
-        OnPlayerInSight += LookTowardsPlayers;
-        OnGetDamaged += GetDamage;
+        playerSkinTransform = player.GetComponentsInChildren<Transform>()[0];
+        SubscribeEvents();
     }
 
     private void OnDisable()
     {
-        OnPlayerInSight -= Run;
-        OnPlayerInSight -= LookTowardsPlayers;
-        OnGetDamaged -= GetDamage;
+        UnSubscribeEvents();
     }
 
     private void Update()
@@ -51,7 +50,9 @@ public class Enemy : Unit
     {
         if (PauseMenu.isGame)
         {
-            rigidBody.velocity = (player.transform.GetChild(0).transform.position - transform.position).normalized * speed;
+            //rigidBody.velocity = (player.transform.GetChild(0).transform.position - transform.position).normalized * speed;
+            Vector3 moveDirection = player.transform.position - transform.position;
+            transform.position += moveDirection.normalized * speed / 175;
         }
     }
 
@@ -87,13 +88,14 @@ public class Enemy : Unit
 
     private void LookTowardsPlayers()
     {
-        transform.LookAt(player.GetComponentsInChildren<Transform>()[0].transform.position);
+        transform.LookAt(playerSkinTransform.transform.position);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Weapon>() != null)
         {
+            animator.SetTrigger("Hurt");
             OnGetDamaged(player.damage + player.Crit());
             onSpecificWeaponAbilityUsed?.Invoke(this);
         }
@@ -103,8 +105,33 @@ public class Enemy : Unit
     {
         if (collision.gameObject.GetComponent<Character>() != null)
         {
+            animator.SetTrigger("Hurt");
             OnApplyDamage?.Invoke(damage);
-            Destroy(gameObject);
+            PushAwayFromPlayer();
+            OnGetDamaged(player.damage + player.Crit());
         }
     }
+
+    private void PushAwayFromPlayer()
+    {
+        Vector3 playerToEnemyDirection = (transform.position - player.transform.position).normalized;
+
+        if (speed != 0) rigidBody.AddForce((playerToEnemyDirection * 300), ForceMode.Force);
+        else rigidBody.AddForce((playerToEnemyDirection * 100), ForceMode.Force);
+    }
+
+    private void SubscribeEvents()
+    {
+        OnPlayerInSight += Run;
+        OnPlayerInSight += LookTowardsPlayers;
+        OnGetDamaged += GetDamage;
+    }
+
+    private void UnSubscribeEvents()
+    {
+        OnPlayerInSight -= Run;
+        OnPlayerInSight -= LookTowardsPlayers;
+        OnGetDamaged -= GetDamage;
+    }
+
 }

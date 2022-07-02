@@ -12,7 +12,10 @@ public class WeaponStats : MonoBehaviour
         {"PoisonedKnife",       new float[3]    {10, 15, 25}    },
         {"Claws",               new float[3]    {14, 20, 27}    },
         {"Scepter",             new float[3]    {10, 14, 22}    },
-        {"Katana",              new float[3]    {15, 22, 32}    }
+        {"Katana",              new float[3]    {15, 22, 32}    },
+        {"DruidStaff",          new float[3]    {15, 19, 25}    },
+        {"Bow",                 new float[3]    {25, 35, 45}    },
+        {"ArcaneGun",           new float[3]    {22, 28, 35}    },
     };
 
 
