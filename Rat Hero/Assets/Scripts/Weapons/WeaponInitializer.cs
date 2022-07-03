@@ -54,6 +54,7 @@ public class WeaponInitializer : MonoBehaviour
     {
         WeaponSwitcher.FindWeaponInArray();
         InitializeMenuWeapons(Weapon.choisedWeapon);
+        WeaponShopController.onShow?.Invoke();
         WeaponShopController.onHide?.Invoke();
         WeaponAbilitiesController.onWeaponChanged?.Invoke();
     }

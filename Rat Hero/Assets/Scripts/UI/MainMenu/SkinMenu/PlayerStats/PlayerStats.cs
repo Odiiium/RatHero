@@ -11,8 +11,8 @@ public class PlayerStats : MonoBehaviour
 
     public static float AttackSpeed { get
         {
-            if (attackSpeed > 500) 
-                return 500;
+            if (attackSpeed > 700) 
+                return 700;
             else if (attackSpeed > 100)
                 return attackSpeed;
             else  
@@ -81,7 +81,6 @@ public class PlayerStats : MonoBehaviour
         Speed =                 PlayerPrefs.GetFloat(prefsList[4]);
         CriticalChance =        PlayerPrefs.GetFloat(prefsList[5]);
         Mana =                  PlayerPrefs.GetFloat(prefsList[6]);
-        RatLevelUp.CurrentLvl = PlayerPrefs.GetInt(prefsList[7]);
 
     }
 
@@ -94,26 +93,73 @@ public class PlayerStats : MonoBehaviour
         PlayerPrefs.SetFloat(prefsList[4], Speed);
         PlayerPrefs.SetFloat(prefsList[5], CriticalChance);
         PlayerPrefs.SetFloat(prefsList[6], Mana);
-        PlayerPrefs.SetInt(prefsList[7], RatLevelUp.CurrentLvl);
     }
     
     public  void AddStats()
     {
-        int moneyToLvlUp = (int)Mathf.Pow(RatLevelUp.CurrentLvl, 2);
-
+        int moneyToLvlUp;
+        if (RatLevelUp.CurrentLvl < 80)
+        {
+            moneyToLvlUp = (int)Mathf.Pow(RatLevelUp.CurrentLvl, 1.7f);
+        }
+        else
+        {
+            moneyToLvlUp = (int)Mathf.Pow(RatLevelUp.CurrentLvl, 2);
+        }
         if (Money.cheese >= moneyToLvlUp)
         {
-            Damage = Mathf.Round(Damage * 1.04f);
-            AttackSpeed = Mathf.Round(AttackSpeed * 1.04f);
-            HealthPoints = Mathf.Round(HealthPoints * 1.04f);
-            Defence = Mathf.Round(Defence + 1);
-            Speed = Mathf.Round(Speed * 1.04f);
-            CriticalChance = Mathf.Round(CriticalChance + 1);
-            Mana = Mathf.Round(Mana * 1.04f);
-            RatLevelUp.CurrentLvl += 1;
+            AddMainStats();
+            RatLevelUp.CurrentLvl++;
             FindObjectOfType<PlayerStatsView>().ShowStats();
             Money.ReduceCheese(moneyToLvlUp);
         }
+    }
+
+    private void AddMainStats()
+    {
+        Damage += AddedDamage();
+        AttackSpeed += AddedAttackSpeed();
+        HealthPoints += AddedHealthPoints();
+        Defence += AddedDefence();
+        Speed += AddedSpeed();
+        CriticalChance += AddedCriticalChance();
+        Mana += AddedMana();
+    }
+
+    internal static float AddedDamage()
+    {
+        if (Damage < 500) return 25;
+        else return Mathf.Round(Damage * 0.03f) + 20;
+    }
+
+    internal static float AddedAttackSpeed()
+    {
+        if (AttackSpeed < 300) return 5;
+        else return Mathf.Round(AttackSpeed * 0.01f) + 1;
+    }
+    internal static float AddedHealthPoints()
+    {
+        if (HealthPoints < 2000) return 50;
+        else return Mathf.Round(Damage * 0.02f) + 10;
+    }
+    internal static float AddedDefence()
+    {
+        if (Defence < 100) return 2;
+        else return Mathf.Round(Defence * 0.02f) + 1;
+    }
+    internal static float AddedSpeed()
+    {
+        if (Speed < 180) return 2;
+        else return 1;
+    }
+    internal static float AddedCriticalChance()
+    {
+        return 1;
+    }
+    internal static float AddedMana()
+    {
+        if (Mana < 300) return 4;
+        else return Mathf.Round(Mana * 0.01f) + 1;
     }
 
 

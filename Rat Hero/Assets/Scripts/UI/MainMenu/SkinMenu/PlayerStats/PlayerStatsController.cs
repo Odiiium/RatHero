@@ -14,12 +14,19 @@ public class PlayerStatsController : MonoBehaviour
     public static UnityAction onAdd;
     public static UnityAction onStatsShowing;
 
-    private void Start()
+    private void OnEnable()
     {
+        SubscribeActions();
         onLoad?.Invoke();
         onStatsShowing?.Invoke();
     }
-    private void Awake()
+
+    private void OnDisable()
+    {
+        UnsubscribeActions();
+    }
+
+    private void SubscribeActions()
     {
         onLoad += stats.LoadStats;
         onAdd += stats.AddStats;
@@ -29,7 +36,7 @@ public class PlayerStatsController : MonoBehaviour
         onStatsShowing += statsView.ShowStats;
     }
 
-    private void OnDisable()
+    private void UnsubscribeActions()
     {
         onLoad -= stats.LoadStats;
         onAdd -= stats.AddStats;

@@ -15,13 +15,13 @@ public class RatShopController : MonoBehaviour
     {
         ratShop.StartRatInitialize();
         ratShopView.InitializeUIElements();
+    }
+
+    private void OnEnable()
+    {
         onHide += ratShopView.HideUIElements;
         onShow += ratShopView.ShowUIElements;
         RatShopView.onBuy += ratShop.OnRatBuy;
-    }
-
-    private void Start()
-    {
         ratShopView.buyButton.onClick.AddListener(RatShopView.onBuy);
     }
 
@@ -30,6 +30,7 @@ public class RatShopController : MonoBehaviour
         onHide -= ratShopView.HideUIElements;
         onShow -= ratShopView.ShowUIElements;
         RatShopView.onBuy -= ratShop.OnRatBuy;
+        ratShopView.buyButton.onClick.RemoveAllListeners(); 
     }
 
 

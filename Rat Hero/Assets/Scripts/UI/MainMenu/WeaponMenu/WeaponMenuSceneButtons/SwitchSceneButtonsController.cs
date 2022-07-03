@@ -10,6 +10,10 @@ public class SwitchSceneButtonsController : MonoBehaviour
     private void Awake()
     {
         switchSceneButtonsView.InitializeButtons();
+    }
+
+    private void OnEnable()
+    {
         switchSceneButtonsView.backToSkinMenuButton.onClick.AddListener(switchSceneButtons.GoToSkinMenu);
         switchSceneButtonsView.playButton.onClick.AddListener(switchSceneButtons.PlayGame);
     }

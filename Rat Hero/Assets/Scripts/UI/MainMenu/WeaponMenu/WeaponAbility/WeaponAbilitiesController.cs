@@ -14,6 +14,10 @@ public class WeaponAbilitiesController : MonoBehaviour
     {
         weaponAbilitiesView.InitializeUIElements();
         weaponAbilitiesView.ShowWeaponAbilityInfo();
+    }
+
+    private void OnEnable()
+    {
         onWeaponChanged += weaponAbilitiesView.ShowWeaponAbilityInfo;
     }
 

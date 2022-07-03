@@ -32,9 +32,14 @@ public class Character : Unit
         if (PauseMenu.isGame)
         {
             PostGameMenu.timeAlived += Time.deltaTime;
-            Run();
         }
     }
+
+    private void FixedUpdate()
+    {
+        Run();
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -67,12 +72,12 @@ public class Character : Unit
         defence = InitializedPlayerDefence();
 
         currentSpeed = speed;
-        rotateSpeed = .7f;
+        rotateSpeed = 1.7f;
     }
 
     protected override void Run()
     {
-        if (mobileJoystick.yAxis() != 0 && isGrounded)
+        if (mobileJoystick.yAxis() != 0 && isGrounded && PauseMenu.isGame)
         {
             rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * currentSpeed;
         }
@@ -103,7 +108,7 @@ public class Character : Unit
     float InitializedPlayerAttackSpeed()
     {
         float ratAdditionalAttackSpeed = RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[1] * PlayerStats.AttackSpeed / 100;
-        return PlayerStats.AttackSpeed + ratAdditionalAttackSpeed;
+        return (PlayerStats.AttackSpeed + ratAdditionalAttackSpeed) / 2;
     }
 
     float InitializedPlayerSpeed()

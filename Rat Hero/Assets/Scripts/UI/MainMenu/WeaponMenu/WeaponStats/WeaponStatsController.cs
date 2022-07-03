@@ -14,8 +14,13 @@ public class WeaponStatsController : MonoBehaviour
     {
         weaponStatsView.InitializeStatsUI();
         weaponStatsView.SetStats();
+    }
+
+    private void OnEnable()
+    {
         onStatsDisplay += weaponStatsView.SetStats;
     }
+
     private void OnDisable()
     {
         onStatsDisplay -= weaponStatsView.SetStats;

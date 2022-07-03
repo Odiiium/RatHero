@@ -16,7 +16,7 @@ public class WeaponLevelUpController : MonoBehaviour
         weaponLevelUpView.GetButton();
     }
 
-    void Start()
+    void OnEnable()
     {
         weaponLevelUpView.GetPrice();
         onWeaponChanging += weaponLevelUpView.SetPrice;

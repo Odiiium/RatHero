@@ -11,15 +11,24 @@ public class RatLevelUpController : MonoBehaviour
     {
         levelUpView.GetPrice();
         levelUpView.GetButton();
+        RatLevelUpView.ShowLevel();
     }
-    private void Start()
+
+    private void OnEnable()
     {
-        levelUpView.levelUpButton.onClick.AddListener(PlayerStatsController.onAdd);
-        levelUpView.levelUpButton.onClick.AddListener(levelUpView.SetPrice);
+        AddListenersToButton();
     }
 
     private void OnDisable()
     {
         levelUpView.levelUpButton.onClick.RemoveAllListeners();
     }
+
+    private void AddListenersToButton()
+    {
+        levelUpView.levelUpButton.onClick.AddListener(PlayerStatsController.onAdd);
+        levelUpView.levelUpButton.onClick.AddListener(levelUpView.SetPrice);
+        levelUpView.levelUpButton.onClick.AddListener(MoneyController.onMoneyShows);
+    }
+
 }

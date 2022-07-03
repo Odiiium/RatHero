@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using TMPro;
 
 public class RatSwitcherView : MonoBehaviour
 {
@@ -10,9 +11,13 @@ public class RatSwitcherView : MonoBehaviour
     internal Button rightButton;
     internal Button selectButton;
 
+    static TextMeshProUGUI ratNameText;
+
+
     private void Awake()
     {
         GetButtons();
+        InitializeRatName();
     }
 
     internal void GetButtons()
@@ -21,6 +26,17 @@ public class RatSwitcherView : MonoBehaviour
         leftButton = buttons[0];
         rightButton = buttons[1];
         selectButton = buttons[2];
+    }
+
+    internal static void SetRatName()
+    {
+        ratNameText.text = RatSwitcher.rats[RatSwitcher.currentRat].ToString();
+    }
+
+    private void InitializeRatName()
+    {
+        ratNameText = transform.parent.GetChild(0).GetComponent<TextMeshProUGUI>();
+        ratNameText.text = PlayerPrefs.GetString("choisedRat", RatSwitcher.rats[RatSwitcher.currentRat]);
     }
 
 

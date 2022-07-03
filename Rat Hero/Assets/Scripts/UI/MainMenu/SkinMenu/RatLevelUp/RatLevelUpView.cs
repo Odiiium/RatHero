@@ -21,11 +21,23 @@ public class RatLevelUpView : MonoBehaviour
 
     public static void ShowLevel()
     {
-        FindObjectOfType<RatLevel>().transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = RatLevelUp.CurrentLvl + " LVL";
+        ratLevelText().text = RatLevelUp.CurrentLvl + " LVL";
     }
     internal void SetPrice()
     {
-        priceCount.text = "" + Mathf.Pow(RatLevelUp.CurrentLvl, 2);
+        if (RatLevelUp.CurrentLvl < 80)
+        {
+            priceCount.text = "" + (int)Mathf.Pow(RatLevelUp.CurrentLvl, 1.7f);
+        }
+        else
+        {
+            priceCount.text = "" + (int)Mathf.Pow(RatLevelUp.CurrentLvl, 2);
+        }
+    }
+
+    private static TextMeshProUGUI ratLevelText()
+    {
+        return FindObjectOfType<RatLevel>().transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
     }
 
 }

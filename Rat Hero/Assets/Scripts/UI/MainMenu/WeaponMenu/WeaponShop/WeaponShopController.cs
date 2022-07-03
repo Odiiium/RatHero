@@ -18,22 +18,32 @@ public class WeaponShopController : MonoBehaviour
     {
         weaponShop.StartWeaponInitialize();
         weaponShopView.InitializeUIElements();
-        onHide += weaponShopView.HideUIElements;
-        onShow += weaponShopView.ShowUIElements;
-        WeaponShopView.onBuy += weaponShop.OnWeaponBuy;
+        weaponShopView.HideUIElements();
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        weaponShopView.buyButton.onClick.AddListener(WeaponShopView.onBuy);
+        SubscribeActions();
     }
 
     private void OnDisable()
+    {
+        UnsubscribeActions();
+    }
+
+    private void SubscribeActions()
+    {
+        onHide += weaponShopView.HideUIElements;
+        onShow += weaponShopView.ShowUIElements;
+        WeaponShopView.onBuy += weaponShop.OnWeaponBuy;
+        weaponShopView.buyButton.onClick.AddListener(WeaponShopView.onBuy);
+    }
+
+    private void UnsubscribeActions()
     {
         onHide -= weaponShopView.HideUIElements;
         onShow -= weaponShopView.ShowUIElements;
         WeaponShopView.onBuy -= weaponShop.OnWeaponBuy;
         weaponShopView.buyButton.onClick.RemoveAllListeners();
     }
-
 }

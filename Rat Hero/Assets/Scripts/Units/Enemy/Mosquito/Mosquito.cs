@@ -6,8 +6,8 @@ public class Mosquito : Enemy
 {
     private void Awake()
     {
-        healthPoints = 400;
-        damage = 40;
+        healthPoints = 350;
+        damage = 50;
         speed = 1.2f;
         currentSpeed = speed;
     }

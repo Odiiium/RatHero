@@ -12,7 +12,10 @@ public class WeaponAbilitiesDictionary : MonoBehaviour
         {"PoisonedKnife",   new Poison()} ,
         {"Claws",           new BloodLust()},
         {"Scepter",         new Snowstorm()},
-        {"Katana",          new LightPace()}
+        {"Katana",          new LightPace()},
+        {"DruidStaff",      new NatureWraith()},
+        {"Bow",             new ArrowsRain()},
+        {"ArcaneGun",       new Laser()},
     };
 
 }

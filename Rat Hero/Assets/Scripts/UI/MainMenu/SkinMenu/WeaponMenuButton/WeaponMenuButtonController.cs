@@ -11,6 +11,9 @@ public class WeaponMenuButtonController : MonoBehaviour
     private void Awake()
     {
         weaponMenuSwitcherView.GetButton();
+    }
+    private void OnEnable()
+    {
         weaponMenuSwitcherView.goToWeaponMenuButton.onClick.AddListener(weaponMenuSwitcher.GoToWeaponMenu);
     }
 

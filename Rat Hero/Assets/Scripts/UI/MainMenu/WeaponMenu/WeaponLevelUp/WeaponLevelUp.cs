@@ -20,16 +20,26 @@ public class WeaponLevelUp : MonoBehaviour
 
     internal void WeaponLevelingUp()
     {
-        string currentWeaponName = WeaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
-        int currentWeaponLvlUpPrice = lvlUpPriceValues.GetValueOrDefault(currentWeaponName)[PlayerPrefs.GetInt(currentWeaponName) - 1];
+        int currentWeaponLvlUpPrice = lvlUpPriceValues.GetValueOrDefault(currentWeaponName())[PlayerPrefs.GetInt(currentWeaponName()) - 1];
 
-        if (Money.cheese > currentWeaponLvlUpPrice & PlayerPrefs.GetInt(currentWeaponName) < 3)
+        if (Money.cheese > currentWeaponLvlUpPrice & PlayerPrefs.GetInt(currentWeaponName()) < 3)
         {
-            PlayerPrefs.SetInt(currentWeaponName, PlayerPrefs.GetInt(currentWeaponName) + 1);
+            PlayerPrefs.SetInt(currentWeaponName(), PlayerPrefs.GetInt(currentWeaponName()) + 1);
             Money.ReduceCheese(currentWeaponLvlUpPrice);
-            WeaponLevelUpController.onWeaponChanging?.Invoke();
-            WeaponStatsController.onStatsDisplay?.Invoke();
-            WeaponShopController.onHide?.Invoke();
+            CallLevelingUpActions();
         }
+    }
+
+    private void CallLevelingUpActions()
+    {
+        WeaponLevelUpController.onWeaponChanging?.Invoke();
+        WeaponStatsController.onStatsDisplay?.Invoke();
+        WeaponShopController.onHide?.Invoke();
+        MoneyController.onMoneyShows?.Invoke();
+    }
+
+    private string currentWeaponName()
+    {
+        return WeaponSwitcher.weapons[WeaponSwitcher.currentWeapon];
     }
 }

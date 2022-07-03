@@ -24,19 +24,31 @@ public class PlayerStatsView : MonoBehaviour
     private void SwitchStatCount()
     {
         statsCountList[0].text = PlayerStats.Damage + "";
-        addStatCountList[0].text = "+" + Mathf.Round(PlayerStats.Damage * 0.04f) + "";
+        addStatCountList[0].text = "+" + PlayerStats.AddedDamage() + "";
+
         statsCountList[1].text = PlayerStats.AttackSpeed + "%";
-        if (PlayerStats.AttackSpeed < 500) addStatCountList[1].text = "+" + PlayerStats.AttackSpeed * 0.04 + "%"; else addStatCountList[1].text = "+" + 0 + "%";
+        if (PlayerStats.AttackSpeed < 500) addStatCountList[1].text = "+" + PlayerStats.AddedAttackSpeed() + "%";
+        else addStatCountList[1].text = "+" + 0 + "%";
+
         statsCountList[2].text = PlayerStats.HealthPoints + "";
-        addStatCountList[2].text = "+" + Mathf.Round(PlayerStats.HealthPoints * 0.04f) + "";
+        addStatCountList[2].text = "+" + PlayerStats.AddedHealthPoints() + "";
+
         statsCountList[3].text = PlayerStats.Defence + "";
-        if (PlayerStats.Defence < 250) addStatCountList[3].text = "+" + 1; else addStatCountList[3].text = "+" + 0;
+        if (PlayerStats.Defence < 250) addStatCountList[3].text = "+" + PlayerStats.AddedDefence();
+        else addStatCountList[3].text = "+" + 0;
+
         statsCountList[4].text = PlayerStats.Speed + "%";
-        if (PlayerStats.Speed < 90) addStatCountList[4].text = "+" + PlayerStats.Speed * 0.04 + "%"; else addStatCountList[4].text = "+" + 0 + "%";
+        if (PlayerStats.Speed < 90) addStatCountList[4].text = "+" + PlayerStats.AddedSpeed() + "%";
+        else addStatCountList[4].text = "+" + 0 + "%";
+
         statsCountList[5].text = PlayerStats.CriticalChance + "%";
-        if (PlayerStats.CriticalChance < 90) addStatCountList[5].text = "+" + 1 + "%"; else addStatCountList[5].text = "+" + 0 + "%";
+        if (PlayerStats.CriticalChance < 90) addStatCountList[5].text = "+" + PlayerStats.AddedCriticalChance() + "%";
+        else addStatCountList[5].text = "+" + 0 + "%";
+
         statsCountList[6].text = PlayerStats.Mana + "%";
-        if (PlayerStats.Mana < 800) addStatCountList[6].text = "+" + PlayerStats.Mana * 0.04 + "%"; else addStatCountList[6].text = "+" + 0 + "%";
+        if (PlayerStats.Mana < 800) addStatCountList[6].text = "+" + PlayerStats.AddedMana() + "%";
+        else addStatCountList[6].text = "+" + 0 + "%";
+
         statsCountList.Clear();
         addStatCountList.Clear();
     }
