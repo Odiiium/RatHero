@@ -9,12 +9,17 @@ public class BloodLust : WeaponAbility
 
     private void OnEnable()
     {
-        SpawnManager.onEnemyDies += IncreaseCounter;
+        TurnOnWeaponAbility();
     }
 
     private void OnDisable()
     {
         SpawnManager.onEnemyDies -= IncreaseCounter;
+    }
+
+    protected override void TurnOnWeaponAbility()
+    {
+        SpawnManager.onEnemyDies += IncreaseCounter;
     }
 
     private void IncreaseCounter()
@@ -35,4 +40,5 @@ public class BloodLust : WeaponAbility
         }
         else return;
     }
+
 }

@@ -23,5 +23,6 @@ public class WeaponAbility : MonoBehaviour
 
     protected virtual void TurnOnWeaponAbility()
     {
+
     }
 }

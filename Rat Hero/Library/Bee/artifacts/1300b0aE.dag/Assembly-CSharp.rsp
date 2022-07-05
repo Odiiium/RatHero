@@ -483,6 +483,7 @@
 "Assets/Scripts/Weapons/Weapon.cs"
 "Assets/Scripts/Weapons/WeaponInitializer.cs"
 "Assets/Scripts/Weapons/WeaponShots/Bow/Arrow.cs"
+"Assets/Scripts/Weapons/WeaponShots/DruidStaff/DruidFlower.cs"
 "Assets/Scripts/Weapons/WeaponShots/FirstSkillClaws/FirstSkillClaws.cs"
 "Assets/Scripts/Weapons/WeaponShots/Pistol/Bullet.cs"
 "Assets/Scripts/Weapons/WeaponShots/Scepter/IceBlock.cs"
