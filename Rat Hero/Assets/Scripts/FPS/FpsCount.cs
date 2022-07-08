@@ -15,7 +15,7 @@ public class FpsCount : MonoBehaviour
         fpsText = GetComponent<TextMeshProUGUI>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         timeSinceFpsShow += Time.deltaTime;
         if (timeSinceFpsShow > 0.5f)
@@ -26,7 +26,7 @@ public class FpsCount : MonoBehaviour
 
     private void ShowFps()
     {
-        FPS = (int)(1 / Time.unscaledDeltaTime);
+        FPS = (int)(1 / Time.deltaTime);
         fpsText.text = FPS.ToString();
         timeSinceFpsShow = 0;
     }

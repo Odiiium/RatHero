@@ -43,7 +43,7 @@ public class SkinChanger : MonoBehaviour
         if (gameObject.name == "MenuSkin") return;
         else
         {
-            gameObject.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>($"Animation/Units/Characters/{skinName}");
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>($"Animation/Units/Characters/{skinName}/{skinName}");
         }
     }
     private void DisplayRat(string skinName)

@@ -43,6 +43,11 @@ public class Character : Unit
 
     private void OnTriggerEnter(Collider other)
     {
+        DetectBuffTrigger(other);
+    }
+
+    private void DetectBuffTrigger(Collider other)
+    {
         if (BuffUI.currentBuffCount < 4 && other.gameObject.TryGetComponent(out Buff buff))
         {
             buff.DoBuff();
@@ -54,6 +59,8 @@ public class Character : Unit
             Destroy(buff.gameObject);
         }
     }
+
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -80,8 +87,9 @@ public class Character : Unit
         if (mobileJoystick.yAxis() != 0 && isGrounded && PauseMenu.isGame)
         {
             rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * currentSpeed;
-        }
             transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
+        }
+            
     }
 
     protected override void GetDamage(float enemyDamage)

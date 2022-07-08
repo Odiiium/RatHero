@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpiderWeb : MonoBehaviour
 {
     MeshRenderer webMesh;
-
+    Character player;
 
     private void Awake()
     {
@@ -15,38 +15,43 @@ public class SpiderWeb : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<Character>() != null)
+        if (collision.gameObject.TryGetComponent(out Character player))
         {
-            webMesh.material = Resources.Load<Material>("Materials/Units/Enemy/Spider/SpiderWebAfterCollision");
+            webMesh.material = webMaterial();
             gameObject.layer = 7;
-            StartCoroutine(ChangeSpeed());
+            StartCoroutine(ChangeSpeed(player));
         }
     }
 
-    private IEnumerator ChangeSpeed()
+    private IEnumerator ChangeSpeed(Character player)
     {
-        SetReducedPlayerSpeed();
+        SetReducedPlayerSpeed(player);
         yield return new WaitForSeconds(5);
-        GetBackPlayerSpeed();
+        GetBackPlayerSpeed(player);
     }
 
     private IEnumerator DestroySpiderWeb()
     {
+        player = FindObjectOfType<Character>();
         yield return new WaitForSeconds(8);
-        StopCoroutine(ChangeSpeed());
-        GetBackPlayerSpeed();
+        StopCoroutine(ChangeSpeed(player));
+        GetBackPlayerSpeed(player);
         Destroy(gameObject);
     }
 
-    private void SetReducedPlayerSpeed()
+    private void SetReducedPlayerSpeed(Character player)
     {
-        FindObjectOfType<Character>().currentSpeed /= 2;
+        player.currentSpeed /= 2;
     }
 
-    private void GetBackPlayerSpeed()
+    private void GetBackPlayerSpeed(Character player)
     {
-        Character player = FindObjectOfType<Character>();
         player.currentSpeed = player.speed;
+    }
+
+    private Material webMaterial()
+    {
+        return Resources.Load<Material>("Materials/Units/Enemy/Spider/SpiderWebAfterCollision");
     }
 
 

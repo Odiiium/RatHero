@@ -9,7 +9,7 @@ INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee
 INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-106
+		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-110
 		INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	android:versionName
@@ -17,7 +17,7 @@ INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee
 		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 		INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:107-153
+		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:111-157
 	android:versionCode
 		INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
@@ -25,7 +25,7 @@ INJECTED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee
 	xmlns:android
 		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:154-194
+		ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:158-198
 supports-screens
 ADDED from D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
 	android:largeScreens

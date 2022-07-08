@@ -24,7 +24,7 @@ public class Skin : MonoBehaviour
             instance = this;
             SkinChanger.instance.ChangeSkin(PlayerPrefs.GetString("choisedRat"));
         }
-        else { return; }
+        else return;
     }
 
 

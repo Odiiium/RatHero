@@ -366,6 +366,7 @@
 "Assets/Scripts/Buffs/PassiveBuffs/PassiveBuff.cs"
 "Assets/Scripts/Camera/CameraController.cs"
 "Assets/Scripts/Environment/Obstacle.cs"
+"Assets/Scripts/Environment/OffEnvironment.cs"
 "Assets/Scripts/FPS/FpsCount.cs"
 "Assets/Scripts/Particles/Buffs/BuffParticle.cs"
 "Assets/Scripts/SpawnManager/SpawnManager.cs"

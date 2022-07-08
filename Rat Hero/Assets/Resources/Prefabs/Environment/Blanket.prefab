@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 7231980519739620600}
   - component: {fileID: 5515230224582559154}
   - component: {fileID: 9056653681442611494}
-  - component: {fileID: 4317271917126859888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa298a0e90d3c4941bcaa4d69b222f6c, type: 2}
+  - {fileID: 2100000, guid: b55a89ad290ad21499f173e6afa94559, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,18 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4317271917126859888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939653449692082115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bcf2b15efae1e9448ba5410653a914f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7450857490908092186
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7794908271089995168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blanket
   m_TagString: Untagged
   m_Icon: {fileID: 0}

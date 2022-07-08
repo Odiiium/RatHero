@@ -9,7 +9,6 @@ public class Spider : Enemy
     private void Awake()
     {
         hasAttacked = false;
-        OnPlayerInSight += Attack;
         healthPoints = 600;
         damage = 40;
         speed = 0;
@@ -34,8 +33,13 @@ public class Spider : Enemy
 
     private void SpitTheWeb()
     {
-        SpiderShoot spidershoot = Instantiate(Resources.Load<SpiderShoot>("Prefabs/Units/Enemy/EnemyAbilities/SpiderShoot"), transform.position, transform.rotation);
+        SpiderShoot spidershoot = Instantiate(SpiderShoot(), transform.position, transform.rotation);
         spidershoot.parentSpider = this;
         spidershoot.transform.rotation = transform.rotation;
+    }
+
+    private SpiderShoot SpiderShoot()
+    {
+        return Resources.Load<SpiderShoot>("Prefabs/Units/Enemy/EnemyAbilities/SpiderShoot");
     }
 }

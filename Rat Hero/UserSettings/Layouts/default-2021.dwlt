@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 59657
+  controlID: 36808
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 59658
+  controlID: 36809
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,11 +165,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1256.8
-    height: 506.4
+    height: 505.6
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59659
+  controlID: 36810
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 300.8
-    height: 506.4
+    height: 505.6
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -214,7 +214,7 @@ MonoBehaviour:
     x: 300.8
     y: 0
     width: 956.00006
-    height: 506.4
+    height: 505.6
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -241,9 +241,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 506.4
+    y: 505.6
     width: 1256.8
-    height: 224.4
+    height: 225.19998
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 17}
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 279.19995
     height: 730.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -301,7 +301,7 @@ MonoBehaviour:
     x: 300.80002
     y: 73.6
     width: 954.00006
-    height: 485.4
+    height: 484.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.GameView
   m_SerializedViewValues:
-  - D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PlayModeViewStates\5bca36ec09418914887b97b851a67883
+  - D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PlayModeViewStates\fe0ab0b2912bda741a606bcb07bb9364
   m_PlayModeViewName: Device Simulator
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     pluginStates:
     - '{}'
-    scale: 55
+    scale: 57
     fitToScreenEnabled: 0
     rotationDegree: 90
     highlightSafeAreaEnabled: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
     x: 0
     y: 73.6
     width: 299.8
-    height: 485.4
+    height: 484.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -368,23 +368,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0c1f0400
-      m_LastClickedID: 270092
-      m_ExpandedIDs: 7262faffb684faffce85faff968afaff4caffaff70affaff9aaffaffe2cafbff3c48fcffac4afcfffa4afcff1c50fcffc650fcff7059fcffb259fcffd85efcff865ffcff1a81fcff48dffcffa00cfdffcc0cfdff6a15fdffde1afdffa4adfdff841bfeff0efaffff34fbffffc45d00000ab802004cf5020050f502006af50200caf50200dcf5020084f60200d4f60200a8f70200daf70200e2f702000af8020054f8020058f80200def802009e1b0400ce1b0400ba1d0400
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6ce5fdffbce5fdff38f4fdff3af5fdff6a04feffa207feffd007feff420bfeff8e48fefff278feffe27dfeff1c7ffefff27ffeff6c80feff0a81feff868efefff090feffc094feff2699feff7ea0feffb0a7feffe2aefeff7af5feff3059ffff745affffd05affff605bffff9e5bffffc45bffffd45bffffe85bffff645cffffea5cffffa85effffbc5effff085fffff1c5fffff425fffff565fffffba5fffff1e60ffff5860ffff9060ffffb660ffffde60fffff260ffff0661ffff1a61ffff5661ffff6a61ffff7e61ffffce61ffffe261ffff1062ffff7462ffff8e62ffffd262fffff862ffff2063ffff6663ffff9a63ffffe463ffff5264ffff10e2ffff58e2ffff64e2ffff70e2ffff78e2ffff8ce2ffff98e2ffffa4e2fffface2ffffe0e2ffff02e3ffff0ee3ffff1ae3ffffe6e3fffff4e3ffff02e4ffff30e4ffff52e4ffff60e4ffff70e4ffff80e4ffff8ee4ffff9ee4fffffce4ffff0ce5ffff2ae5ffff2ce5ffff62f3fffff4f6ffff34fbfffff67800001c7900004c790000747a0000c67a0000ca6401007a650100aa65010096670100ce6e0100fe6e0100ea7001008e780100be780100aa7a01009a7b01004a7c01007a7c0100667e010052910100a891010000920100289201004e920100669201007e920100fe92010004930100369301003e930100f29301005a94010074940100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Mosquito
-        m_OriginalName: Mosquito
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -348304
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -417,7 +417,7 @@ MonoBehaviour:
     x: 300.80002
     y: 73.6
     width: 954.00006
-    height: 485.4
+    height: 484.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -438,9 +438,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 100, y: 0}
+      snapOffset: {x: -141, y: 149}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -603,9 +603,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: -232, y: -202.40002}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       id: Scene View/Particles
       index: 10
       layout: 4
@@ -619,9 +619,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.4818094, y: 0.009506182, z: 0.844886}
+    m_Target: {x: 4.494678, y: 3.9573982, z: -5.9842787}
     speed: 2
-    m_Value: {x: -3.4818094, y: 0.0095061865, z: 0.844886}
+    m_Value: {x: 4.494678, y: 3.9573982, z: -5.9842787}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -668,20 +668,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.28056437, y: 0.10683431, z: -0.03143888, w: 0.95336145}
+    m_Target: {x: -0.29790774, y: -0.052895997, z: 0.018393425, w: -0.9532171}
     speed: 2
-    m_Value: {x: 0.2819918, y: 0.10678616, z: -0.031598844, w: 0.95293176}
+    m_Value: {x: -0.2992886, y: -0.051426042, z: 0.018019222, w: -0.95260537}
   m_Size:
-    m_Target: 1.0276414
+    m_Target: 0.5850126
     speed: 2
-    m_Value: 1.0276414
+    m_Value: 0.61257863
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.60069996
-    m_SpeedNormalized: 0.29999998
+    m_Speed: 1.5602194
+    m_SpeedNormalized: 0.77999973
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -722,7 +722,7 @@ MonoBehaviour:
     x: 300.80002
     y: 73.6
     width: 954.00006
-    height: 492.59998
+    height: 484.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -820,20 +820,20 @@ MonoBehaviour:
     x: 300.80002
     y: 73.6
     width: 954.00006
-    height: 492.59998
+    height: 484.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 309}
+  m_PosRight: {x: 0, y: 549}
   m_Scope: 1
   m_SplitterFlex: 0
   m_SearchText: 
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4dcf9b58
-    m_LastClickedID: 1486606157
+    m_SelectedIDs: e594f01a
+    m_LastClickedID: 451974373
     m_ExpandedIDs: a01a5fa600000000c53aba5a
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -873,9 +873,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 580
+    y: 579.2
     width: 1255.8
-    height: 203.4
+    height: 204.19998
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -893,22 +893,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs/Weapons/Pistol
+    - Assets/Resources/Prefabs/Environment
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 81
   m_LastFolders:
-  - Assets/Resources/Prefabs/Weapons/Pistol
+  - Assets/Resources/Prefabs/Environment
   m_LastFoldersGridSize: 81
   m_LastProjectPath: D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1416.6}
-    m_SelectedIDs: b6680000
-    m_LastClickedID: 26806
-    m_ExpandedIDs: 000000002a6700002c6700002e67000030670000326700003467000036670000386700003a6700003c6700003e67000040670000426700004467000046670000486700004a6700004c6700004e67000050670000526700005467000056670000586700005a6700005c6700005e67000060670000626700006467000066670000686700006a6700006c6700006e67000070670000726700007467000076670000786700007a6700007c6700007e670000806700008467000086670000886700008a6700008c6700008e67000090670000926700009467000096670000986700009a6700009c6700009e670000a06700008268000084680000ac680000b4680000c8680000d8680000dc68000002e501002e51020000ca9a3b
+    scrollPos: {x: 0, y: 1383.8}
+    m_SelectedIDs: ae690000
+    m_LastClickedID: 27054
+    m_ExpandedIDs: 0000000006680000086800000a6800000c6800000e68000010680000126800001468000016680000186800001a6800001c6800001e68000020680000226800002468000026680000286800002a6800002c6800002e68000030680000326800003468000036680000386800003a6800003c6800003e68000040680000426800004468000046680000486800004a6800004c6800004e68000050680000526800005468000056680000586800005a6800005c6800005e68000060680000626800006468000066680000686800006a6800006c6800006e68000070680000726800007468000076680000786800007a6800007c6800007e680000806800008268000084680000866800008e69000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -936,7 +936,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a6700002c6700002e67000030670000326700003467000036670000386700003a6700003c6700003e67000040670000426700004467000046670000486700004a6700004c6700004e67000050670000526700005467000056670000586700005a6700005c6700005e67000060670000626700006467000066670000686700006a6700006c6700006e67000070670000726700007467000076670000786700007a6700007c6700007e670000806700008467000086670000886700008a6700008c6700008e67000090670000926700009467000096670000986700009a6700009c6700009e670000a06700008268000084680000ac680000b4680000dc68000002e5010000ca9a3b
+    m_ExpandedIDs: 0000000006680000086800000a6800000c6800000e68000010680000126800001468000016680000186800001a6800001c6800001e68000020680000226800002468000026680000286800002a6800002c6800002e68000030680000326800003468000036680000386800003a6800003c6800003e68000040680000426800004468000046680000486800004a6800004c6800004e68000050680000526800005468000056680000586800005a6800005c6800005e68000060680000626800006468000066680000686800006a6800006c6800006e68000070680000726800007468000076680000786800007a6800007c6800007e6800008068000082680000846800008668000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -980,7 +980,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

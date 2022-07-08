@@ -7,8 +7,6 @@ public class Enemy : Unit
     Transform playerSkinTransform;
     Animator animator;
 
-
-    protected UnityAction OnPlayerInSight;
     internal UnityAction<float> OnGetDamaged;
 
     internal static UnityAction<float> OnApplyDamage;
@@ -30,8 +28,8 @@ public class Enemy : Unit
     private void OnEnable()
     {
         maxHp = healthPoints;
-        animator = transform.GetChild(0).GetComponent<Animator>();
         player = FindObjectOfType<Character>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
         playerSkinTransform = player.GetComponentsInChildren<Transform>()[0];
         SubscribeEvents();
     }
@@ -43,7 +41,7 @@ public class Enemy : Unit
 
     private void Update()
     {
-        PlayerInSight();
+       PlayerInSight();
     }
 
     protected override void Run()
@@ -77,7 +75,9 @@ public class Enemy : Unit
         float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
         if (distanceToPlayer < 8)
         {
-            OnPlayerInSight?.Invoke();
+            Run();
+            LookTowardsPlayer();
+            Attack();
         }
     }
 
@@ -87,14 +87,14 @@ public class Enemy : Unit
         healthPoints -= playerDamage;
     }
 
-    private void LookTowardsPlayers()
+    private void LookTowardsPlayer()
     {
         transform.LookAt(playerSkinTransform.transform.position);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Weapon>() != null)
+        if (other.gameObject.GetComponent<Weapon>())
         {
             OnGetDamaged(player.damage + player.Crit());
             onSpecificWeaponAbilityUsed?.Invoke(this);
@@ -103,33 +103,29 @@ public class Enemy : Unit
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<Character>() != null)
+        if (collision.gameObject.TryGetComponent(out Character player))
         {
-            OnApplyDamage?.Invoke(damage);
             PushAwayFromPlayer();
-            OnGetDamaged(player.damage + player.Crit());
+            OnApplyDamage?.Invoke(damage);
+            OnGetDamaged((int)player.damage + (int)player.Crit());
         }
     }
 
     private void PushAwayFromPlayer()
     {
-        Vector3 playerToEnemyDirection = (transform.position - player.transform.position).normalized;
+        Vector3 fromPlayerToEnemyDirection = (transform.position - player.transform.position).normalized;
 
-        if (speed != 0) rigidBody.AddForce((playerToEnemyDirection * 300), ForceMode.Force);
-        else rigidBody.AddForce((playerToEnemyDirection * 100), ForceMode.Force);
+        if (speed != 0) rigidBody.AddForce((fromPlayerToEnemyDirection * 300), ForceMode.Force);
+        else rigidBody.AddForce((fromPlayerToEnemyDirection * 100), ForceMode.Force);
     }
 
     private void SubscribeEvents()
     {
-        OnPlayerInSight += Run;
-        OnPlayerInSight += LookTowardsPlayers;
         OnGetDamaged += GetDamage;
     }
 
     private void UnSubscribeEvents()
     {
-        OnPlayerInSight -= Run;
-        OnPlayerInSight -= LookTowardsPlayers;
         OnGetDamaged -= GetDamage;
     }
 

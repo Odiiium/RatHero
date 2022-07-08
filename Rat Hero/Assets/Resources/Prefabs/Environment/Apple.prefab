@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 8785582767447004370}
   - component: {fileID: 5853421291043483032}
   - component: {fileID: 6926040930528643340}
-  - component: {fileID: 5217036365617538230}
-  - component: {fileID: 1128833333050152391}
-  m_Layer: 0
+  - component: {fileID: 7292114110104496194}
+  m_Layer: 8
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8821e001962719142a7f5153cdeaf434, type: 2}
+  - {fileID: 2100000, guid: d323ddd7d4324ec46b693c39bfd86ddd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5217036365617538230
-MeshCollider:
+--- !u!65 &7292114110104496194
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,22 +94,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: a6dde5ca18585b646ad88e96e9a437d7, type: 3}
---- !u!114 &1128833333050152391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529884911396898793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bcf2b15efae1e9448ba5410653a914f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 0.7999999, y: 1.04, z: 0.9999999}
+  m_Center: {x: 0, y: 0.54, z: -0.29999998}
 --- !u!1 &8851627587991355184
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8186590606147315082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Apple
   m_TagString: Untagged
   m_Icon: {fileID: 0}

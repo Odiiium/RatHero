@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PlayerCollider"))
         {
@@ -20,7 +20,7 @@ public class Obstacle : MonoBehaviour
         {
             SetOriginalMaterial();
         }
-    }
+    }*/
 
     private void SetTransparentMaterial()
     {
@@ -29,10 +29,11 @@ public class Obstacle : MonoBehaviour
 
     private void SetOriginalMaterial()
     {
+        
         gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Environment/{pureName()}s/{instanceName()}");
     }
     string pureName()
-    {
+    { 
         return parentString().Substring(0, parentString().IndexOf(" "));
     }
     string instanceName()

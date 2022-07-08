@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Profiling;
 
 
 public class SpawnManager : MonoBehaviour
@@ -36,9 +37,11 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnRandomEnemy()
     {
-        if (enemyCount < 50)
+        Profiler.BeginSample("RandomEnemySpawn");
+        if (enemyCount < 30)
         {
             StartCoroutine(SpawnEnemyWithCooldown());
+            Profiler.EndSample();
         }
         else return;
     }

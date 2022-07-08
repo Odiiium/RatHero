@@ -6,16 +6,24 @@ public class RatShop : MonoBehaviour
 {
     public static Dictionary<string, int> ratsPrice = new Dictionary<string, int>() // Dictionary which contains price 
     {
-        {"AlbinoRat", 100 },
-        {"RedHatRat", 200 },
-        {"ArthasRat", 400 }
+        {"AlbinoRat",   100 },
+        {"RedHatRat",   200 },
+        {"ArthasRat",   400 },
+        {"WomenRat",    750 },
+        {"PunkRat",     1400},
+        {"MerlinRat",   2250},
+        {"UFORat",      3000},
     };
 
     public static Dictionary<string, string> moneyType = new Dictionary<string, string>() // Dictionary which contains currency ( cheese or diamonds )
     {
-        {"AlbinoRat", "cheese" },
-        {"RedHatRat", "chesee"},
-        {"ArthasRat", "cheese" }
+        {"AlbinoRat",   "cheese"},
+        {"RedHatRat",   "chesee"},
+        {"ArthasRat",   "cheese"},
+        {"WomenRat",    "cheese"},
+        {"PunkRat",     "cheese"},
+        {"MerlinRat",   "cheese"},
+        {"UFORat",      "cheese"},
     };
 
 

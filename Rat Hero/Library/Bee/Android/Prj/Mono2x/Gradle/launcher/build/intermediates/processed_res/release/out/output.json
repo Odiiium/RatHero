@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.DefaultCompany.RatHero",
+  "applicationId": "com.HilariousTaleGames.RatHero",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "resources-release.ap_",
       "properties": {
-        "packageId": "com.DefaultCompany.RatHero",
+        "packageId": "com.HilariousTaleGames.RatHero",
         "split": "",
         "minSdkVersion": "22"
       }
