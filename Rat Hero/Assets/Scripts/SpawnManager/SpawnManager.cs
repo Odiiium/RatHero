@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
 
     internal static int enemyCount;
 
-    public static UnityAction onSpawningNewEnemy, onEnemyDies;
+    public static UnityAction onEnemyDies;
 
     Character player;
 
@@ -20,61 +20,34 @@ public class SpawnManager : MonoBehaviour
         PauseMenu.isGame = true;
         enemyCount = 0;
         player = FindObjectOfType<Character>();
-        onSpawningNewEnemy += SpawnRandomEnemy;
-        onEnemyDies += SpawnRandomEnemy;
     }
 
     private void Start()
     {
-        onSpawningNewEnemy?.Invoke();
+        SpawnEnemyWithCooldown();
     }
 
-    private void OnDisable()
-    {
-        onSpawningNewEnemy -= SpawnRandomEnemy;
-        onEnemyDies -= SpawnRandomEnemy;
-    }
-
-    void SpawnRandomEnemy()
+    void SpawnEnemyWithCooldown()
     {
         Profiler.BeginSample("RandomEnemySpawn");
-        if (enemyCount < 30)
-        {
-            StartCoroutine(SpawnEnemyWithCooldown());
-            Profiler.EndSample();
-        }
-        else return;
+        InvokeRepeating(nameof(SpawnEnemy), 0, 1);
+        Profiler.EndSample();
     }
 
-    private IEnumerator SpawnEnemyWithCooldown()
+    private void SpawnEnemy()
     {
-        if (PauseMenu.isGame)
+        if (PauseMenu.isGame && enemyCount < 30)
         {
-            Vector3 spawnPosition = new Vector3(player.transform.position.x + DistanceForSpawn().x, 0, player.transform.position.z + DistanceForSpawn().z);
             int index = Random.Range(0, enemies.Length);
-            Instantiate(enemies[index], spawnPosition, enemies[index].transform.rotation);
+            Instantiate(enemies[index], DistanceForSpawn(), enemies[index].transform.rotation);
             enemyCount++;
         }
-        yield return new WaitForSeconds(.5f);
-        onSpawningNewEnemy();
     }
 
     Vector3 DistanceForSpawn()
     {
-        float randomDistanceX = Random.Range(-15, 15);
-        float randomDistanceZ = Random.Range(-15, 15);
-
-        if (Mathf.Abs(randomDistanceX) < 4)
-        {
-            if (randomDistanceX < 0) randomDistanceX = -5;
-            else randomDistanceX = 5;
-        }
-        if (Mathf.Abs(randomDistanceZ) < 4)
-        {
-            if (randomDistanceZ < 0) randomDistanceZ = -5;
-            else randomDistanceZ = 5;
-        }
-
-        return new Vector3(randomDistanceX, 0, randomDistanceZ);
+        Vector3 randomPoint = Random.insideUnitSphere;
+        randomPoint = new Vector3(randomPoint.x, 0, randomPoint.z) * 12 + new  Vector3(2, 0, 2) + player.transform.position;
+        return randomPoint;
     }
 }

@@ -59,7 +59,7 @@ public class Enemy : Unit
         AddCheeseForPlayer();
         PostGameMenu.killedEnemies++;
         SpawnManager.enemyCount--;
-        SpawnManager.onEnemyDies();
+        SpawnManager.onEnemyDies?.Invoke();
         Destroy(gameObject);
     }
 
@@ -67,7 +67,7 @@ public class Enemy : Unit
     {
         Money.AddCheese(Mathf.RoundToInt(maxHp / 1000) + 1);
         PostGameMenu.cheeseGained += Mathf.RoundToInt(maxHp / 1000) + 1;
-        Money.onCheeseAdding();
+        Money.onCheeseAdding?.Invoke();
     }
 
     protected virtual void PlayerInSight()
