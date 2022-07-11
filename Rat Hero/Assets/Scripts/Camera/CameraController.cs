@@ -32,12 +32,5 @@ public class CameraController : MonoBehaviour
     {
         camera = GetComponent<Camera>();
         player = FindObjectOfType<Character>();
-        cameraPositionRelativeToThePlayer = player.transform.InverseTransformPoint(transform.position);
-    }
-
-    private void Update()
-    {
-        transform.position = player.transform.TransformPoint(cameraPositionRelativeToThePlayer);
-        transform.LookAt(player.transform.position + new Vector3(0, .85f, 0));
     }
 }

@@ -15,7 +15,7 @@ D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61902
+64055
 Successfully changed project path to: D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
 D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 445.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 126.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.1f1 (3b70a0754835)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -71,7 +71,7 @@ Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngine
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.004832 seconds.
+Registered in 0.012471 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -79,37 +79,455 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 105.26 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 269.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.911 seconds
+- Completed reload, in  1.892 seconds
 Domain Reload Profiling:
-	ReloadAssembly (912ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (1894ms)
+		BeginReloadAssembly (231ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (645ms)
-			LoadAssemblies (111ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1380ms)
+			LoadAssemblies (232ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (151ms)
+			SetupTypeCache (307ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (400ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (858ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (91ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (105ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (117ms)
-				ProcessInitializeOnLoadMethodAttributes (84ms)
+				InitializePlatformSupportModulesInManaged (176ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (270ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (277ms)
+				ProcessInitializeOnLoadMethodAttributes (130ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004904 seconds.
-Android Extension - Scanning For ADB Devices 5069 ms
+Registered in 0.011848 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  8.893 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8895ms)
+		BeginReloadAssembly (421ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (164ms)
+		EndReloadAssembly (8165ms)
+			LoadAssemblies (263ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (645ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (134ms)
+			SetupLoadedEditorAssemblies (7074ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (55ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (201ms)
+				ProcessInitializeOnLoadAttributes (6748ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 2.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3935 Unused Serialized files (Serialized files now loaded: 1)
+Unloading 21 unused Assets / (56.0 KB). Loaded Objects now: 4450.
+Memory consumption went from 163.1 MB to 163.1 MB.
+Total: 37.822000 ms (FindLiveObjects: 0.693900 ms CreateObjectMapping: 0.741200 ms MarkObjects: 36.204500 ms  DeleteObjects: 0.179000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1041712.941848 seconds.
+  path: Assets/EmaceArt - raft on the desert
+  artifactKey: Guid(2fabdb0128313f8478205dfe465cc958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert using Guid(2fabdb0128313f8478205dfe465cc958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe8e3cedb3f3f9444920ef8f14c1b90') in 0.015747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Cloud/EA04_Env_Cloud_Ring_01a_PRE.prefab
+  artifactKey: Guid(b5dd35adbd35f9e4e8489ab6d0318052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Cloud/EA04_Env_Cloud_Ring_01a_PRE.prefab using Guid(b5dd35adbd35f9e4e8489ab6d0318052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f7c4133fa59a005ae615fb25e612eb') in 0.643107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Cloud/EA04_Env_Cloud_01a_PRE.prefab
+  artifactKey: Guid(8f77fc4e6df5c3340bd35620d18e691c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Cloud/EA04_Env_Cloud_01a_PRE.prefab using Guid(8f77fc4e6df5c3340bd35620d18e691c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1da3396414da6f630a615d3bc0e39d') in 0.025777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs
+  artifactKey: Guid(0330de2171aa4db44af85110f3d847b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs using Guid(0330de2171aa4db44af85110f3d847b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e750803ed9c136c9336dd8ca1e223d') in 0.002302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Animal/Bird/EA04_Animal_Bird_01a_PRE.prefab
+  artifactKey: Guid(e813196d4af634c4abd9059ae3446f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Animal/Bird/EA04_Animal_Bird_01a_PRE.prefab using Guid(e813196d4af634c4abd9059ae3446f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9e485f759d58e003bea1c862e19b4b') in 0.023465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.435606 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Ground
+  artifactKey: Guid(3ad30e2ab471722408c414bfa7f37758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Ground using Guid(3ad30e2ab471722408c414bfa7f37758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b2d3c764b7e9060e337f47ba4bf8b5') in 0.002259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.457406 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants
+  artifactKey: Guid(2a15b7213cd0a5b4081deeafa1e8e58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants using Guid(2a15b7213cd0a5b4081deeafa1e8e58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa4cdc33dde58b1cb2bce7e4cade67b') in 0.002559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants/EA04_Env_Plants_Grass_Dry_01b_PRE.prefab
+  artifactKey: Guid(741deaeacca15e749b9560cb27a5af29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants/EA04_Env_Plants_Grass_Dry_01b_PRE.prefab using Guid(741deaeacca15e749b9560cb27a5af29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b9dce2d19f0d0c2cb76c88d658b6a8') in 0.021153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants/EA04_Env_Plants_Cactus_01b_PRE.prefab
+  artifactKey: Guid(f9a96b9a70de8214f9184755b87f1fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants/EA04_Env_Plants_Cactus_01b_PRE.prefab using Guid(f9a96b9a70de8214f9184755b87f1fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6614e4431b07839a8f5b4efc891cb3b7') in 0.022560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants/EA04_Env_Plants_Grass_Dry_01a_PRE.prefab
+  artifactKey: Guid(47555e4f5572b0d4c94e95b1b8d25596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Plants/EA04_Env_Plants_Grass_Dry_01a_PRE.prefab using Guid(47555e4f5572b0d4c94e95b1b8d25596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc535481552a1be08913c66c2b3b0d7c') in 0.022272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.368118 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks
+  artifactKey: Guid(04e2989c793c1b643a465ea198d37042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks using Guid(04e2989c793c1b643a465ea198d37042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631c4771d7763ac83315fe49f1514408') in 0.002555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.050045 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks/EA04_Env_Rocks_Gray_01a_PRE.prefab
+  artifactKey: Guid(4832f75fa2e1f1244bb1428af5c2e9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks/EA04_Env_Rocks_Gray_01a_PRE.prefab using Guid(4832f75fa2e1f1244bb1428af5c2e9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfccfcf216bc93da845fbc555bd97d4d') in 0.439941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks/EA04_Env_Rocks_Gray_01c_PRE.prefab
+  artifactKey: Guid(39cc16b8d5718454486b29a78462b360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks/EA04_Env_Rocks_Gray_01c_PRE.prefab using Guid(39cc16b8d5718454486b29a78462b360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d678b6dadff2f892e9c1ecdbd4a4cf') in 0.024019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks/EA04_Env_Rocks_Sand_01d_PRE.prefab
+  artifactKey: Guid(29b4a7fc34fd3d149b5c4a4657967ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Rocks/EA04_Env_Rocks_Sand_01d_PRE.prefab using Guid(29b4a7fc34fd3d149b5c4a4657967ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64adf958ad5b477dda272abc0f445099') in 0.019876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.679581 seconds.
+  path: Assets/EmaceArt - raft on the desert/Meshes/EA04_Env_Rocks_Gray_01d.fbx
+  artifactKey: Guid(2f42d8fc0f6cde841a074b842295c590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Meshes/EA04_Env_Rocks_Gray_01d.fbx using Guid(2f42d8fc0f6cde841a074b842295c590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c96366d437e590e4e17ee0983feaa7b') in 0.274513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.159347 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Roots
+  artifactKey: Guid(a06d0aff893342c4abb5208edc376eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Roots using Guid(a06d0aff893342c4abb5208edc376eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6262eb715b43f394951fa3832528b17') in 0.002707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Roots/EA04_Env_Tree_Root_01b_PRE.prefab
+  artifactKey: Guid(c3c14281210af7e498caf061a2a10afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Roots/EA04_Env_Tree_Root_01b_PRE.prefab using Guid(c3c14281210af7e498caf061a2a10afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0529742914dcc179018885d4bac55b58') in 0.026530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Roots/EA04_Env_Tree_Root_01c_PRE.prefab
+  artifactKey: Guid(f02f157366585ba458e6b5c0b844c8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Roots/EA04_Env_Tree_Root_01c_PRE.prefab using Guid(f02f157366585ba458e6b5c0b844c8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266fc3e11b1a53f417ec1ddeb8598c84') in 0.022262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.300121 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Stone
+  artifactKey: Guid(8c475078fc9461f4bb260077ac1ffbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Stone using Guid(8c475078fc9461f4bb260077ac1ffbd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84c2aafa9aa6a68628a64b3e0269fce') in 0.002275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Stone/EA04_Env_Stone_Sand_01a_PRE.prefab
+  artifactKey: Guid(5c832dd79dfd51d489f609712d07439c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Stone/EA04_Env_Stone_Sand_01a_PRE.prefab using Guid(5c832dd79dfd51d489f609712d07439c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0cd529f920b8e1ef4bf38c6549b732') in 0.022690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Stone/EA04_Env_Stone_Sand_01b_PRE.prefab
+  artifactKey: Guid(375d763285ccba54a935074aafa06bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Stone/EA04_Env_Stone_Sand_01b_PRE.prefab using Guid(375d763285ccba54a935074aafa06bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5456289f4cf51f38506d75cf5e2f3c61') in 0.020295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.666013 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk
+  artifactKey: Guid(abe184efbc0ac8c4996323507f008fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk using Guid(abe184efbc0ac8c4996323507f008fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865d042519a9d9e285ebc242e3af7b42') in 0.002538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.036627 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk/EA04_Env_Tree_Trunk_01a_PRE.prefab
+  artifactKey: Guid(d34499157cceccb44b1f7d491dc1c81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk/EA04_Env_Tree_Trunk_01a_PRE.prefab using Guid(d34499157cceccb44b1f7d491dc1c81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f693036acef80eb17ee4c40d253d67') in 0.025133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk/EA04_Env_Tree_Trunk_01e_PRE.prefab
+  artifactKey: Guid(a865e7ad8634264498eca14a1f123a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk/EA04_Env_Tree_Trunk_01e_PRE.prefab using Guid(a865e7ad8634264498eca14a1f123a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5853b60fa99ea50b0d60d94aec85ff') in 0.019335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk/EA04_Env_Tree_Trunk_01f_PRE.prefab
+  artifactKey: Guid(d68f793b815ef6148b905e872770773d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Env/Trunk/EA04_Env_Tree_Trunk_01f_PRE.prefab using Guid(d68f793b815ef6148b905e872770773d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4da9c398b3b649a81a782352355221a') in 0.022271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.429623 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop
+  artifactKey: Guid(77e70868d07fb1d4fa234e75eb674033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop using Guid(77e70868d07fb1d4fa234e75eb674033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1095f5a33f92d0847ace9c223b6bdc') in 0.002519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.903238 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Skull
+  artifactKey: Guid(204ec7884190bdd4aa1867b1990ff4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Skull using Guid(204ec7884190bdd4aa1867b1990ff4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2de51ec4d0e02fbdc21b95a5612c1e8') in 0.002580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.036439 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Skull/EA04_Prop_Skull_01a_PRE.prefab
+  artifactKey: Guid(d5fe580a44fb9954596136332fa54ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Skull/EA04_Prop_Skull_01a_PRE.prefab using Guid(d5fe580a44fb9954596136332fa54ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573f2a7b7ca71e66aaafb1f909aa2a5a') in 0.020542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.768335 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden
+  artifactKey: Guid(19b5ad1ebb7757a4a8c107874c3419a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden using Guid(19b5ad1ebb7757a4a8c107874c3419a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256b697f107390f9aa3c2b2dd20f1f82') in 0.002663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.745659 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Pole
+  artifactKey: Guid(b3162b5a439c2b64b8a339bcfe16fec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Pole using Guid(b3162b5a439c2b64b8a339bcfe16fec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0342b52aa717b14025ed695c5b961a93') in 0.002491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.051073 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Pole/EA04_Wooden_Pole_Color_01a_PRE.prefab
+  artifactKey: Guid(eded41f323e33a34b96ef4fa1091be67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Pole/EA04_Wooden_Pole_Color_01a_PRE.prefab using Guid(eded41f323e33a34b96ef4fa1091be67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e5ad9445cf74a695f7b5abf8840c92') in 0.026645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Pole/EA04_Wooden_Pole_Color_01c_PRE.prefab
+  artifactKey: Guid(d14df0cffe108bd4c86d7cb26c0f61a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Pole/EA04_Wooden_Pole_Color_01c_PRE.prefab using Guid(d14df0cffe108bd4c86d7cb26c0f61a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48e9316da2f147c7d3981ab2a58f5fc') in 0.019974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.055300 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk
+  artifactKey: Guid(447cb45ad7d4a2449b8d84fd6ace7551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk using Guid(447cb45ad7d4a2449b8d84fd6ace7551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a6753eca70ac1a9bbe6d9f8a8eb5b46') in 0.002552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01a_PRE.prefab
+  artifactKey: Guid(e26e7baa942515d46a49d1f853d2cfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01a_PRE.prefab using Guid(e26e7baa942515d46a49d1f853d2cfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e3d909a5ec671890a10e5581f29635') in 0.022674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01j_PRE.prefab
+  artifactKey: Guid(3de00999260827d4ca9a5cebe75bc8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01j_PRE.prefab using Guid(3de00999260827d4ca9a5cebe75bc8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96257bf8fe09e75cabcd20663e4fd2f6') in 0.021797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01c_PRE.prefab
+  artifactKey: Guid(3bc0ccb722ea5694e928b6e8aaf40ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01c_PRE.prefab using Guid(3bc0ccb722ea5694e928b6e8aaf40ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4c7217d802cd56644664ba2d4acaee') in 0.020883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01f_PRE.prefab
+  artifactKey: Guid(9982ecdbdd0f5424d92089097569c616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01f_PRE.prefab using Guid(9982ecdbdd0f5424d92089097569c616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838f1ae90888409f0899e839d8de6dd4') in 0.021631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01b_PRE.prefab
+  artifactKey: Guid(c9beaa7ae774235418cdac448a648563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_01b_PRE.prefab using Guid(c9beaa7ae774235418cdac448a648563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca336d53127d88fbdc139ab4fc6c78f2') in 0.020906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01e_PRE.prefab
+  artifactKey: Guid(9d94ef517b84a494e8153f05f698304c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01e_PRE.prefab using Guid(9d94ef517b84a494e8153f05f698304c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4061b8bfbec4e09e7b84208c9ce9f9b3') in 0.019280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01b_PRE.prefab
+  artifactKey: Guid(e75d184eba578ed45b56e7836cd2f800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01b_PRE.prefab using Guid(e75d184eba578ed45b56e7836cd2f800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887a84b0a816d0adfde8d34ff1b29735') in 0.025352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01f_PRE.prefab
+  artifactKey: Guid(973b845495cc8ff408f0d29d4a06b291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01f_PRE.prefab using Guid(973b845495cc8ff408f0d29d4a06b291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d961bfd1b032e2d8cb875a13cebeba') in 0.019065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01i_PRE.prefab
+  artifactKey: Guid(0a820b017af7cf5419d3a4e3e178add4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Wooden/Desk/EA04_Wooden_Desk_Color_01i_PRE.prefab using Guid(0a820b017af7cf5419d3a4e3e178add4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c745cc63a0b8e5858ea2013c4b7f8c') in 0.023228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.524574 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/cauldron
+  artifactKey: Guid(cba26780e4dd5594c85887072503b825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/cauldron using Guid(cba26780e4dd5594c85887072503b825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7975e3c142c1e49a899b511dafa663') in 0.002604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.033235 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/cauldron/EA04_Prop_cauldron_01a_PRE.prefab
+  artifactKey: Guid(59dbe1ffa44fb2b419b71ba1f408f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/cauldron/EA04_Prop_cauldron_01a_PRE.prefab using Guid(59dbe1ffa44fb2b419b71ba1f408f7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768436429e802c4c7b03dd8aad6d4e84') in 0.021233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.775457 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/cover
+  artifactKey: Guid(504a7d60cb6af184796cd0d227cd1359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/cover using Guid(504a7d60cb6af184796cd0d227cd1359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dcf9545b8fdd41c77fff44f5adc497') in 0.002747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.048061 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/cover/EA04_Prop_cover_01a_PRE.prefab
+  artifactKey: Guid(29eb4cacbff4ad748bca3f35f8a2ab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/cover/EA04_Prop_cover_01a_PRE.prefab using Guid(29eb4cacbff4ad748bca3f35f8a2ab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32fae2ec16401fefa763203d8ad8266') in 0.019500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.894557 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Flag
+  artifactKey: Guid(056c1859cfc22604fa28d97f55fddcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Flag using Guid(056c1859cfc22604fa28d97f55fddcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a7e26bf6b6c7436ad4cf86ed277918') in 0.002666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031369 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Flag/EA04_Prop_Flag_01a_PRE.prefab
+  artifactKey: Guid(a10ec3c65771e174a8fef152ce83dbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Flag/EA04_Prop_Flag_01a_PRE.prefab using Guid(a10ec3c65771e174a8fef152ce83dbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d765bbbba95492b6f8f46f9b48fdbb3') in 0.021819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.004421 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Pole
+  artifactKey: Guid(c9ca8b60126e7b44d8fa3bea6fb59e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Pole using Guid(c9ca8b60126e7b44d8fa3bea6fb59e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baf6c576e0e774c171a7fbf435c9e7d8') in 0.002100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.845038 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Oar
+  artifactKey: Guid(8d49a38968d500548bade647a960b2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Oar using Guid(8d49a38968d500548bade647a960b2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71645bd7f4562010dcf07c8efae35316') in 0.002625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.614924 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Prop/Barrel
+  artifactKey: Guid(35ec77c87c52a094480fe7a56f9bd19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Prop/Barrel using Guid(35ec77c87c52a094480fe7a56f9bd19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012d71ef687455543e30a576d20fc3f4') in 0.002573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.133028 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Wehicule
+  artifactKey: Guid(a2acab4262bbc06408a05c4b95190a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Wehicule using Guid(a2acab4262bbc06408a05c4b95190a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e4760aaa4775c568d7430256cc3514') in 0.002587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.605869 seconds.
+  path: Assets/EmaceArt - raft on the desert/Prefabs/Wehicule/Raft
+  artifactKey: Guid(b703d7e4c3fa0654987f1b1a56f46aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Prefabs/Wehicule/Raft using Guid(b703d7e4c3fa0654987f1b1a56f46aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd132b9b490ca8b2167edefa65fe89a') in 0.002515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.921389 seconds.
+  path: Assets/EmaceArt - raft on the desert/Scenes
+  artifactKey: Guid(6b6010d26085e9c42b740abe940e0d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Scenes using Guid(6b6010d26085e9c42b740abe940e0d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0a382784020175910c31772f74c199') in 0.002619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.560162 seconds.
+  path: Assets/EmaceArt - raft on the desert/Scenes/Assets_preview.unity
+  artifactKey: Guid(cf6eda0647d715b46a2334d126b8f8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Scenes/Assets_preview.unity using Guid(cf6eda0647d715b46a2334d126b8f8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34d95215694ab796918fc48e35ce914') in 0.002753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.190740 seconds.
+  path: Assets/EmaceArt - raft on the desert/Scenes/Desert_demoscene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EmaceArt - raft on the desert/Scenes/Desert_demoscene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b171ac9757db3928c093457d4821a9ef') in 0.003012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.085085 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37ca830ce2391ce93cbb54788eb9063') in 0.003473 seconds 
