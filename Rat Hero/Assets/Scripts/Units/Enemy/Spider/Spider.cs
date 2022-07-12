@@ -9,10 +9,6 @@ public class Spider : Enemy
     private void Awake()
     {
         hasAttacked = false;
-        healthPoints = 600;
-        damage = 40;
-        speed = 0;
-        currentSpeed = speed;
     }
 
     protected override void Attack()

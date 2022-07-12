@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -6,12 +7,13 @@ public class Enemy : Unit
     Character player;
     Transform playerSkinTransform;
     Animator animator;
+    internal EnemySpawnPoint enemySpawnPoint;
 
     internal UnityAction<float> OnGetDamaged;
 
     internal static UnityAction<float> OnApplyDamage;
     internal static UnityAction<Enemy> onSpecificWeaponAbilityUsed;
-
+    
     internal override float healthPoints
     {
         get { return currentHp; }
@@ -27,8 +29,8 @@ public class Enemy : Unit
 
     private void OnEnable()
     {
-        maxHp = healthPoints;
         player = FindObjectOfType<Character>();
+        InitializeEnemyStats();
         animator = transform.GetChild(0).GetComponent<Animator>();
         playerSkinTransform = player.GetComponentsInChildren<Transform>()[0];
         SubscribeEvents();
@@ -58,8 +60,9 @@ public class Enemy : Unit
     {
         AddCheeseForPlayer();
         PostGameMenu.killedEnemies++;
-        SpawnManager.enemyCount--;
+        enemySpawnPoint.enemyCount--;
         SpawnManager.onEnemyDies?.Invoke();
+        enemySpawnPoint.onEnemyHasBeenKilled?.Invoke();
         Destroy(gameObject);
     }
 
@@ -129,4 +132,35 @@ public class Enemy : Unit
         OnGetDamaged -= GetDamage;
     }
 
+
+    private void InitializeEnemyStats()
+    {
+        float[] enemyStats = EnemyStatsDictionary.enemiesStats.GetValueOrDefault(GetType().ToString());
+        BasicStatsInitialize(enemyStats);
+        maxHp = healthPoints;
+        currentSpeed = speed;
+    }
+
+    private void BasicStatsInitialize(float[] enemyStats)
+    {
+        speed = enemyStats[2];
+
+        if (PostGameMenu.timeAlived > 600)
+        {
+            healthPoints = (int)Mathf.Pow(enemyStats[0], TimeModifier()) + 500;
+            damage = (int)Mathf.Pow(enemyStats[1], TimeModifier()) + 50;
+        }
+        else
+        {
+            healthPoints = (int)Mathf.Pow(enemyStats[0], TimeModifier());
+            damage = (int)enemyStats[1];
+        }
+    }
+
+    private float TimeModifier()
+    {
+        float alivedTime = PostGameMenu.timeAlivedInMinutes()[0];
+
+        return 1 + (alivedTime / 30);
+    }
 }

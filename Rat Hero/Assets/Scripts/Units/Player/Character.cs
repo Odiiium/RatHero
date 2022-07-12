@@ -56,11 +56,10 @@ public class Character : Unit
                 buff.ShowBuffUI(other.name.Replace("(Clone)", ""));
                 StartCoroutine((buff as PassiveBuff).WaitForBuffEnds());
             }
+            buff.buffSpawnPoint.DoSpawn();
             Destroy(buff.gameObject);
         }
     }
-
-
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -72,11 +71,11 @@ public class Character : Unit
 
     private void SetPlayerStats()
     {
-        attackSpeed = InitializedPlayerAttackSpeed();
-        speed = InitializedPlayerSpeed() / 60;
-        damage = InitializedPlayerDamage();
-        criticalChance = InitializedPlayerCriticalChance();
-        defence = InitializedPlayerDefence();
+        attackSpeed = PlayerStatsInitializer.InitializedPlayerAttackSpeed();
+        speed = PlayerStatsInitializer.InitializedPlayerSpeed() / 60;
+        damage = PlayerStatsInitializer.InitializedPlayerDamage();
+        criticalChance = PlayerStatsInitializer.InitializedPlayerCriticalChance();
+        defence = PlayerStatsInitializer.InitializedPlayerDefence();
 
         currentSpeed = speed;
         rotateSpeed = 1.7f;
@@ -99,38 +98,6 @@ public class Character : Unit
         onHealthChanged?.Invoke();
     }
 
-
-    float InitializedPlayerDamage()
-    {
-        float weaponAdditionalDamage = WeaponStats.weaponStatsValues.GetValueOrDefault(Weapon.choisedWeapon)[Weapon.currentLevel - 1] * PlayerStats.Damage / 100;
-        float ratAdditionalDamage = RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[0] * PlayerStats.Damage / 100;
-        return Mathf.Round(PlayerStats.Damage + ratAdditionalDamage + weaponAdditionalDamage);
-    }
-
-    float InitializedPlayerDefence()
-    {
-        float ratAdditionalDefence = RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[3] * PlayerStats.Defence / 100;
-        return PlayerStats.Defence + ratAdditionalDefence;
-    }
-
-    float InitializedPlayerAttackSpeed()
-    {
-        float ratAdditionalAttackSpeed = RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[1] * PlayerStats.AttackSpeed / 100;
-        return (PlayerStats.AttackSpeed + ratAdditionalAttackSpeed) / 2;
-    }
-
-    float InitializedPlayerSpeed()
-    {
-        float ratAdditionalSpeed = RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[4] * PlayerStats.Speed / 100;
-        return PlayerStats.Speed + ratAdditionalSpeed;
-    }
-
-    float InitializedPlayerCriticalChance()
-    {
-        float ratAdditionalCriticalChance = RatAdditionalStats.ratStatsValues.GetValueOrDefault(RatSwitcher.rats[RatSwitcher.currentRat])[5] * PlayerStats.CriticalChance / 100;
-        return PlayerStats.CriticalChance + ratAdditionalCriticalChance;
-    }
-
     internal float Crit()
     {
         int randomInt = Random.Range(0, 100);
@@ -140,5 +107,4 @@ public class Character : Unit
         }
         else return 0;
     }
-
 }

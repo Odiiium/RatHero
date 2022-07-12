@@ -20,7 +20,7 @@ public class HealthBarView : MonoBehaviour
         if (currentHealth != null)
         {
             currentHealth.fillAmount = HealthBar.healthPoints / HealthBar.maximumHealth;
-            currentHealthText.text = HealthBar.healthPoints + "";
+            currentHealthText.text = Mathf.Round(HealthBar.healthPoints) + "";
         }
     }
 }

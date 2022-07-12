@@ -10,7 +10,7 @@ public class MoneyController : MonoBehaviour
 
     public static UnityAction onMoneyShows;
 
-    private void Awake()
+    private void OnEnable()
     {
         if (gameObject.name != "MoneyGameUI")
         {
@@ -26,6 +26,7 @@ public class MoneyController : MonoBehaviour
         }
     }
 
+
     private void OnDisable()
     {
         if (gameObject.name != "MoneyGameUI")
@@ -36,5 +37,10 @@ public class MoneyController : MonoBehaviour
         { 
             Money.onCheeseAdding -= moneyView.ShowCurrentMoneyInGame;
         }
+    }
+
+    internal static void InvokeOnMoneyShowsAction()
+    {
+        onMoneyShows?.Invoke();
     }
 }

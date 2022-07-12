@@ -5,6 +5,7 @@ using UnityEngine;
 public class FourthAbility : Ability
 {
     int necromantedEnemiesCount;
+    float healModifier = 0.05f;
 
     internal override void DoAbility()
     {
@@ -40,7 +41,7 @@ public class FourthAbility : Ability
 
     private void HealPlayer(int enemiesCount)
     {
-        float healCount = Mathf.Round(HealthBar.maximumHealth * 0.015f * enemiesCount);
+        float healCount = Mathf.Round(HealthBar.maximumHealth * healModifier * enemiesCount);
         HealthBar.healthPoints += healCount;
         Character.onHealthChanged?.Invoke();
     }

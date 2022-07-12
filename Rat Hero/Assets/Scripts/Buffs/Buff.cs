@@ -7,6 +7,7 @@ public abstract class Buff : MonoBehaviour
 {
     internal static UnityAction onGetBuff;
     protected Character player;
+    internal BuffSpawnPoint buffSpawnPoint;
 
     private void Awake()
     {

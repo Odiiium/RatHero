@@ -19,6 +19,6 @@ public class ManaBarView : MonoBehaviour
     internal void SetManaBarCurrentValue()
     {
         currentMana.fillAmount = ManaBar.mana / ManaBar.maximumMana;
-        currentManaText.text = ManaBar.mana + "";
+        currentManaText.text = Mathf.Round(ManaBar.mana) + "";
     }
 }

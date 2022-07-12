@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 
 public class PlayerStatsController : MonoBehaviour
@@ -10,9 +7,9 @@ public class PlayerStatsController : MonoBehaviour
     [SerializeField] PlayerStatsView statsView;
     [SerializeField] PlayerStats stats;
 
-    public static UnityAction onLoad;
-    public static UnityAction onAdd;
-    public static UnityAction onStatsShowing;
+    internal static UnityAction onLoad;
+    internal static UnityAction onAdd;
+    internal static UnityAction onStatsShowing;
 
     private void OnEnable()
     {
@@ -44,5 +41,10 @@ public class PlayerStatsController : MonoBehaviour
         onAdd -= RatLevelUpView.ShowLevel;
         onStatsShowing -= RatLevelUpView.ShowLevel;
         onStatsShowing -= statsView.ShowStats;
+    }
+
+    internal static void InvokeOnAddAction()
+    {
+        onAdd?.Invoke();
     }
 }
