@@ -12,8 +12,8 @@ public class ManaBarView : MonoBehaviour
 
     internal void InitializeUI()
     {
-        currentMana = gameObject.transform.GetChild(1).GetComponent<Image>();
-        currentManaText = gameObject.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+        currentMana = gameObject.transform.GetChild(0).GetComponent<Image>();
+        currentManaText = gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
     }
 
     internal void SetManaBarCurrentValue()

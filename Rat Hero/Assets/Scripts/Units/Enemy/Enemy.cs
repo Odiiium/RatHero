@@ -86,8 +86,11 @@ public class Enemy : Unit
 
     protected override void GetDamage(float playerDamage)
     {
-        animator.SetTrigger("Hurt");
-        healthPoints -= playerDamage;
+        if (this)
+        {
+            animator.SetTrigger("Hurt");
+            healthPoints -= playerDamage;
+        }
     }
 
     private void LookTowardsPlayer()
@@ -97,7 +100,7 @@ public class Enemy : Unit
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Weapon>())
+        if (other.gameObject.GetComponent<Weapon>() && this)
         {
             OnGetDamaged(player.damage + player.Crit());
             onSpecificWeaponAbilityUsed?.Invoke(this);
@@ -106,11 +109,16 @@ public class Enemy : Unit
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent(out Character player))
+        if (collision.gameObject.TryGetComponent(out Character player) && this)
         {
             PushAwayFromPlayer();
             OnApplyDamage?.Invoke(damage);
-            OnGetDamaged((int)player.damage + (int)player.Crit());
+            try
+            {
+                int pureDamage = (int)player.damage + (int)player.Crit();
+                OnGetDamaged(pureDamage);
+            }
+            catch { }
         }
     }
 

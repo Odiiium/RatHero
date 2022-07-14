@@ -85,7 +85,7 @@ public class Character : Unit
     {
         if (mobileJoystick.yAxis() != 0 && isGrounded && PauseMenu.isGame)
         {
-            rigidBody.velocity = transform.forward * mobileJoystick.yAxis() * currentSpeed;
+            rigidBody.velocity = mobileJoystick.yAxis() * transform.forward * currentSpeed;
             transform.Rotate(0, mobileJoystick.xAxis() * rotateSpeed, 0);
         }
             
@@ -93,8 +93,7 @@ public class Character : Unit
 
     protected override void GetDamage(float enemyDamage)
     {
-        float blockModifier = 1 - defence / 400;
-        HealthBar.healthPoints -= Mathf.Round(enemyDamage * blockModifier);
+        HealthBar.healthPoints -= Mathf.Round(enemyDamage * blockModifier());
         onHealthChanged?.Invoke();
     }
 
@@ -106,5 +105,10 @@ public class Character : Unit
             return damage * 1.5f;
         }
         else return 0;
+    }
+
+    private float blockModifier()
+    {
+        return 1 - defence / 400;
     }
 }

@@ -38,7 +38,8 @@ public class SkinChanger : MonoBehaviour
 
     private void SkinInitialize(string skinName)
     {
-        gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Units/Characters/{skinName}");
+        //gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Units/Characters/{skinName}");
+        gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Palletes/Pallete1");
         gameObject.GetComponent<MeshFilter>().sharedMesh = Resources.Load<Mesh>($"Mesh/Units/Characters/{skinName}/{skinName}1");
         if (gameObject.name == "MenuSkin") return;
         else

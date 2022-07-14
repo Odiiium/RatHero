@@ -11,13 +11,13 @@ public class HealthBarView : MonoBehaviour
 
     internal void InitializeUI()
     {
-        currentHealth = gameObject.transform.GetChild(1).GetComponent<Image>();
-        currentHealthText = gameObject.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+        currentHealth = gameObject.transform.GetChild(0).GetComponent<Image>();
+        currentHealthText = gameObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
     }
 
     internal void SetHealthBarCurrentValue()
     {
-        if (currentHealth != null)
+        if (currentHealth)
         {
             currentHealth.fillAmount = HealthBar.healthPoints / HealthBar.maximumHealth;
             currentHealthText.text = Mathf.Round(HealthBar.healthPoints) + "";

@@ -15,7 +15,7 @@ public class SpiderShoot : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<Character>() != null)
+        if (collision.gameObject.layer == 10)
         {
             ApplyDamageToPlayer(parentSpider);
         }
@@ -26,6 +26,11 @@ public class SpiderShoot : MonoBehaviour
         }
     }
 
+    private void SpawnSpiderWeb()
+    {
+        Instantiate(spiderWeb(), transform.position, transform.rotation);
+    }
+
     private IEnumerator StartLifeTime()
     {
         yield return new WaitForSeconds(2);
@@ -33,15 +38,9 @@ public class SpiderShoot : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    private void SpawnSpiderWeb()
-    {
-        var spiderWeb = Resources.Load("Prefabs/Units/Enemy/EnemyAbilities/SpiderWeb");
-        Instantiate(spiderWeb, transform.position, transform.rotation);
-    }
-
     private void ApplyDamageToPlayer(Spider spider)
     {
-        if (spider != null)
+        if (spider)
         {
             Spider.OnApplyDamage?.Invoke(spider.damage);
             Character.onHealthChanged?.Invoke();
@@ -51,6 +50,11 @@ public class SpiderShoot : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private SpiderWeb spiderWeb()
+    {
+        return Resources.Load<SpiderWeb>("Prefabs/Units/Enemy/EnemyAbilities/SpiderWeb");
     }
 
 
