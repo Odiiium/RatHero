@@ -4,9 +4,9 @@ using UnityEngine.Events;
 
 public class Enemy : Unit
 {
-    Character player;
-    Transform playerSkinTransform;
-    Animator animator;
+    protected Character player;
+    protected Transform playerSkinTransform;
+    protected Animator animator;
     internal EnemySpawnPoint enemySpawnPoint;
 
     internal UnityAction<float> OnGetDamaged;
@@ -27,6 +27,7 @@ public class Enemy : Unit
         }
     }
 
+    //Set dependents to Enemy
     private void OnEnable()
     {
         player = FindObjectOfType<Character>();
@@ -41,16 +42,17 @@ public class Enemy : Unit
         UnSubscribeEvents();
     }
 
+    // Checking is player on sight or not 
     private void Update()
     {
        PlayerInSight();
     }
 
+    // Run if game is not paused
     protected override void Run()
     {
         if (PauseMenu.isGame)
         {
-            //rigidBody.velocity = (player.transform.GetChild(0).transform.position - transform.position).normalized * speed;
             Vector3 moveDirection = player.transform.position - transform.position;
             transform.position += moveDirection.normalized * speed / 175;
         }
@@ -60,12 +62,16 @@ public class Enemy : Unit
     {
         AddCheeseForPlayer();
         PostGameMenu.killedEnemies++;
-        enemySpawnPoint.enemyCount--;
+        if (enemySpawnPoint)                        //Checking is enemy were created by using spawnPoint 
+        {
+            enemySpawnPoint.enemyCount--;
+            enemySpawnPoint.onEnemyHasBeenKilled?.Invoke();
+        }
         SpawnManager.onEnemyDies?.Invoke();
-        enemySpawnPoint.onEnemyHasBeenKilled?.Invoke();
         Destroy(gameObject);
     }
 
+    // Add cheese depends on maximal hp of enemy, invokes Adding cheese action
     private void AddCheeseForPlayer()
     {
         Money.AddCheese(Mathf.RoundToInt(maxHp / 1000) + 1);
@@ -73,6 +79,7 @@ public class Enemy : Unit
         Money.onCheeseAdding?.Invoke();
     }
 
+    //Checking is player in Enemy sight or not 
     protected virtual void PlayerInSight()
     {
         float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
@@ -84,11 +91,12 @@ public class Enemy : Unit
         }
     }
 
+    //Reduce healthpoints and set "Hurt" animation when enemy get damaged by player
     protected override void GetDamage(float playerDamage)
     {
         if (this)
         {
-            animator.SetTrigger("Hurt");
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Hurt")) animator.SetTrigger("Hurt"); // Checking is hurt animation playing or not
             healthPoints -= playerDamage;
         }
     }
@@ -102,8 +110,8 @@ public class Enemy : Unit
     {
         if (other.gameObject.GetComponent<Weapon>() && this)
         {
-            OnGetDamaged(player.damage + player.Crit());
-            onSpecificWeaponAbilityUsed?.Invoke(this);
+            OnGetDamaged(player.damage + player.Crit());        //Call action that damages enemy
+            onSpecificWeaponAbilityUsed?.Invoke(this);          //Call action that uses special weapon ability to an enemy if allowed
         }
     }
 
@@ -112,7 +120,7 @@ public class Enemy : Unit
         if (collision.gameObject.TryGetComponent(out Character player) && this)
         {
             PushAwayFromPlayer();
-            OnApplyDamage?.Invoke(damage);
+            OnApplyDamage?.Invoke(damage);                      //Call action that damages a player
             try
             {
                 int pureDamage = (int)player.damage + (int)player.Crit();
@@ -122,12 +130,12 @@ public class Enemy : Unit
         }
     }
 
-    private void PushAwayFromPlayer()
+    protected virtual void PushAwayFromPlayer()
     {
         Vector3 fromPlayerToEnemyDirection = (transform.position - player.transform.position).normalized;
 
-        if (speed != 0) rigidBody.AddForce((fromPlayerToEnemyDirection * 300), ForceMode.Force);
-        else rigidBody.AddForce((fromPlayerToEnemyDirection * 100), ForceMode.Force);
+        if (speed != 0) rigidBody.AddForce((fromPlayerToEnemyDirection * 300), ForceMode.Force);        //Check is enemy is not kinematic
+        else rigidBody.AddForce((fromPlayerToEnemyDirection * 100), ForceMode.Force);                   //If true adding bigger force to an enemy
     }
 
     private void SubscribeEvents()
@@ -140,15 +148,16 @@ public class Enemy : Unit
         OnGetDamaged -= GetDamage;
     }
 
-
+    // Get enemy stats in dictionary and initialize it depending on Enemy type
     private void InitializeEnemyStats()
     {
-        float[] enemyStats = EnemyStatsDictionary.enemiesStats.GetValueOrDefault(GetType().ToString());
+        float[] enemyStats = EnemyStatsDictionary.enemiesStats.GetValueOrDefault(GetType().ToString());     
         BasicStatsInitialize(enemyStats);
         maxHp = healthPoints;
         currentSpeed = speed;
     }
 
+    //Set peculiar stats depending on time player has played
     private void BasicStatsInitialize(float[] enemyStats)
     {
         speed = enemyStats[2];

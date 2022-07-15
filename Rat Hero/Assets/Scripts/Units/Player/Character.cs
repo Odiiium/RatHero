@@ -7,7 +7,7 @@ public class Character : Unit
 {
     [SerializeField] MobileController mobileJoystick;
 
-    internal static bool isGrounded;
+    internal static bool isGrounded, isSlowed;
 
     public static UnityAction onHealthChanged;
     public static UnityAction onManaChanged;

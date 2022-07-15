@@ -30,12 +30,12 @@ public class Spider : Enemy
     private void SpitTheWeb()
     {
         SpiderShoot spidershoot = Instantiate(SpiderShoot(), transform.position, transform.rotation);
-        spidershoot.parentSpider = this;
+        spidershoot.parentEnemy = this;
         spidershoot.transform.rotation = transform.rotation;
     }
 
     private SpiderShoot SpiderShoot()
     {
-        return Resources.Load<SpiderShoot>("Prefabs/Units/Enemy/EnemyAbilities/SpiderShoot");
+        return Resources.Load<SpiderShoot>("Prefabs/Units/Enemy/EnemyShots/SpiderShoot");
     }
 }
