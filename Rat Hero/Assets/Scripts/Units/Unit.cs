@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public abstract class Unit : MonoBehaviour
 {
     protected Rigidbody rigidBody;
+    [SerializeField] protected internal SFX soundsEffects;
 
     internal bool isPoisoned;
 

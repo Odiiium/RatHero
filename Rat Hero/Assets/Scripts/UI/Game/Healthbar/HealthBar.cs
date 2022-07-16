@@ -9,10 +9,10 @@ public class HealthBar : MonoBehaviour
         set
         {
             hp = value;
-            if (hp <= 0)
+            if (hp <= 0 && PauseMenu.isGame)
             {
-                PauseMenu.isGame = false;
                 PostGameMenu.isDied?.Invoke();
+                PauseMenu.isGame = false;
             }
         }
     }

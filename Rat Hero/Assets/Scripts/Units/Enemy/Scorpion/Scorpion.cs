@@ -1,9 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Scorpion : Enemy
 {
+    protected override float TimeToDeathSoundPlay { get => 3; }
+
     private bool hasAttacked;
 
     private void Awake()

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Hedgehog : Enemy
 {
-    private bool hasAttacked;
+    protected override float TimeToDeathSoundPlay { get => 3; }
 
+    private bool hasAttacked;
     private void Awake()
     {
         hasAttacked = false;

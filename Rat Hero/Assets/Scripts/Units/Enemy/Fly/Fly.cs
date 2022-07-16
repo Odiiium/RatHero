@@ -3,5 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Fly : Enemy
-{ 
+{
+    protected override float TimeToGedDamagedSoundPlay { get => 0.5f; }
 }

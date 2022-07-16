@@ -1,9 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FireLizard : Enemy
 {
+    protected override float TimeToDeathSoundPlay { get => .8f; }
+    protected override float TimeToGedDamagedSoundPlay { get => 1; }
+
     private bool hasAttacked;
 
     private void Awake()

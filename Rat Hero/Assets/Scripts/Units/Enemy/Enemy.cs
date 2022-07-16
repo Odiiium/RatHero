@@ -27,6 +27,9 @@ public class Enemy : Unit
         }
     }
 
+    protected virtual float TimeToGedDamagedSoundPlay { get => 0; }
+    protected virtual float TimeToDeathSoundPlay { get => 0; }
+
     //Set dependents to Enemy
     private void OnEnable()
     {
@@ -61,6 +64,7 @@ public class Enemy : Unit
     protected virtual void OnDie()
     {
         AddCheeseForPlayer();
+        soundsEffects.OnDeathMakeSound(TimeToDeathSoundPlay);
         PostGameMenu.killedEnemies++;
         if (enemySpawnPoint)                        //Checking is enemy were created by using spawnPoint 
         {
@@ -97,6 +101,7 @@ public class Enemy : Unit
         if (this)
         {
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Hurt")) animator.SetTrigger("Hurt"); // Checking is hurt animation playing or not
+            soundsEffects.OnGetDamagedMakeSound(TimeToGedDamagedSoundPlay);
             healthPoints -= playerDamage;
         }
     }
@@ -108,7 +113,7 @@ public class Enemy : Unit
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Weapon>() && this)
+        if (other.gameObject.GetComponent<Weapon>() && this && PauseMenu.isGame)
         {
             OnGetDamaged(player.damage + player.Crit());        //Call action that damages enemy
             onSpecificWeaponAbilityUsed?.Invoke(this);          //Call action that uses special weapon ability to an enemy if allowed
@@ -117,7 +122,7 @@ public class Enemy : Unit
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent(out Character player) && this)
+        if (collision.gameObject.TryGetComponent(out Character player) && this && PauseMenu.isGame)
         {
             PushAwayFromPlayer();
             OnApplyDamage?.Invoke(damage);                      //Call action that damages a player
@@ -164,13 +169,13 @@ public class Enemy : Unit
 
         if (PostGameMenu.timeAlived > 600)
         {
-            healthPoints = (int)Mathf.Pow(enemyStats[0], TimeModifier()) + 500;
-            damage = (int)Mathf.Pow(enemyStats[1], TimeModifier()) + 50;
+            healthPoints = (int)Mathf.Pow(enemyStats[0], TimeModifier()) + 500 + RatLevelUp.CurrentLvl * 40;
+            damage = (int)Mathf.Pow(enemyStats[1], TimeModifier()) + 50 + RatLevelUp.CurrentLvl * 8;
         }
         else
         {
-            healthPoints = (int)Mathf.Pow(enemyStats[0], TimeModifier());
-            damage = (int)enemyStats[1];
+            healthPoints = (int)Mathf.Pow(enemyStats[0], TimeModifier()) + RatLevelUp.CurrentLvl * 30;
+            damage = (int)enemyStats[1] + RatLevelUp.CurrentLvl * 5;
         }
     }
 

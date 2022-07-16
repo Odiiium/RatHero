@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Mole : Enemy
 {
+    protected override float TimeToDeathSoundPlay { get => 2; }
+
     private bool hasAttacked;
 
     private void Awake()

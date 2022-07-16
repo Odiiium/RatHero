@@ -53,6 +53,7 @@ public class PostGameMenuView : MonoBehaviour
 
     internal void OpenPostGameMenu()
     {
+        FindObjectOfType<Character>().soundsEffects.OnDeathMakeSound(0, .2f);
         gameUI.SetActive(false);
         postGameMenu.SetActive(true);
     }

@@ -15,4 +15,14 @@ public class SettingsMenuView : MonoBehaviour
         musicSlider = gameObject.transform.GetChild(2).GetChild(0).GetComponent<Scrollbar>();
         backButton = gameObject.transform.GetChild(3).GetComponent<Button>();
     }
+
+    internal void SetSoundScrollbarValues(float value)
+    {
+        soundSlider.value = value;
+    }
+
+    internal void SetMusicScrollbarValues(float value)
+    {
+        musicSlider.value = value;
+    }
 }

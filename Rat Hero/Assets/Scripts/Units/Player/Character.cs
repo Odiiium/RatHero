@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -17,6 +15,7 @@ public class Character : Unit
 
     private void Awake()
     {
+        PauseMenu.isGame = true;
         isGrounded = true;
         SetPlayerStats();
         Enemy.OnApplyDamage += GetDamage;
@@ -51,6 +50,7 @@ public class Character : Unit
         if (BuffUI.currentBuffCount < 4 && other.gameObject.TryGetComponent(out Buff buff))
         {
             buff.DoBuff();
+            (soundsEffects as CharacterSFX).OnGetBonusMakeSound(0.4f);
             if (buff is PassiveBuff)
             {
                 buff.ShowBuffUI(other.name.Replace("(Clone)", ""));
@@ -93,6 +93,7 @@ public class Character : Unit
 
     protected override void GetDamage(float enemyDamage)
     {
+        soundsEffects.OnGetDamagedMakeSound(1, 0.6f);
         HealthBar.healthPoints -= Mathf.Round(enemyDamage * blockModifier());
         onHealthChanged?.Invoke();
     }

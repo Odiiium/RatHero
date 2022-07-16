@@ -20,6 +20,13 @@ public class PauseMenuView : MonoBehaviour
         exitButton = transform.GetChild(3).GetComponent<Button>();
     }
 
+    internal void SetSoundScrollbarValues(float value)
+    {
+        soundScrollbar.value = value;
+    }
 
-
+    internal void SetMusicScrollbarValues(float value)
+    {
+        musicScrollbar.value = value;
+    }
 }
