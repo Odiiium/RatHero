@@ -25,7 +25,7 @@ public class Hedgehog : Enemy
     private IEnumerator AttackCooldown()
     {
         hasAttacked = true;
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(10);
         hasAttacked = false;
     }
 

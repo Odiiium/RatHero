@@ -12,6 +12,7 @@ public class SettingsMenuController : MonoBehaviour
         settingsMenuView.InitializeUIElements();
         SettingsMenu.onSoundChange?.Invoke(SettingsMenu.Sound.volume);
         SettingsMenu.onMusicChange?.Invoke(SettingsMenu.Music.volume);
+        SetSettingsSliderValues();
     }
 
     private void OnEnable()
@@ -24,6 +25,11 @@ public class SettingsMenuController : MonoBehaviour
         RemoveListeners();
     }
 
+    private void SetSettingsSliderValues()
+    {
+        settingsMenuView.SetMusicScrollbarValues(SettingsMenu.Music.volume);
+        settingsMenuView.SetSoundScrollbarValues(SettingsMenu.Sound.volume);
+    }
 
     private void AddListeners()
     {

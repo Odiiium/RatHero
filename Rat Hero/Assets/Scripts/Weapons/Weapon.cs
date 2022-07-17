@@ -13,6 +13,10 @@ public class Weapon : MonoBehaviour
     private void Awake()
     {
         player = FindObjectOfType<Character>();
+    }
+
+    private void OnEnable()
+    {
         WeaponInitializer.OnLoaded += InstanceInitialize;
     }
 

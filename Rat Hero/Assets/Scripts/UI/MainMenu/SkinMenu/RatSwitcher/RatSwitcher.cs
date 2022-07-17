@@ -58,7 +58,6 @@ public class RatSwitcher : MonoBehaviour
 
     private void DisplayRat()
     {
-        RatSwitcherView.SetRatName();
         DisplayRatStats();
         if (PlayerPrefs.GetInt(rats[currentRat]) == 1) RatShopController.onHide?.Invoke();
         else RatShopController.onShow?.Invoke();
@@ -68,10 +67,4 @@ public class RatSwitcher : MonoBehaviour
     {
         RatAdditionalStatsController.onStatsDisplay?.Invoke();
     }
-
-    private void DisplayRatName()
-    {
-
-    }
-
 }

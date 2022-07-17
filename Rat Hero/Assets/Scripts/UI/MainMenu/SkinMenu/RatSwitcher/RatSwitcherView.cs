@@ -17,7 +17,6 @@ public class RatSwitcherView : MonoBehaviour
     private void Awake()
     {
         GetButtons();
-        InitializeRatName();
     }
 
     internal void GetButtons()
@@ -32,12 +31,4 @@ public class RatSwitcherView : MonoBehaviour
     {
         ratNameText.text = RatSwitcher.rats[RatSwitcher.currentRat].ToString();
     }
-
-    private void InitializeRatName()
-    {
-        ratNameText = transform.parent.GetChild(0).GetComponent<TextMeshProUGUI>();
-        ratNameText.text = PlayerPrefs.GetString("choisedRat", RatSwitcher.rats[RatSwitcher.currentRat]);
-    }
-
-
 }

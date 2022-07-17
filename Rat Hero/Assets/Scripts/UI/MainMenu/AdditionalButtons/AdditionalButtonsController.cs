@@ -10,6 +10,9 @@ public class AdditionalButtonsController : MonoBehaviour
     private void Awake()
     {
         additionalButtonsView.GetButton();
+    }
+    private void OnEnable()
+    {
         additionalButtonsView.settingMenuButton.onClick.AddListener(additionalButtons.GoToSettingsMenu);
         additionalButtonsView.exitButton.onClick.AddListener(additionalButtons.ExitGame);
     }

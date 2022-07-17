@@ -26,7 +26,7 @@ public class Mole : Enemy
     private IEnumerator AttackCooldown()
     {
         hasAttacked = true;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         hasAttacked = false;
     }
 

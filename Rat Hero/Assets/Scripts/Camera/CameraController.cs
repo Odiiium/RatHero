@@ -32,5 +32,11 @@ public class CameraController : MonoBehaviour
     {
         camera = GetComponent<Camera>();
         player = FindObjectOfType<Character>();
+        SetFieldOfViewValue();
+    }
+
+    private void SetFieldOfViewValue()
+    {
+        camera.fieldOfView = cameraFieldOfView;
     }
 }

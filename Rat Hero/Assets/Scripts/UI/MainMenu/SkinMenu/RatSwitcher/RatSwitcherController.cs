@@ -11,7 +11,6 @@ public class
     private void OnEnable()
     {
         AddListenersToButtons();
-        RatSwitcherView.SetRatName();
     }
 
     private void OnDisable()

@@ -49,6 +49,6 @@ public class Scorpion : Enemy
     private IEnumerator WaitForAttackAnimationEnds()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        ShootTheThorn();
+        if (this) ShootTheThorn();
     }
 }

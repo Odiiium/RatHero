@@ -25,7 +25,7 @@ public class Spider : Enemy
     private IEnumerator AttackCooldown()
     {
         hasAttacked = true;
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(6);
         hasAttacked = false;
     }
 

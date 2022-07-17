@@ -26,7 +26,7 @@ public class FireLizard : Enemy
     private IEnumerator AttackCooldown()
     {
         hasAttacked = true;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
         hasAttacked = false;
     }
 

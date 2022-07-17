@@ -13,7 +13,10 @@ public class ManaBarController : MonoBehaviour
         manaBarView.InitializeUI();
         manaBarView.SetManaBarCurrentValue();
         InvokeRepeating(nameof(StartManaRegeneration), 1, 1);
+    }
 
+    private void OnEnable()
+    {
         Character.onManaChanged += manaBarView.SetManaBarCurrentValue;
     }
 

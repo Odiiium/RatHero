@@ -27,14 +27,13 @@ public class WeaponInitializer : MonoBehaviour
 
     internal void InitializeWeapon(string weaponName, int weaponLvl)
     {
-        if (gameObject.transform.GetChild(0) != null)
+        if (gameObject.transform.GetChild(0))
         {
             for (int i = 0; i < 3; i++)
             {
-                var childObject = gameObject.transform.GetChild(i).gameObject;
+                GameObject childObject = gameObject.transform.GetChild(i).gameObject;
                 childObject.GetComponent<MeshFilter>().mesh = Resources.Load<Mesh>($"Mesh/Weapons/{weaponName}/{weaponName}_lvl{weaponLvl}");
                 childObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Weapons/{weaponName}/{weaponName}");
-                childObject.GetComponent<MeshCollider>().sharedMesh = Resources.Load<Mesh>($"Mesh/Weapons/{weaponName}/{weaponName}_lvl{weaponLvl}");
             }
         }
         else return;
