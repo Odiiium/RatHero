@@ -13,8 +13,7 @@ public class PostGameMenuView : MonoBehaviour
     internal TextMeshProUGUI enemiesKilledText;
     internal TextMeshProUGUI timeAlivedText;
 
-    internal Button restartButton;
-    internal Button backToMenuButton;
+    internal Button restartButton, backToMenuButton, adsRestartButton;
 
     internal void InitializeUIElements()
     {
@@ -26,6 +25,7 @@ public class PostGameMenuView : MonoBehaviour
     {
         restartButton = transform.GetChild(0).GetChild(4).GetChild(1).GetComponent<Button>();
         backToMenuButton = transform.GetChild(0).GetChild(4).GetChild(0).GetComponent<Button>();
+        adsRestartButton = transform.GetChild(0).GetChild(4).GetChild(2).GetComponent<Button>();
     }
 
     private void InitializeTextElements()
@@ -56,6 +56,9 @@ public class PostGameMenuView : MonoBehaviour
         FindObjectOfType<Character>().soundsEffects.OnDeathMakeSound(0, .2f);
         gameUI.SetActive(false);
         postGameMenu.SetActive(true);
+        if (AdsRestartReward.isAdWatched)
+        {
+            adsRestartButton.gameObject.SetActive(false);
+        }
     }
-    
 }

@@ -10,21 +10,22 @@ public abstract class AbilityController : MonoBehaviour
     private void Awake()
     {
         abilityView.InitializeUIElements();
-        if (abilityView.lockedButton != null)
+    }
+
+    private void OnEnable()
+    {
+        abilityView.abilityButton.onClick.AddListener(ability.DoAbility);
+        if (abilityView.lockedButton)
         {
             abilityView.lockedButton.onClick.AddListener(abilityView.ShowText);
             abilityView.SetLockedButtonCondition();
         }
     }
 
-    private void OnEnable()
-    {
-        abilityView.abilityButton.onClick.AddListener(ability.DoAbility);
-    }
-
     private void OnDisable()
     {
         abilityView.abilityButton.onClick.RemoveListener(ability.DoAbility);
+        if (abilityView.lockedButton) abilityView.lockedButton.onClick.RemoveListener(abilityView.ShowText);
     }
 
     private void Update()

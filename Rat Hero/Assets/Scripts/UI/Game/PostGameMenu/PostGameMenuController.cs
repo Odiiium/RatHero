@@ -6,14 +6,20 @@ public class PostGameMenuController : MonoBehaviour
 {
     [SerializeField] PostGameMenu postGameMenu;
     [SerializeField] PostGameMenuView postGameMenuView;
+    [SerializeField] AdsRestartReward adsReward;
 
     private void Awake()
     {
         postGameMenuView.InitializeUIElements();
-        AddListeners();
         postGameMenu.SetStatsToZero();
         postGameMenuView.HidePostGameMenu();
     }
+
+    private void OnEnable()
+    {
+        AddListeners();
+    }
+
 
     private void OnDisable()
     {
@@ -24,6 +30,7 @@ public class PostGameMenuController : MonoBehaviour
     {
         postGameMenuView.restartButton.onClick.AddListener(postGameMenu.Restart);
         postGameMenuView.backToMenuButton.onClick.AddListener(postGameMenu.BackToMenu);
+        postGameMenuView.adsRestartButton.onClick.AddListener(adsReward.ShowAd);
         PostGameMenu.isDied += postGameMenuView.SetPostGameStatistics;
         PostGameMenu.isDied += postGameMenuView.OpenPostGameMenu;
     }
@@ -32,6 +39,7 @@ public class PostGameMenuController : MonoBehaviour
     {
         postGameMenuView.restartButton.onClick.RemoveListener(postGameMenu.Restart);
         postGameMenuView.backToMenuButton.onClick.RemoveListener(postGameMenu.BackToMenu);
+        postGameMenuView.adsRestartButton.onClick.RemoveListener(adsReward.ShowAd);
         PostGameMenu.isDied -= postGameMenuView.SetPostGameStatistics;
         PostGameMenu.isDied -= postGameMenuView.OpenPostGameMenu;
     }

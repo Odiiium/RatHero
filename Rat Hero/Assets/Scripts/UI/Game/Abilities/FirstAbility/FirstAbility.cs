@@ -11,7 +11,7 @@ public class FirstAbility : Ability
             ReduceMana(50);
             timeFromCooldown = 0;
             SpawnClaws();
-            StartCoroutine(DoCoolDown(cooldownTime, abilityView.abilityImageCooldown));
+            player.StartCoroutine(DoCoolDown(cooldownTime, abilityView.abilityImageCooldown));
         }
     }
 

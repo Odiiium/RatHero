@@ -14,7 +14,7 @@ public class ThirdAbility : Ability
             timeFromCooldown = 0;
             DoJump();
             BuffPlayer();
-            StartCoroutine(DoCoolDown(cooldownTime, abilityView.abilityImageCooldown));
+            player.StartCoroutine(DoCoolDown(cooldownTime, abilityView.abilityImageCooldown));
         }
     }
 

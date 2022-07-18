@@ -19,7 +19,7 @@ public class FrostLizardShot : EnemyShot
             MakeSlowlessEffect(out IceParticle iceParticle, out Character player);
             yield return new WaitForSeconds(5);
             Character.isSlowed = false;
-            player.currentSpeed *= 2;
+            player.currentSpeed = player.speed;
             Destroy(iceParticle.gameObject);
         }
         else yield return null;

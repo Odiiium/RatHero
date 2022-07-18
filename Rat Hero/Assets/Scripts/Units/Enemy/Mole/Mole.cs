@@ -50,6 +50,6 @@ public class Mole : Enemy
     private IEnumerator WaitForAttackAnimationEnds()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        ShootTheDirt();
+        if (this) ShootTheDirt();
     }
 }

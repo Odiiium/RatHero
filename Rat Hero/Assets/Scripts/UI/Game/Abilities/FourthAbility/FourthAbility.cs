@@ -14,7 +14,7 @@ public class FourthAbility : Ability
             ReduceMana(100);
             timeFromCooldown = 0;
             DoNecromancy();
-            StartCoroutine(DoCoolDown(cooldownTime, abilityView.abilityImageCooldown));
+            player.StartCoroutine(DoCoolDown(cooldownTime, abilityView.abilityImageCooldown));
         }
     }
 

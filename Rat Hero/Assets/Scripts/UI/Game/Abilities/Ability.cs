@@ -20,13 +20,9 @@ public abstract class Ability : MonoBehaviour
         onCooldown = false;
         SetCooldownTime();
     }
-    internal virtual void DoAbility()
-    {
-    }
+    internal abstract void DoAbility();
 
-    internal virtual void SetCooldownTime()
-    {
-    }
+    internal abstract void SetCooldownTime();
 
     internal void ReduceMana(float mana)
     {
