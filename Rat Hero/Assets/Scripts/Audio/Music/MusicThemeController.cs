@@ -19,7 +19,7 @@ public class MusicThemeController : MonoBehaviour
         SettingsMenu.onMusicChange -= ChangeMusicVolume;
     }
 
-    private void Start()
+    private void Awake()
     {
         clipIndex = Random.Range(0, audioClipArray.Length);
         audioSource = GetComponent<AudioSource>();

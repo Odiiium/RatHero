@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
@@ -21,7 +19,6 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
     {
         gameID = androidGameId;
         Advertisement.Initialize(gameID, testMode, this);
-
     }
 
     public void OnInitializationComplete()
