@@ -16,6 +16,9 @@ public class WeaponStats : MonoBehaviour
         {"DruidStaff",          new float[3]    {15, 19, 25}    },
         {"Bow",                 new float[3]    {25, 35, 45}    },
         {"ArcaneGun",           new float[3]    {22, 28, 35}    },
+        {"MagicSphere",         new float[3]    {25, 32, 40}    },
+        {"Scythe",              new float[3]    {32, 40, 53}    },
+        {"Hammer",              new float[3]    {40, 50, 60}    },
     };
 
 

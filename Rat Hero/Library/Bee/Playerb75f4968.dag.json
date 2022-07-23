@@ -1375,8 +1375,7 @@
         1367,
         1368,
         1369,
-        1370,
-        1371
+        1370
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -26267,20 +26266,6 @@
       "DebugActionIndex": 1237
     },
     {
-      "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/Bee/artifacts/Android/ManagedStripped/icallsummary.txt"
-      ],
-      "Outputs": [
-        "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt"
-      ],
-      "ToBuildDependencies": [
-        13
-      ],
-      "DebugActionIndex": 1238
-    },
-    {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Mono.Security.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -26292,7 +26277,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1239
+      "DebugActionIndex": 1238
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/mscorlib.dll",
@@ -26306,7 +26291,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1240
+      "DebugActionIndex": 1239
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Configuration.dll",
@@ -26320,7 +26305,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1241
+      "DebugActionIndex": 1240
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Core.dll",
@@ -26334,7 +26319,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1242
+      "DebugActionIndex": 1241
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.dll",
@@ -26348,7 +26333,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1243
+      "DebugActionIndex": 1242
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Xml.dll",
@@ -26362,7 +26347,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1244
+      "DebugActionIndex": 1243
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Addressables.dll",
@@ -26376,7 +26361,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1245
+      "DebugActionIndex": 1244
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.Addressables.pdb",
@@ -26390,7 +26375,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1246
+      "DebugActionIndex": 1245
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.ResourceManager.dll",
@@ -26404,7 +26389,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1247
+      "DebugActionIndex": 1246
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.ResourceManager.pdb",
@@ -26418,7 +26403,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1248
+      "DebugActionIndex": 1247
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.dll",
@@ -26432,7 +26417,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1249
+      "DebugActionIndex": 1248
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.pdb",
@@ -26446,7 +26431,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1250
+      "DebugActionIndex": 1249
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -26460,7 +26445,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1251
+      "DebugActionIndex": 1250
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.VisualScripting.Core.dll",
@@ -26474,7 +26459,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1252
+      "DebugActionIndex": 1251
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.VisualScripting.Core.pdb",
@@ -26488,7 +26473,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1253
+      "DebugActionIndex": 1252
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.VisualScripting.Flow.dll",
@@ -26502,7 +26487,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1254
+      "DebugActionIndex": 1253
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.VisualScripting.Flow.pdb",
@@ -26516,7 +26501,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1255
+      "DebugActionIndex": 1254
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.VisualScripting.State.dll",
@@ -26530,7 +26515,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1256
+      "DebugActionIndex": 1255
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.VisualScripting.State.pdb",
@@ -26544,7 +26529,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1257
+      "DebugActionIndex": 1256
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Advertisements.dll",
@@ -26558,7 +26543,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1258
+      "DebugActionIndex": 1257
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Advertisements.pdb",
@@ -26572,7 +26557,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1259
+      "DebugActionIndex": 1258
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.dll",
@@ -26586,7 +26571,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1260
+      "DebugActionIndex": 1259
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.pdb",
@@ -26600,7 +26585,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1261
+      "DebugActionIndex": 1260
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -26614,7 +26599,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1262
+      "DebugActionIndex": 1261
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.pdb",
@@ -26628,7 +26613,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1263
+      "DebugActionIndex": 1262
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.dll",
@@ -26642,7 +26627,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1264
+      "DebugActionIndex": 1263
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.pdb",
@@ -26656,7 +26641,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1265
+      "DebugActionIndex": 1264
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AssetBundleModule.dll",
@@ -26670,7 +26655,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1266
+      "DebugActionIndex": 1265
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AssetBundleModule.pdb",
@@ -26684,7 +26669,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1267
+      "DebugActionIndex": 1266
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.dll",
@@ -26698,7 +26683,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1268
+      "DebugActionIndex": 1267
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.pdb",
@@ -26712,7 +26697,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1269
+      "DebugActionIndex": 1268
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.dll",
@@ -26726,7 +26711,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1270
+      "DebugActionIndex": 1269
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.pdb",
@@ -26740,7 +26725,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1271
+      "DebugActionIndex": 1270
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.dll",
@@ -26754,7 +26739,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1272
+      "DebugActionIndex": 1271
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.dll",
@@ -26768,7 +26753,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1273
+      "DebugActionIndex": 1272
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.pdb",
@@ -26782,7 +26767,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1274
+      "DebugActionIndex": 1273
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.dll",
@@ -26796,7 +26781,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1275
+      "DebugActionIndex": 1274
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.pdb",
@@ -26810,7 +26795,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1276
+      "DebugActionIndex": 1275
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.dll",
@@ -26824,7 +26809,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1277
+      "DebugActionIndex": 1276
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.pdb",
@@ -26838,7 +26823,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1278
+      "DebugActionIndex": 1277
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -26852,7 +26837,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1279
+      "DebugActionIndex": 1278
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.pdb",
@@ -26866,7 +26851,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1280
+      "DebugActionIndex": 1279
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -26880,7 +26865,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1281
+      "DebugActionIndex": 1280
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ParticleSystemModule.pdb",
@@ -26894,7 +26879,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1282
+      "DebugActionIndex": 1281
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.pdb",
@@ -26908,7 +26893,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1283
+      "DebugActionIndex": 1282
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.dll",
@@ -26922,7 +26907,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1284
+      "DebugActionIndex": 1283
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.pdb",
@@ -26936,7 +26921,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1285
+      "DebugActionIndex": 1284
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.dll",
@@ -26950,7 +26935,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1286
+      "DebugActionIndex": 1285
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.pdb",
@@ -26964,7 +26949,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1287
+      "DebugActionIndex": 1286
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -26978,7 +26963,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1288
+      "DebugActionIndex": 1287
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.pdb",
@@ -26992,7 +26977,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1289
+      "DebugActionIndex": 1288
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -27006,7 +26991,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1290
+      "DebugActionIndex": 1289
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.pdb",
@@ -27020,7 +27005,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1291
+      "DebugActionIndex": 1290
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -27034,7 +27019,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1292
+      "DebugActionIndex": 1291
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
@@ -27048,7 +27033,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1293
+      "DebugActionIndex": 1292
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -27062,7 +27047,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1294
+      "DebugActionIndex": 1293
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
@@ -27076,7 +27061,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1295
+      "DebugActionIndex": 1294
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.dll",
@@ -27090,7 +27075,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1296
+      "DebugActionIndex": 1295
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.pdb",
@@ -27104,7 +27089,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1297
+      "DebugActionIndex": 1296
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.dll",
@@ -27118,7 +27103,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1298
+      "DebugActionIndex": 1297
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.pdb",
@@ -27132,7 +27117,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1299
+      "DebugActionIndex": 1298
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.dll",
@@ -27146,7 +27131,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1300
+      "DebugActionIndex": 1299
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.pdb",
@@ -27160,7 +27145,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1301
+      "DebugActionIndex": 1300
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.dll",
@@ -27174,7 +27159,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1302
+      "DebugActionIndex": 1301
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.pdb",
@@ -27188,7 +27173,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1303
+      "DebugActionIndex": 1302
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsNativeModule.dll",
@@ -27202,7 +27187,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1304
+      "DebugActionIndex": 1303
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsNativeModule.pdb",
@@ -27216,7 +27201,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1305
+      "DebugActionIndex": 1304
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.dll",
@@ -27230,7 +27215,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1306
+      "DebugActionIndex": 1305
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.pdb",
@@ -27244,7 +27229,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1307
+      "DebugActionIndex": 1306
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -27258,7 +27243,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1308
+      "DebugActionIndex": 1307
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityAnalyticsModule.pdb",
@@ -27272,7 +27257,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1309
+      "DebugActionIndex": 1308
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityConnectModule.dll",
@@ -27286,7 +27271,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1310
+      "DebugActionIndex": 1309
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityConnectModule.pdb",
@@ -27300,7 +27285,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1311
+      "DebugActionIndex": 1310
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -27314,7 +27299,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1312
+      "DebugActionIndex": 1311
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb",
@@ -27328,7 +27313,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1313
+      "DebugActionIndex": 1312
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -27342,7 +27327,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1314
+      "DebugActionIndex": 1313
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UnityWebRequestModule.pdb",
@@ -27356,7 +27341,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1315
+      "DebugActionIndex": 1314
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityLinkerToEditorData.json",
@@ -27370,7 +27355,7 @@
       "ToBuildDependencies": [
         13
       ],
-      "DebugActionIndex": 1316
+      "DebugActionIndex": 1315
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity default resources",
@@ -27381,18 +27366,18 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity default resources"
       ],
-      "DebugActionIndex": 1317
+      "DebugActionIndex": 1316
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/build.gradle_wvxv.info",
       "ActionType": "WriteTextFile",
-      "WriteTextFilePayload": "{\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles+Arguments\":{\"ProjectPath\":\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle\",\"Architectures\":\"ARMv7, ARM64\",\"BuildSystem\":\"Gradle\",\"GradleProjectCreateInfo\":{\"HostPlatform\":\"Windows\",\"ApplicationType\":\"AppBundle\",\"BuildType\":\"Release\",\"AndroidSDKPath\":\"D:\\\\Unity\\\\2021.3.1f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\",\"AndroidNDKPath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\",\"PreferredHeapSizeForJVM\":4096,\"UnityLibraryTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\mainTemplate.gradle\",\"LauncherTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\launcherTemplate.gradle\",\"BaseProjectTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\baseProjectTemplate.gradle\",\"GradlePropertiesTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\gradleTemplate.properties\",\"GradleLibraryTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\libTemplate.gradle\",\"ProguardUserPath\":\"\",\"SettingsTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\settingsTemplate.gradle\",\"BuildTools\":\"30.0.2\",\"TargetSDKVersion\":30,\"MinSDKVersion\":22,\"PackageName\":\"com.HilariousTaleGames.RatHero\",\"Architectures\":\"ARMv7, ARM64\",\"BuildApkPerCpuArchitecture\":false,\"VersionCode\":1,\"VersionName\":\"0.1\",\"Minify\":0,\"NoCompressOptions\":{\"RelativeFilePaths\":[],\"FileExtensions\":[]},\"UseCustomKeystore\":true,\"KeystorePath\":\"D:/KeyStore/RatHero/RatHeroKeyStore.keystore\",\"KeystoreName\":\"RatHeroKeyStore.keystore\",\"KeystorePassword\":\"200wwoq\",\"KeystoreAliasName\":\"rathero\",\"KeystoreAliasPassword\":\"200wwoq\",\"ScriptingImplementation\":\"IL2CPP\",\"AndroidLibraries\":[],\"AARFiles\":[\"Packages/com.unity.ads/Plugins/Android/UnityAds.aar\"],\"BuiltinJavaSourcePaths\":[\"com/unity3d/player/UnityPlayerActivity.java\"],\"JavaSourcePaths\":[],\"KotlinSourcePaths\":[],\"PlayerPackage\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer\",\"PlayerPackageTools\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\",\"SymlinkSources\":false,\"InstallIntoBuildsFolder\":false,\"UnityPath\":\"\",\"UnityProjectPath\":\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero\",\"Dependencies\":[]}},\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles\",\"methodName\":\"Run\",\"assemblyLocation\":\"D:\\\\Unity\\\\2021.3.1f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\AndroidPlayerBuildProgram.exe\",\"targets\":[\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/build.gradle\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build.gradle\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build.gradle\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle.properties\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/local.properties\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/settings.gradle\"],\"inputs\":[\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/launcherTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/baseProjectTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/gradleTemplate.properties\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/libTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/settingsTemplate.gradle\"],\"targetDirectories\":[]}}",
+      "WriteTextFilePayload": "{\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles+Arguments\":{\"ProjectPath\":\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle\",\"Architectures\":\"ARMv7, ARM64\",\"BuildSystem\":\"Gradle\",\"GradleProjectCreateInfo\":{\"HostPlatform\":\"Windows\",\"ApplicationType\":\"AppBundle\",\"BuildType\":\"Release\",\"AndroidSDKPath\":\"D:\\\\Unity\\\\2021.3.1f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\",\"AndroidNDKPath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\",\"PreferredHeapSizeForJVM\":4096,\"UnityLibraryTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\mainTemplate.gradle\",\"LauncherTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\launcherTemplate.gradle\",\"BaseProjectTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\baseProjectTemplate.gradle\",\"GradlePropertiesTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\gradleTemplate.properties\",\"GradleLibraryTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\libTemplate.gradle\",\"ProguardUserPath\":\"\",\"SettingsTemplatePath\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\settingsTemplate.gradle\",\"BuildTools\":\"30.0.2\",\"TargetSDKVersion\":30,\"MinSDKVersion\":22,\"PackageName\":\"com.HilariousTaleGames.RatHero\",\"Architectures\":\"ARMv7, ARM64\",\"BuildApkPerCpuArchitecture\":false,\"VersionCode\":3,\"VersionName\":\"0.2\",\"Minify\":0,\"NoCompressOptions\":{\"RelativeFilePaths\":[],\"FileExtensions\":[]},\"UseCustomKeystore\":true,\"KeystorePath\":\"D:/KeyStore/RatHero/RatHeroKeyStore.keystore\",\"KeystoreName\":\"RatHeroKeyStore.keystore\",\"KeystorePassword\":\"200wwoq\",\"KeystoreAliasName\":\"rathero\",\"KeystoreAliasPassword\":\"200wwoq\",\"ScriptingImplementation\":\"IL2CPP\",\"AndroidLibraries\":[],\"AARFiles\":[\"Packages/com.unity.ads/Plugins/Android/UnityAds.aar\"],\"BuiltinJavaSourcePaths\":[\"com/unity3d/player/UnityPlayerActivity.java\"],\"JavaSourcePaths\":[],\"KotlinSourcePaths\":[],\"PlayerPackage\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer\",\"PlayerPackageTools\":\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\",\"SymlinkSources\":false,\"InstallIntoBuildsFolder\":false,\"UnityPath\":\"\",\"UnityProjectPath\":\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero\",\"Dependencies\":[]}},\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles\",\"methodName\":\"Run\",\"assemblyLocation\":\"D:\\\\Unity\\\\2021.3.1f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\AndroidPlayerBuildProgram.exe\",\"targets\":[\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/build.gradle\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build.gradle\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build.gradle\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle.properties\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/local.properties\",\"D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/settings.gradle\"],\"inputs\":[\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/launcherTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/baseProjectTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/gradleTemplate.properties\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/libTemplate.gradle\",\"D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/settingsTemplate.gradle\"],\"targetDirectories\":[]}}",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/build.gradle_wvxv.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 1318
+      "DebugActionIndex": 1317
     },
     {
       "Annotation": "ActionGenerateProjectFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/build.gradle (+5 others)",
@@ -27422,11 +27407,11 @@
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/settings.gradle"
       ],
       "ToBuildDependencies": [
-        1318
+        1317
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 1319
+      "DebugActionIndex": 1318
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/proguard-unity.txt",
@@ -27437,7 +27422,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/proguard-unity.txt"
       ],
-      "DebugActionIndex": 1320
+      "DebugActionIndex": 1319
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerActivity.java",
@@ -27448,7 +27433,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerActivity.java"
       ],
-      "DebugActionIndex": 1321
+      "DebugActionIndex": 1320
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar",
@@ -27459,7 +27444,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar"
       ],
-      "DebugActionIndex": 1322
+      "DebugActionIndex": 1321
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/ids.xml",
@@ -27470,7 +27455,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/ids.xml"
       ],
-      "DebugActionIndex": 1323
+      "DebugActionIndex": 1322
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/styles.xml",
@@ -27481,7 +27466,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/styles.xml"
       ],
-      "DebugActionIndex": 1324
+      "DebugActionIndex": 1323
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v21/styles.xml",
@@ -27492,7 +27477,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v21/styles.xml"
       ],
-      "DebugActionIndex": 1325
+      "DebugActionIndex": 1324
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v28/styles.xml",
@@ -27503,7 +27488,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v28/styles.xml"
       ],
-      "DebugActionIndex": 1326
+      "DebugActionIndex": 1325
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/styles.xml",
@@ -27514,7 +27499,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/styles.xml"
       ],
-      "DebugActionIndex": 1327
+      "DebugActionIndex": 1326
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v21/styles.xml",
@@ -27525,7 +27510,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v21/styles.xml"
       ],
-      "DebugActionIndex": 1328
+      "DebugActionIndex": 1327
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v28/styles.xml",
@@ -27536,7 +27521,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v28/styles.xml"
       ],
-      "DebugActionIndex": 1329
+      "DebugActionIndex": 1328
     },
     {
       "Annotation": "WriteText D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/strings.xml",
@@ -27547,7 +27532,7 @@
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/strings.xml"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 1330
+      "DebugActionIndex": 1329
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png",
@@ -27558,7 +27543,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png"
       ],
-      "DebugActionIndex": 1331
+      "DebugActionIndex": 1330
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png",
@@ -27569,7 +27554,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png"
       ],
-      "DebugActionIndex": 1332
+      "DebugActionIndex": 1331
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png",
@@ -27580,7 +27565,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png"
       ],
-      "DebugActionIndex": 1333
+      "DebugActionIndex": 1332
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png",
@@ -27591,7 +27576,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png"
       ],
-      "DebugActionIndex": 1334
+      "DebugActionIndex": 1333
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png",
@@ -27602,7 +27587,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png"
       ],
-      "DebugActionIndex": 1335
+      "DebugActionIndex": 1334
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png",
@@ -27613,7 +27598,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png"
       ],
-      "DebugActionIndex": 1336
+      "DebugActionIndex": 1335
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png",
@@ -27624,7 +27609,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 1337
+      "DebugActionIndex": 1336
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png",
@@ -27635,7 +27620,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 1338
+      "DebugActionIndex": 1337
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png",
@@ -27646,7 +27631,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 1339
+      "DebugActionIndex": 1338
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png",
@@ -27657,7 +27642,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 1340
+      "DebugActionIndex": 1339
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png",
@@ -27668,7 +27653,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 1341
+      "DebugActionIndex": 1340
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png",
@@ -27679,7 +27664,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 1342
+      "DebugActionIndex": 1341
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmain.so",
@@ -27690,7 +27675,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmain.so"
       ],
-      "DebugActionIndex": 1343
+      "DebugActionIndex": 1342
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so",
@@ -27701,7 +27686,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so"
       ],
-      "DebugActionIndex": 1344
+      "DebugActionIndex": 1343
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info",
@@ -27712,7 +27697,7 @@
         "Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 1345
+      "DebugActionIndex": 1344
     },
     {
       "Annotation": "Generate Manifests Library/Bee/artifacts/Android/Manifest/LauncherManifestDiag.txt (+3 others)",
@@ -27822,11 +27807,11 @@
         96,
         98,
         100,
-        1345
+        1344
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 1346
+      "DebugActionIndex": 1345
     },
     {
       "Annotation": "ClassRegistrationGenerator D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/artifacts/Android/il2cppOutput/UnityClassRegistration.cpp",
@@ -27844,7 +27829,7 @@
         13
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1347
+      "DebugActionIndex": 1346
     },
     {
       "Annotation": "Compile UnityClassRegistration Library/Bee/artifacts/Android/libunity/armeabi-v7a/UnityClassRegistration.o",
@@ -27858,10 +27843,10 @@
         "Library/Bee/artifacts/Android/libunity/armeabi-v7a/UnityClassRegistration.o"
       ],
       "ToBuildDependencies": [
-        1347
+        1346
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1348
+      "DebugActionIndex": 1347
     },
     {
       "Annotation": "ICallRegistrationGenerator D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/artifacts/Android/il2cppOutput/UnityICallRegistration.cpp",
@@ -27902,7 +27887,7 @@
         13
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1349
+      "DebugActionIndex": 1348
     },
     {
       "Annotation": "Compile UnityICallRegistration Library/Bee/artifacts/Android/libunity/armeabi-v7a/UnityICallRegistration.o",
@@ -27916,10 +27901,10 @@
         "Library/Bee/artifacts/Android/libunity/armeabi-v7a/UnityICallRegistration.o"
       ],
       "ToBuildDependencies": [
-        1349
+        1348
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1350
+      "DebugActionIndex": 1349
     },
     {
       "Annotation": "Link libunity Library/Bee/artifacts/Android/libunity/armeabi-v7a/unstripped/libunity.so",
@@ -27936,11 +27921,11 @@
         "Library/Bee/artifacts/Android/libunity/armeabi-v7a/unstripped/libunity.so"
       ],
       "ToBuildDependencies": [
-        1348,
-        1350
+        1347,
+        1349
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1351
+      "DebugActionIndex": 1350
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.dbg.so from Library/Bee/artifacts/Android/libunity/armeabi-v7a/unstripped/libunity.so Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.dbg.so",
@@ -27953,10 +27938,10 @@
         "Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.dbg.so"
       ],
       "ToBuildDependencies": [
-        1351
+        1350
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1352
+      "DebugActionIndex": 1351
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.sym.so from Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.dbg.so Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.sym.so",
@@ -27969,10 +27954,10 @@
         "Library/Bee/artifacts/Android/libunity/armeabi-v7a/libunity.sym.so"
       ],
       "ToBuildDependencies": [
-        1352
+        1351
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1353
+      "DebugActionIndex": 1352
     },
     {
       "Annotation": "Stripping Library/Bee/artifacts/Android/libunity/armeabi-v7a/unstripped/libunity.so -> Library/Bee/artifacts/Android/libunity/armeabi-v7a/stripped/libunity.so Library/Bee/artifacts/Android/libunity/armeabi-v7a/stripped/libunity.so",
@@ -27985,10 +27970,10 @@
         "Library/Bee/artifacts/Android/libunity/armeabi-v7a/stripped/libunity.so"
       ],
       "ToBuildDependencies": [
-        1351
+        1350
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1354
+      "DebugActionIndex": 1353
     },
     {
       "Annotation": "Adding note Library/Bee/artifacts/Android/libunity/armeabi-v7a/stripped/libunity.so -> D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so",
@@ -28003,11 +27988,11 @@
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so"
       ],
       "ToBuildDependencies": [
-        1353,
-        1354
+        1352,
+        1353
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1355
+      "DebugActionIndex": 1354
     },
     {
       "Annotation": "Compile UnityClassRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityClassRegistration.o",
@@ -28021,10 +28006,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityClassRegistration.o"
       ],
       "ToBuildDependencies": [
-        1347
+        1346
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1356
+      "DebugActionIndex": 1355
     },
     {
       "Annotation": "Compile UnityICallRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityICallRegistration.o",
@@ -28038,10 +28023,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityICallRegistration.o"
       ],
       "ToBuildDependencies": [
-        1349
+        1348
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1357
+      "DebugActionIndex": 1356
     },
     {
       "Annotation": "Link libunity Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so",
@@ -28058,11 +28043,11 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so"
       ],
       "ToBuildDependencies": [
-        1356,
-        1357
+        1355,
+        1356
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1358
+      "DebugActionIndex": 1357
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so",
@@ -28075,10 +28060,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so"
       ],
       "ToBuildDependencies": [
-        1358
+        1357
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1359
+      "DebugActionIndex": 1358
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so",
@@ -28091,10 +28076,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so"
       ],
       "ToBuildDependencies": [
-        1359
+        1358
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1360
+      "DebugActionIndex": 1359
     },
     {
       "Annotation": "Stripping Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so -> Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so",
@@ -28107,10 +28092,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so"
       ],
       "ToBuildDependencies": [
-        1358
+        1357
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1361
+      "DebugActionIndex": 1360
     },
     {
       "Annotation": "Adding note Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so -> D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so",
@@ -28125,11 +28110,11 @@
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so"
       ],
       "ToBuildDependencies": [
-        1360,
-        1361
+        1359,
+        1360
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1362
+      "DebugActionIndex": 1361
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/armeabi-v7a/libmain.so",
@@ -28140,7 +28125,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/armeabi-v7a/libmain.so"
       ],
-      "DebugActionIndex": 1363
+      "DebugActionIndex": 1362
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/armeabi-v7a/libil2cpp.so",
@@ -28154,7 +28139,7 @@
       "ToBuildDependencies": [
         542
       ],
-      "DebugActionIndex": 1364
+      "DebugActionIndex": 1363
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/armeabi-v7a/libunity.so",
@@ -28166,9 +28151,9 @@
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/armeabi-v7a/libunity.so"
       ],
       "ToBuildDependencies": [
-        1353
+        1352
       ],
-      "DebugActionIndex": 1365
+      "DebugActionIndex": 1364
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libmain.so",
@@ -28179,7 +28164,7 @@
       "Outputs": [
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libmain.so"
       ],
-      "DebugActionIndex": 1366
+      "DebugActionIndex": 1365
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libil2cpp.so",
@@ -28193,7 +28178,7 @@
       "ToBuildDependencies": [
         984
       ],
-      "DebugActionIndex": 1367
+      "DebugActionIndex": 1366
     },
     {
       "Annotation": "CopyFiles D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libunity.so",
@@ -28205,9 +28190,9 @@
         "D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libunity.so"
       ],
       "ToBuildDependencies": [
-        1360
+        1359
       ],
-      "DebugActionIndex": 1368
+      "DebugActionIndex": 1367
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_xizu.info",
@@ -28218,7 +28203,7 @@
         "Library/Bee/artifacts/csharpactions/unity_app_guid_xizu.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 1369
+      "DebugActionIndex": 1368
     },
     {
       "Annotation": "GuidGenerator D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid",
@@ -28252,11 +28237,11 @@
       ],
       "ToBuildDependencies": [
         101,
-        1369
+        1368
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 1370
+      "DebugActionIndex": 1369
     },
     {
       "Annotation": "Player",
@@ -28645,7 +28630,7 @@
         1314,
         1315,
         1316,
-        1317,
+        1318,
         1319,
         1320,
         1321,
@@ -28671,14 +28656,13 @@
         1341,
         1342,
         1343,
-        1344,
-        1346,
-        1355,
-        1362,
-        1370
+        1345,
+        1354,
+        1361,
+        1369
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 1371
+      "DebugActionIndex": 1370
     }
   ],
   "FileSignatures": [
@@ -29214,7 +29198,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 1371
+          "Player": 1370
         }
 ,  "DefaultNodes": [
     0

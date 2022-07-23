@@ -15,7 +15,7 @@ D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-60354
+52574
 Successfully changed project path to: D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
 D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/UnityPortfolio/Rat_Hero Repository/RatHero/Rat Hero
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 409.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 295.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.1f1 (3b70a0754835)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -71,7 +71,7 @@ Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngine
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.146194 seconds.
+Registered in 0.011255 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -79,36 +79,633 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 130.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 263.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.598 seconds
+- Completed reload, in  1.751 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1599ms)
-		BeginReloadAssembly (448ms)
+	ReloadAssembly (1752ms)
+		BeginReloadAssembly (194ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (890ms)
-			LoadAssemblies (513ms)
+		EndReloadAssembly (1301ms)
+			LoadAssemblies (196ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (203ms)
+			SetupTypeCache (330ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (516ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (772ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (152ms)
+				InitializePlatformSupportModulesInManaged (162ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (131ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (145ms)
-				ProcessInitializeOnLoadMethodAttributes (86ms)
+				RefreshPlugins (264ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006690 seconds.
+Registered in 0.008921 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  9.209 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9211ms)
+		BeginReloadAssembly (513ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (226ms)
+		EndReloadAssembly (8426ms)
+			LoadAssemblies (268ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (624ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (165ms)
+			SetupLoadedEditorAssemblies (7299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (67ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (234ms)
+				ProcessInitializeOnLoadAttributes (6925ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.45 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4069 Unused Serialized files (Serialized files now loaded: 1)
+Unloading 35 unused Assets / (56.4 KB). Loaded Objects now: 4576.
+Memory consumption went from 172.0 MB to 171.9 MB.
+Total: 29.330400 ms (FindLiveObjects: 0.590600 ms CreateObjectMapping: 0.510200 ms MarkObjects: 28.041400 ms  DeleteObjects: 0.185700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 430670.433491 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat4.png
+  artifactKey: Guid(de76f2fa2ddfb33489d90898cc60febc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat4.png using Guid(de76f2fa2ddfb33489d90898cc60febc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3890146615f2340bf2a06849f0e488d') in 0.428205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat3.png
+  artifactKey: Guid(41fa9b975f43d2645b2f717db2200111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat3.png using Guid(41fa9b975f43d2645b2f717db2200111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e795a240f9f2fc6dabe2a4e7eba250') in 0.042664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj
+  artifactKey: Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj using Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d77f5113052de8ca080686830a3311') in 0.495672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat6.png
+  artifactKey: Guid(9edba097aab914d47929a9d7d6c44ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat6.png using Guid(9edba097aab914d47929a9d7d6c44ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e75636e1677b37b66a5e22b4db8b220') in 0.016440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.png
+  artifactKey: Guid(4d463251e1512ac448a0baa5c86eaf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.png using Guid(4d463251e1512ac448a0baa5c86eaf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3bad4fa7253ea814ecca85103cc52bb') in 0.014280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.png
+  artifactKey: Guid(7f3d01cd64996c84582e54280bc4857b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.png using Guid(7f3d01cd64996c84582e54280bc4857b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9203a65937d2778ce7e7d731fbd4a21e') in 0.014856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat1.obj
+  artifactKey: Guid(60a1698183decbb4a8b466ea54f09ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat1.obj using Guid(60a1698183decbb4a8b466ea54f09ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd03bc29ea59e0fd7cb6501007f176d0d') in 0.050888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.220386 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat1.obj
+  artifactKey: Guid(13159f01410bf04459206db4aa38ed44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat1.obj using Guid(13159f01410bf04459206db4aa38ed44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424a46a482ce38c9d7a72fb89a7f00e9') in 0.070629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat3.png
+  artifactKey: Guid(266d885dfa0aec44a8b4179d0c305506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat3.png using Guid(266d885dfa0aec44a8b4179d0c305506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2cd1dcaeb77cc4c5ab8d95e452752a') in 0.022753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat2.obj
+  artifactKey: Guid(9b2354b4cd9fe204292e3c0a436ebe7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat2.obj using Guid(9b2354b4cd9fe204292e3c0a436ebe7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9544b29489f0b539f63aa67cf0750064') in 0.070369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat6.png
+  artifactKey: Guid(becf727b55a55e840b85e70a616c42d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat6.png using Guid(becf727b55a55e840b85e70a616c42d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec2f1b2501bafcab7d23cbbfff9d81a') in 0.037941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat3.obj
+  artifactKey: Guid(f64b01c3fa58bb04581fa33e45716f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat3.obj using Guid(f64b01c3fa58bb04581fa33e45716f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f93d8024ecbdbfc0a677a58697da5b3') in 0.057683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat4.obj
+  artifactKey: Guid(06649b0ac6b244a40860bb4934a680dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat4.obj using Guid(06649b0ac6b244a40860bb4934a680dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc5e08d1d41a0dee0fa38ed1708156f') in 0.051572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.479327 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat1.obj
+  artifactKey: Guid(5645a40e1535eeb479307381a4a7dc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat1.obj using Guid(5645a40e1535eeb479307381a4a7dc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15ff11f58edc3f9a33cee20a3f310da') in 0.053000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5.png
+  artifactKey: Guid(24e99e20adc4f6f49b94ce02aeaa34cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5.png using Guid(24e99e20adc4f6f49b94ce02aeaa34cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde8ef0c1ef995dd8d57695f4a4c690d') in 0.048493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5.obj
+  artifactKey: Guid(380aff85dcd93c147b07f04d02bd7312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5.obj using Guid(380aff85dcd93c147b07f04d02bd7312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f1b481187227c0e02b911c59d27dc3') in 0.050664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat1.png
+  artifactKey: Guid(f8a093f5d363a004d9db97e124005e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat1.png using Guid(f8a093f5d363a004d9db97e124005e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a2e2aa2e076eb05fb696c6abb198d6') in 0.014008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat6.obj
+  artifactKey: Guid(6dbf904b231b29c44a85c084b57403cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat6.obj using Guid(6dbf904b231b29c44a85c084b57403cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850bce2d5fbd20dd9943096c27f87a27') in 0.054329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat4.png
+  artifactKey: Guid(eee7414b7afb22946ab2e6752c14969f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat4.png using Guid(eee7414b7afb22946ab2e6752c14969f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e81b7a550c342cbc5bb3d62ef32144d') in 0.013421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.763341 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5 1.png
+  artifactKey: Guid(0c0612a91e04f934489d64ca0907c85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5 1.png using Guid(0c0612a91e04f934489d64ca0907c85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a794f4365ca933ac7ecd19dd840731') in 0.015848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.146092 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat3.obj
+  artifactKey: Guid(fcbed1269e676bf4397c7325b81168ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat3.obj using Guid(fcbed1269e676bf4397c7325b81168ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b81cb16ad16767d250a98e26743606') in 0.046897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5.obj
+  artifactKey: Guid(380aff85dcd93c147b07f04d02bd7312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat5.obj using Guid(380aff85dcd93c147b07f04d02bd7312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca5b6a5dddbe7c8546fbd1f92f6193f') in 0.052357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.995786 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat1.obj
+  artifactKey: Guid(5645a40e1535eeb479307381a4a7dc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/AngelRat/AngelRat1.obj using Guid(5645a40e1535eeb479307381a4a7dc36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242d476ac2e83993e95d45f7624194b5') in 0.044781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.397575 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat3.obj
+  artifactKey: Guid(f64b01c3fa58bb04581fa33e45716f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat3.obj using Guid(f64b01c3fa58bb04581fa33e45716f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a238e60a9289ae39b60bc3c90eec0f64') in 0.058551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat6.obj
+  artifactKey: Guid(5ca361c2de352c64b8916248a8763ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat6.obj using Guid(5ca361c2de352c64b8916248a8763ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e453ff1cd533e13f6d181f70a4f2bdab') in 0.053336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.700242 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat1.obj
+  artifactKey: Guid(13159f01410bf04459206db4aa38ed44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/DemonRat/DemonRat1.obj using Guid(13159f01410bf04459206db4aa38ed44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a1fd6656c50b0011062bd84cb75910') in 0.046690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.857688 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj
+  artifactKey: Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj using Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f731032bf0428438072a215cf19db3b') in 0.051342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.obj
+  artifactKey: Guid(d4cba5825b7e21b46890dcc2967a1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.obj using Guid(d4cba5825b7e21b46890dcc2967a1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3aad92899bc01680a6ba62b10fbf4af') in 0.055285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat3.obj
+  artifactKey: Guid(632a5d712ae17004bbbff1d7093a4c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat3.obj using Guid(632a5d712ae17004bbbff1d7093a4c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932f3b5f47f5e4b37e61cb4c10063048') in 0.051096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 273.048511 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat
+  artifactKey: Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat using Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae61ebb9ec7b2a1bc13fc9146aa506f') in 0.084896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182b376073f565760bf60582180c543d') in 0.104711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
+  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c24b01f279e4563f691f68c05920471') in 0.133733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat
+  artifactKey: Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat using Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d47071aef7fe62ce809ca4da75368f') in 0.055211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.873966 seconds.
+  path: Assets/AssetStore/used3/low poly/Materials/Color_E02.mat
+  artifactKey: Guid(85f40d378e2c9f9459d95ba0009b7fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/used3/low poly/Materials/Color_E02.mat using Guid(85f40d378e2c9f9459d95ba0009b7fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c882faab9701037a493a5983cd9fe34') in 0.051883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/AssetStore/used3/Fbx low poly/Materials/Color_G03.mat
+  artifactKey: Guid(e085441fbdf85a4458c6186c1001352c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/used3/Fbx low poly/Materials/Color_G03.mat using Guid(e085441fbdf85a4458c6186c1001352c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8fbdad467f20477702cb1c08a3d13c6') in 0.066836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/AssetStore/used3/Materials/Color_E05.mat
+  artifactKey: Guid(c87ebb82f1fa25449a9750cf5d631f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/used3/Materials/Color_E05.mat using Guid(c87ebb82f1fa25449a9750cf5d631f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137619a935c7b4321c9fb6985926306a') in 0.032996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AssetStore/used3/Materials/Color_F04.mat
+  artifactKey: Guid(8af7395080ca2114cae09880c91dce4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/used3/Materials/Color_F04.mat using Guid(8af7395080ca2114cae09880c91dce4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684ed96e41a0f3c01e5500ee7d767345') in 0.020127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/AssetStore/used3/Materials/Color_E02.mat
+  artifactKey: Guid(911676696a6221549a671e111ba3eeec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/used3/Materials/Color_E02.mat using Guid(911676696a6221549a671e111ba3eeec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fcffbc4fca08fafad17f8100580bad9') in 0.023530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 301.742000 seconds.
+  path: Assets/Resources/Animation/Units/Characters/ArthasRat
+  artifactKey: Guid(ae5e9d5ed28a9b54abe169882257a557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Animation/Units/Characters/ArthasRat using Guid(ae5e9d5ed28a9b54abe169882257a557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef76b7a1740d116cb2671478f8d1ebc') in 0.142081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 244.369879 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj
+  artifactKey: Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj using Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0975fabb725d2e4fdfb60aaf3bea5f') in 0.062213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.obj
+  artifactKey: Guid(d4cba5825b7e21b46890dcc2967a1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.obj using Guid(d4cba5825b7e21b46890dcc2967a1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28221a945f9451b3932bd6dc04ac8433') in 0.053160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat3.obj
+  artifactKey: Guid(632a5d712ae17004bbbff1d7093a4c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat3.obj using Guid(632a5d712ae17004bbbff1d7093a4c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea30ad915456227d2a2aa3d4ed4ea40c') in 0.048694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.531409 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2 1.png
+  artifactKey: Guid(b9a0c9b7333beb34fb25bcf7d69c5997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2 1.png using Guid(b9a0c9b7333beb34fb25bcf7d69c5997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61c9439f1f89f0df1ccd04424bd8049') in 0.018623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5 1.png
+  artifactKey: Guid(af2ab3d783acf884bbc23689c3020a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5 1.png using Guid(af2ab3d783acf884bbc23689c3020a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47253582985a891210775258c515ac70') in 0.014990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.781305 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj
+  artifactKey: Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat2.obj using Guid(8c87b1bcb0c779d41bc2421829566a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f40fc13f269d4d2a1a611616891d857') in 0.089382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.obj
+  artifactKey: Guid(d4cba5825b7e21b46890dcc2967a1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat5.obj using Guid(d4cba5825b7e21b46890dcc2967a1947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2cc92361f6a656fad6e21e2339d5e5') in 0.042175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.818616 seconds.
+  path: Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat6.obj
+  artifactKey: Guid(73348d2015031be42b2d61888d5fe21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mesh/Units/Characters/GodzillaRat/GodzillaRat6.obj using Guid(73348d2015031be42b2d61888d5fe21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53452e18273d26b75005697085f2ad12') in 0.044291 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011251 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  9.071 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9075ms)
+		BeginReloadAssembly (816ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (35ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (277ms)
+		EndReloadAssembly (8000ms)
+			LoadAssemblies (423ms)
+			RebuildTransferFunctionScriptingTraits (2ms)
+			SetupTypeCache (673ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (110ms)
+			SetupLoadedEditorAssemblies (1235ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (65ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (920ms)
+				ProcessInitializeOnLoadMethodAttributes (87ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5112ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4038 Unused Serialized files (Serialized files now loaded: 1)
+Unloading 29 unused Assets / (52.5 KB). Loaded Objects now: 4627.
+Memory consumption went from 174.6 MB to 174.6 MB.
+Total: 34.999300 ms (FindLiveObjects: 0.658400 ms CreateObjectMapping: 0.757700 ms MarkObjects: 33.272000 ms  DeleteObjects: 0.307500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011167 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in 12.019 seconds
+Domain Reload Profiling:
+	ReloadAssembly (12021ms)
+		BeginReloadAssembly (753ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (125ms)
+		EndReloadAssembly (10976ms)
+			LoadAssemblies (1963ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (839ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (140ms)
+			SetupLoadedEditorAssemblies (2503ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (84ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (192ms)
+				ProcessInitializeOnLoadAttributes (1274ms)
+				ProcessInitializeOnLoadMethodAttributes (940ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5121ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4038 Unused Serialized files (Serialized files now loaded: 1)
+Unloading 29 unused Assets / (51.5 KB). Loaded Objects now: 4631.
+Memory consumption went from 174.7 MB to 174.6 MB.
+Total: 28.120900 ms (FindLiveObjects: 0.657000 ms CreateObjectMapping: 0.495300 ms MarkObjects: 26.767700 ms  DeleteObjects: 0.197400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019663 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityPortfolio\Rat_Hero Repository\RatHero\Rat Hero\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  8.936 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8939ms)
+		BeginReloadAssembly (509ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (106ms)
+		EndReloadAssembly (8187ms)
+			LoadAssemblies (539ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (700ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (109ms)
+			SetupLoadedEditorAssemblies (1211ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (61ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (149ms)
+				ProcessInitializeOnLoadAttributes (905ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5235ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4038 Unused Serialized files (Serialized files now loaded: 1)
+Unloading 29 unused Assets / (51.4 KB). Loaded Objects now: 4635.
+Memory consumption went from 174.7 MB to 174.6 MB.
+Total: 25.219500 ms (FindLiveObjects: 0.532100 ms CreateObjectMapping: 0.395100 ms MarkObjects: 24.130700 ms  DeleteObjects: 0.158600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008786 seconds.

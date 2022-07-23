@@ -16,6 +16,9 @@ public class WeaponLevelUp : MonoBehaviour
         {"DruidStaff",          new int[2]{1000, 2000}    },
         {"Bow",                 new int[2]{1500, 2900}    },
         {"ArcaneGun",           new int[2]{2200, 4200}    },
+        {"MagicSphere",         new int[2]{3200, 5000}    },
+        {"Scythe",              new int[2]{4000, 6200}    },
+        {"Hammer",              new int[2]{6666, 8888}    },
     };
 
     internal void WeaponLevelingUp()

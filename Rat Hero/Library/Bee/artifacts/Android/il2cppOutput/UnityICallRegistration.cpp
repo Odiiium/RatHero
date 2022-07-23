@@ -3574,6 +3574,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
 		Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
 
+		//UnityEngine.Collider[] UnityEngine.Physics::OverlapSphere_Internal_Injected(UnityEngine.PhysicsScene&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
+		void Register_UnityEngine_Physics_OverlapSphere_Internal_Injected();
+		Register_UnityEngine_Physics_OverlapSphere_Internal_Injected();
+
 		//UnityEngine.RaycastHit[] UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 		void Register_UnityEngine_Physics_Internal_RaycastAll_Injected();
 		Register_UnityEngine_Physics_Internal_RaycastAll_Injected();

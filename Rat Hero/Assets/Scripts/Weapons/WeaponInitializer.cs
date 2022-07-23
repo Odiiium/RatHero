@@ -33,7 +33,7 @@ public class WeaponInitializer : MonoBehaviour
             {
                 GameObject childObject = gameObject.transform.GetChild(i).gameObject;
                 childObject.GetComponent<MeshFilter>().mesh = Resources.Load<Mesh>($"Mesh/Weapons/{weaponName}/{weaponName}_lvl{weaponLvl}");
-                childObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Weapons/{weaponName}/{weaponName}");
+                childObject.GetComponent<MeshRenderer>().sharedMaterial = Resources.Load<Material>($"Materials/Weapons/{weaponName}/{weaponName}");
             }
         }
         else return;
@@ -45,7 +45,7 @@ public class WeaponInitializer : MonoBehaviour
         {
             GameObject childObject = gameObject.transform.GetChild(i).gameObject;
             childObject.GetComponent<MeshFilter>().mesh = Resources.Load<Mesh>($"Mesh/Weapons/{weaponName}/{weaponName}_lvl{i+1}");
-            childObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Weapons/{weaponName}/{weaponName}");
+            childObject.GetComponent<MeshRenderer>().sharedMaterial = Resources.Load<Material>($"Materials/Weapons/{weaponName}/{weaponName}");
         }
     }
     

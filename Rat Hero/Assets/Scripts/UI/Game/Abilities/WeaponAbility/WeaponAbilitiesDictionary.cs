@@ -16,6 +16,9 @@ public class WeaponAbilitiesDictionary : MonoBehaviour
         {"DruidStaff",      new NatureWraith()},
         {"Bow",             new ArrowsRain()},
         {"ArcaneGun",       new Laser()},
+        {"MagicSphere",     new ManaDrain()},
+        {"Scythe",          new Vampirism()},
+        {"Hammer",          new ThorStrike()}
     };
 
 }

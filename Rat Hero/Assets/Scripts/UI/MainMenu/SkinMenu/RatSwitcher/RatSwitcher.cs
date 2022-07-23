@@ -9,7 +9,7 @@ public class RatSwitcher : MonoBehaviour
     public static string[] rats = new string[]
     {
         "DoubleStripeRat", "AlbinoRat", "RedHatRat", "ArthasRat", "WomenRat",
-        "PunkRat", "MerlinRat", "CarRat", "PharaohRat", "UFORat", "KingRat"
+        "PunkRat", "MerlinRat", "CarRat", "PharaohRat", "UFORat","DemonRat", "AngelRat", "KingRat", "GodzillaRat"
     };
 
     static public int currentRat;

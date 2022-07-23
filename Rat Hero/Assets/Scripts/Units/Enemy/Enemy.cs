@@ -13,6 +13,8 @@ public class Enemy : Unit
 
     internal static UnityAction<float> OnApplyDamage;
     internal static UnityAction<Enemy> onSpecificWeaponAbilityUsed;
+
+    private bool isDied;
     
     internal override float healthPoints
     {
@@ -20,8 +22,9 @@ public class Enemy : Unit
         set
         {
             currentHp = value;
-            if (currentHp <= 0)
+            if (currentHp <= 0 && !isDied)
             {
+                isDied = true;
                 OnDie();
             }
         }
@@ -33,6 +36,7 @@ public class Enemy : Unit
     //Set dependents to Enemy
     private void OnEnable()
     {
+        isDied = false;
         player = FindObjectOfType<Character>();
         InitializeEnemyStats();
         animator = transform.GetChild(0).GetComponent<Animator>();

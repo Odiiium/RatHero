@@ -38,19 +38,23 @@ public class SkinChanger : MonoBehaviour
 
     private void SkinInitialize(string skinName)
     {
-        //gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Units/Characters/{skinName}");
         gameObject.GetComponent<MeshRenderer>().material = Resources.Load<Material>($"Materials/Palletes/Pallete1");
         gameObject.GetComponent<MeshFilter>().sharedMesh = Resources.Load<Mesh>($"Mesh/Units/Characters/{skinName}/{skinName}1");
-        if (gameObject.name == "MenuSkin") return;
-        else
-        {
-            gameObject.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>($"Animation/Units/Characters/{skinName}/{skinName}");
-        }
+        SetAnimatorOrNot(skinName);
     }
     private void DisplayRat(string skinName)
     {
         if (PlayerPrefs.GetInt(skinName) == 1) RatShopController.onHide?.Invoke();
         else RatShopController.onShow?.Invoke();
 
+    }
+
+    private void SetAnimatorOrNot(string skinName)
+    {
+        if (gameObject.name == "MenuSkin") return;
+        else
+        {
+            gameObject.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>($"Animation/Units/Characters/{skinName}/{skinName}");
+        }
     }
 }

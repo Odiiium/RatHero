@@ -18,7 +18,10 @@ public class RatShop : MonoBehaviour
         {"CarRat",      3000},
         {"PharaohRat",  4500},
         {"UFORat",      6000},
-        {"KingRat",     10000}
+        {"AngelRat",    10000},
+        {"DemonRat",    10000},
+        {"KingRat",     15000},
+        {"GodzillaRat", 25000}
     };
 
     public static Dictionary<string, string> moneyType = new Dictionary<string, string>() // Dictionary which contains currency ( cheese or diamonds )
@@ -32,7 +35,10 @@ public class RatShop : MonoBehaviour
         {"CarRat",      cheese},
         {"PharaohRat",  cheese},
         {"UFORat",      cheese},
+        {"AngelRat",    cheese},
+        {"DemonRat",    cheese},
         {"KingRat",     cheese},
+        {"GodzillaRat", cheese}
     };
 
 

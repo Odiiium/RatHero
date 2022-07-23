@@ -810,6 +810,7 @@ UnityEngine.ParticleSystem::Emit_Internal
 UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents
 UnityEngine.ParticleSystemRenderer::GetMeshes
 UnityEngine.Physics::get_defaultPhysicsScene_Injected
+UnityEngine.Physics::OverlapSphere_Internal_Injected
 UnityEngine.Physics::Internal_RaycastAll_Injected
 UnityEngine.Physics2D::get_queriesHitTriggers
 UnityEngine.Physics2D::GetRayIntersectionAll_Internal_Injected
